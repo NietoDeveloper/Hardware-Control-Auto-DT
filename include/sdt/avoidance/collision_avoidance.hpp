@@ -21,12 +21,6 @@ struct AvoidanceConfig {
   double w_hysteresis{0.2};     // damps left/right dithering between cycles
 };
 
-struct AvoidanceResult {
-  Vec3 velocity;
-  double min_ttc_s{kInf};
-  bool modified{false};
-  bool no_safe_option{false};  // every candidate violates critical_ttc_s -> escalate to safety
-};
 
 class CollisionAvoidance {
  public:
