@@ -22,11 +22,4 @@ class MediaRouter {
   void addSource(IMediaSource& s) { sources_.push_back(&s); }
   void setSink(IMediaSink& sink) noexcept { sink_ = &sink; }
 
- private:
-  std::vector<IMediaSource*> sources_;
-  IMediaSink* sink_{nullptr};
-  std::array<bool, 256> wait_key_{};  // per stream: dropped a frame, discard deltas until a keyframe
-  Stats stats_{};
-};
-
 }  // namespace sdt
