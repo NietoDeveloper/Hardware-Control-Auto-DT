@@ -9,18 +9,6 @@ cfg.guard.max_speed_mps    = 6.0;
 cfg.geofence.enabled       = true;           // fill vertices, min_z, max_z
 cfg.safety.radar_required  = true;
 rc.control_rt = sdt::RtConfig{80, 2};        // SCHED_FIFO 80 pinned to CPU 2 (needs CAP_SYS_NICE)
-rc.comms_rt   = sdt::RtConfig{50, 3};
-
-sdt::MediaRouter media;                      // optional
-media.addSource(my_camera);  media.setSink(my_rtp_sink);
-
-sdt::VehicleRuntime rt(ctl, link, clock, rc, &media);
-rt.start();
-```
-
-## 6. Bring-up checklist
-
-1. **Simulator first.** Run `sil_demo`, then your own scenario in the simulator with your limits.
 2. **Adapters on the bench, actuators disabled.** Log what `apply()` would send; verify signs,
    units, frame rotations and update rates against a trusted reference.
 3. **Check timestamps.** State and radar must be fresh (< 250 ms / 500 ms) or arming is refused.
