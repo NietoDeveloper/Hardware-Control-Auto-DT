@@ -77,6 +77,4 @@ dashboard                                    vehicle
 
 CRC-32 detects accidental corruption only. v1 offers **no authentication or encryption**. Run the
 link on a trusted/isolated network or inside a VPN/TLS tunnel; authenticated frames are on the
-roadmap.
-
-## 9. Example (C++)
+roadmap
