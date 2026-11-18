@@ -24,6 +24,3 @@ struct LoopStats {
 };
 
 class PeriodicThread {
- public:
-  PeriodicThread() = default;
-  PeriodicThread(const PeriodicThread&) = delete;
