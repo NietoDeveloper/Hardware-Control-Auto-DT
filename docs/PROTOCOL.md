@@ -16,10 +16,7 @@ offset  size  field
 
 * Incremental: feed it any chunking of the byte stream.
 * **Re-synchronises** after garbage, truncation or bit errors by scanning for the magic bytes.
-* Fixed internal buffer; no allocation, no exceptions.
-* Counts frames, CRC errors, oversize fram
-(0 = disarm, 1 = arm) |
-| SetMode | `0x03` | dashboard → vehicle | `u8 mode` (see §3) |
+* Fixed internal buffer; no allocation, no excmode` (see §3) |
 | ManualControl | `0x04` | dashboard → vehicle | `f32 forward, f32 lateral, f32 vertical, f32 yaw` |
 | MissionUpload | `0x05` | dashboard → vehicle | see §4 |
 | MissionControl | `0x06` | dashboard → vehicle | `u8 action` (see §3) |
