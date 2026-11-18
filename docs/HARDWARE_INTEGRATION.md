@@ -10,19 +10,6 @@ reference implementation of the same ports.
 
 | Port | Method | Contract |. |true); /* driver thread cuts power + brakes */ }
  private:
-  std::atomic<double> left_{0}, right_{0}, yaw_from_estimator_{0};
-  std::atomic<bool> estop_{false};
-  double track_{0.5}, wheel_r_{0.08};n) : 0;
-  }
-  bool send(const std::uint8_t* d, std::size_t n) noexcept override {
-    return ::sendto(fd_, d, n, MSG_DONTWAIT, peer_, peer_len_) == static_cast<ssize_t>(n);
-  }
- private: int fd_{-1}; const sockaddr* peer_{nullptr}; socklen_t peer_len_{0};
-};
-```
-
-The decoder tolerates arbitrary chunking, so stream (TCP, serial) and datagram (UDP) transports
-both work unchanged. A web dashboard reaches the vehicle through its own backend, which relays the
 binary frames; the core does not embed an HTTP/WebSocket server.
 
 ## 5. Wiring it together
