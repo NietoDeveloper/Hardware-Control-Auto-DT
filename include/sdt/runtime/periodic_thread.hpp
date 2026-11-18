@@ -8,8 +8,3 @@
 #include <thread>
 
 #include "sdt/common/types.hpp"
-
-namespace sdt {
-
-struct RtConfig {
-  int priority{0};  // 0 = default scheduler; 1..99 = SCHED_FIFO priority (needs CAP_SYS_NICE)
