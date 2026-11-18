@@ -15,14 +15,7 @@ struct Obstacle {
   Vec3 velocity;  // world frame
   double radius_m{1.0};
   std::uint16_t hits{0};
-  std::uint16_t misses{0};
-  TimeNs last_update{0};
-};
-
-inline constexpr std::size_t kMaxTracks = 64;
-using ObstacleList = std::array<Obstacle, kMaxTracks>;
-
-struct TrackerConfig {
+  std::uint1
   double min_range_m{0.3};
   double max_range_m{150.0};
   double min_snr_db{6.0};
