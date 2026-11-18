@@ -21,11 +21,6 @@ struct AvoidanceConfig {
   double w_hysteresis{0.2};     // damps left/right dithering between cycles
 };
 
-
-class CollisionAvoidance {
- public:
-  explicit CollisionAvoidance(const AvoidanceConfig& cfg = {}) noexcept : cfg_(cfg) {}
-
   AvoidanceResult resolve(const VehicleState& own, const Vec3& desired, const Obstacle* obstacles,
                           std::size_t count, double max_speed) noexcept;
 
