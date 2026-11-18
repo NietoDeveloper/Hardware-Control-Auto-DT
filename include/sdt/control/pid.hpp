@@ -14,12 +14,5 @@ struct PidGains {
 
 /// PID with conditional-integration anti-windup. Header-only, allocation-free.
 class Pid {
- public:
-  explicit Pid(const PidGains& g = {}) noexcept : g_(g) {}
-
-  double integral_{0.0};
-  double prev_error_{0.0};
-  bool primed_{false};
-};
 
 }  // namespace sdt
