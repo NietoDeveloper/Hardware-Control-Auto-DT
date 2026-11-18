@@ -22,10 +22,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
     case ControlMode::
 }
   ManualClock clock;
-  auto [dashboard, onboard] = LoopbackTransport::makePair();
-  CommandQueue queue;
-  CommandGateway gateway(*onboard, queue);
-
   Mission m;
   m.id = 1;
   m.count = 3;
