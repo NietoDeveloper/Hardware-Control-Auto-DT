@@ -87,9 +87,3 @@ std::size_t n = sdt::proto::encodeCommand(sdt::CmdManual{0.5f, 0.f, 0.f, 0.1f}, 
 transport.send(buf, n);
 
 sdt::proto::FrameDecoder dec;
-dec.feed(rx, rx_len, [&](const sdt::proto::Frame& f) {
-  sdt::Telemetry t;
-  if (f.type == sdt::proto::MsgType::Telemetry &&
-      sdt::proto::decodeTelemetry(f.payload, f.length, t)) { /* use t */ }
-});
-```
