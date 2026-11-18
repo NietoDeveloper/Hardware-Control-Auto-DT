@@ -84,5 +84,3 @@ Properties of `step()`:
 ```
 
 * **One writer per queue, wait-free.** `SpscQueue` uses acquire/release atomics and cache-line
-  alignment; no mutexes appear on any path the control thread touches.
-* **Back-pressure policy is "drop, never block".** A 
