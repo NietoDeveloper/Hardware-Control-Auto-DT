@@ -8,12 +8,3 @@
 #include "sdt/runtime/vehicle_controller.hpp"
 #include "sdt/sim/sim_world.hpp"
 
-using namespace sdt;
-
-int main() {
-  ManualClock clock;
-l(cfg, VehiclePorts{veh, radar, veh});
-
-  Mission m;;
-    clock.advance(millis(10));
-  }
