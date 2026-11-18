@@ -16,9 +16,6 @@ offset  size  field
 
 ### Link liveness
 
-**Any valid command frame** (including `Heartbeat`) refreshes the link timer. With defaults the
-vehicle holds after 2 s of silence and returns home after 10 s, so dashboards should send a frame
-at **≥ 5 Hz** (10 Hz recommended). `ManualControl` frames count as heartbeats.
 
 ## 3. Enumerations
 
