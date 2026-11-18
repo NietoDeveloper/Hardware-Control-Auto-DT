@@ -146,5 +146,3 @@ Details: [SAFETY.md](SAFETY.md).
 | New fault sources | Add a bit in `safety::fault`, an input in `SafetyInputs`, a rule in `SafetySupervisor`. |
 
 ## 10. Testing strategy
-
-* **Unit tests** per module with edge cases (corruption, NaN, boundaries, saturation).
