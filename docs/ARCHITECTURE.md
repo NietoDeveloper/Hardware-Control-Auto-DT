@@ -49,37 +49,3 @@ port.
    from `IRadarSource` into `RadarTracker` (bounded work). Confirmed tracks are copied into a
    fixed array.
 2. **Judge.** Build `SafetyInputs` (link age, state age, radar age, geofence margin, collision flag)
-   and let `SafetySupervisor` return a `SafetyVerdict` (state, action, fault bits, speed limit).
-3. **Terminate if required.** `EmergencyStop` → call `IActuatorSink::emergencyStop()`, disarm,
-   publish telemetry, return. Disarmed → command zero velocity, return.
-4. **Decide intent.** Failsafe `ReturnHome` forces that mode. Then, by mode:
-   `Manual` (sticks → world-frame velocity), `Mission` (`MissionExecutor::step`), `ReturnHome`
-   (follow a straight line to home), `Hold` (zero). A `Hold` verdict zeroes the intent.
-5. **Avoid.** If obstacles exist and the intent is non-zero, `CollisionAvoidance::resolve` returns a
-   modified velocity. If it finds *no* safe candidate it sets `no_safe_option`, which feeds back as
-   the `collision_imminent` input of the next cycle's verdict.
-6. **Limit.** `CommandGuard::filter` applies vertical clamp → horizontal limit (min of platform
-   limit and verdict limit) → geofence barrier → acceleration slew → yaw clamp.
-7. **Steer.** Manual: sticks drive yaw rate. Otherwise a PID turns the vehicle to face its
-   direction of travel when moving faster than `face_travel_min_speed_mps`.
-8. **Act and report.** `IActuatorSink::apply(cmd)`; copy a `Telemetry` snapshot.
-
-Properties of `step()`:
-
-* **Single-threaded by contract.** Only the control thread calls it.
-* **Deterministic.** No wall-clock reads; time is the `now` argument.
-* **Bounded.** Fixed-capacity arrays everywhere; loop bounds are compile-time or config constants.
-* **Allocation-free and non-throwing.** Verified by a test that fails on any `operator new` call.
-
-## 5. Threading model
-
-```
- comms thread  (200 Hz, prio 50)   control thread (100 Hz, prio 80)     media thread (best effort)
- ───────────────────────────────   ─────────────────────────────────    ──────────────────────────
- ITransport.receive                drain command queue                  poll IMediaSource(s)
- FrameDecoder / CRC / decode  ──►  VehicleController.handle(env)        MediaRouter.pump()
-   CommandQueue (SPSC, 32)         VehicleController.step(now)            drop on backpressure
- pop telemetry queue          ◄──  push Telemetry every 100 ms           resync on keyframe
- encode + ITransport.send          (SPSC, 8; drop if full)
-```
-
