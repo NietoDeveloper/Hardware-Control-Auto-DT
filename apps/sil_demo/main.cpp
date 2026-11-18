@@ -21,13 +21,7 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
     case ControlMode::
 }
-  for (int i = 0; i < 12000; ++i) {  // up to 120 s of simulated time
-    const TimeNs now = clock.now();
-    const double t = toSeconds(now);
-
-    // --- simulated dashboard operator ---ontrol{MissionAction::Start}, seq); started = true; }
-
-    // --- vehicle side: comms -> control -> physics ---
+  for (int i = 0; i < 12000; ++i) {  // up to sics ---
     gateway.poll(now);
     CommandEnvelope env;
     while (queue.pop(env)) ctl.handle(env);
