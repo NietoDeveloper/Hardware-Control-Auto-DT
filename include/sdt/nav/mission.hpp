@@ -8,4 +8,3 @@
 namespace sdt {
 
 struct Waypoint {
-  Vec3 position;             // local ENU, m
