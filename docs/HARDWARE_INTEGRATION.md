@@ -10,13 +10,7 @@ reference implementation of the same ports.
 
 | Port | Method | Contract |. |
 
-Rules for every adapter that runs on the control thread (`IStateSource`, `IRadarSource`,
-`IActuatorSink`): **no allocation, no locks that another thread can hold for long, no blocking I/O,
-  void apply(const sdt::VelocityCommand& cmd) noexcept override {
-    const double yaw = yaw_from_estimator_.load(std::memory_order_relaxed);
-    const double v   = cmd.velocity.x * std::cos(yaw) + cmd.velocity.y * std::sin(yaw);  // forward
-    const double w   = cmd.yaw_rate;
-    left_.store ((v - w * track_ * 0.5) / wheel_r_, std::memory_order_relaxed);  // rad/s
+Rules for every adapter that runs on the con
     right_.store((v + w * track_ * 0.5) / wheel_r_, std::memory_order_relaxed);
     // a separate motor-driver thread reads left_/right_ and talks CAN / UART
   }
