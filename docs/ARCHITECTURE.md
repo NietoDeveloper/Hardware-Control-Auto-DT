@@ -11,7 +11,7 @@ threads interact, and — most importantly — **why** it is built this way.
   programmed route.
 * Detect obstacles with radar and avoid them (or stop) instead of colliding.
 * Remain controllable and safe when links, sensors or algorithms misbehave.
-* Be one backend among many: it talks to other Software DT backends and frontends through a
+* Be one backend among many: it talks to other Software DT backends and frontenrough a
   small, stable, transport-independent protocol.
 * Be testable without hardware, deterministically, in CI.
 
