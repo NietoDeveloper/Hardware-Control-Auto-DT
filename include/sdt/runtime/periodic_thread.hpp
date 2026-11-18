@@ -35,8 +35,4 @@ class PeriodicThread {
   LoopStats stats() const noexcept;
 
  private:
-  std::thread th_;
-  std::atomic<bool> running_{false};
-  std::atomic<std::uint64_t> cycles_{0};
-  std::atomic<std::uint64_t> overruns_{0};
-
+  std
