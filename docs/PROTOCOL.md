@@ -61,6 +61,3 @@ dashboard                                    vehicle
   MissionUpload(id=7, 12 wp) ──────────────►  stored
   MissionControl(Start) ───────────────────►  mode=Mission, mission_state=Running
   ◄──────────────────────────── Telemetry: mission_index advancing, tracks=n
-  SetMode(Manual) / ManualControl(...) ────►  operator takes over live
-  MissionControl(Resume) / SetMode(Mission)►  back to the route
-  Arm(0) ──────────────────────────────────►  accep
