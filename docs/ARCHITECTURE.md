@@ -40,7 +40,3 @@ port.
   their hardware needs (body-frame velocity, wheel speeds, joint rates…).
 * Radar detections are in the **sensor frame**; the tracker transforms them using the vehicle
   state. In v1 the radar boresight is assumed to be the vehicle's forward axis.
-
-## 4. The control cycle
-
-`VehicleController::step(now)` is the heart of the system. One ca
