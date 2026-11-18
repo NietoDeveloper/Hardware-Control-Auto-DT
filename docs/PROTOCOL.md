@@ -5,21 +5,6 @@ serial/radio link, or a WebSocket/gRPC bridge operated by a dashboard backend.
 
 All multi-byte integers and floats are **little-endian**. Floats are IEEE-754 binary32.
 
-## 1. Frame
-
-```
-offset  size  field
-0       2     magic      0xD7 0x7A
-2       1     version    1
-3       1     type       s
-### Decoder behaviour (`proto::FrameDecoder`)
-
-| 0 | Hold |
-| 1 | Manual |
-| 2 | Mission |
-| 3 | ReturnHome |
-
-| `action` | Meaning |
 |---|---|
 | 1 | Start (requires armed + a loaded mission) |
 | 2 | Pause |
