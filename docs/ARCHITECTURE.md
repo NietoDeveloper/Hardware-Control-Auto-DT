@@ -148,5 +148,3 @@ Details: [SAFETY.md](SAFETY.md).
 ## 10. Testing strategy
 
 * **Unit tests** per module with edge cases (corruption, NaN, boundaries, saturation).
-* **System tests** run the full controller against the simulator with a manual clock and inject
-  faults: link loss, estimator freeze, radar silence, 
