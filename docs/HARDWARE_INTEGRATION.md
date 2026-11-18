@@ -8,13 +8,7 @@ reference implementation of the same ports.
 
 ## 1. Port contracts
 
-| Port | Method | Contract |. |
-
-Rules for every adapter that runs on the con
-    right_.store((v + w * track_ * 0.5) / wheel_r_, std::memory_order_relaxed);
-    // a separate motor-driver thread reads left_/right_ and talks CAN / UART
-  }
-  void emergencyStop() noexcept override { estop_.store(true); /* driver thread cuts power + brakes */ }
+| Port | Method | Contract |. |true); /* driver thread cuts power + brakes */ }
  private:
   std::atomic<double> left_{0}, right_{0}, yaw_from_estimator_{0};
   std::atomic<bool> estop_{false};
