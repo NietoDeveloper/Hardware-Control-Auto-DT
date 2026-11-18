@@ -12,9 +12,7 @@ reference implementation of the same ports.
 |---|---|---|
 | `IStateSource` | `bool poll(VehicleState&) noexcept` | Non-blocking. Return `true` only with **new** data. Fill ENU position (m), velocity (m/s), yaw (rad, CCW from East), yaw rate, timestamp. Never return NaN/Inf (they are rejected). |
 | `IRadarSource` | `bool poll(RadarScan&) noexcept` | Non-blocking. Detections in the sensor frame: range, azimuth (+ left), elevation (+ up), radial velocity, SNR. Up to 256 detections per scan. |
-| `IActuatorSink` | `void apply(const VelocityCommand&) noexcept` | Called every control cycle (100 Hz default) with the final, filtered world-frame velocity + yaw rate. Must not block. |
-| | `void emergencyStop() noexcept` | Idempotent, non-blocking, vehicle-appropriate safe termination. |
-| `ITransport` | `size_t receive(uint8_t*, size_t) noexcept` | Non-blocking; return bytes copied (0 = none). |
+| `IActuatorSink` | `void apply(const VelocityCommand&) noexcept` | Called` | `size_t receive(uint8_t*, size_t) noexcept` | Non-blocking; return bytes copied (0 = none). |
 | | `bool send(const uint8_t*, size_t) noexcept` | Non-blocking; `false` if it could not be queued. |
 | `IMediaSource` | `bool poll(MediaFrame&)` | Already-encoded frames; `requestKeyframe()` asks the encoder for an IDR frame. |
 | `IMediaSink` | `bool publish(MediaFrame&&)` | Return `false` to apply back-pressure (the router drops and resyncs). |
