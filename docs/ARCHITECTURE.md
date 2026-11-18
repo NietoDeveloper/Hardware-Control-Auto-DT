@@ -141,5 +141,3 @@ Details: [SAFETY.md](SAFETY.md).
 | A new vehicle or mechanism | Implement `IStateSource`, `IRadarSource` (optional), `IActuatorSink`. |
 | A new radio / network | Implement `ITransport`. |
 | A WebSocket/gRPC bridge for web dashboards | Run it in the dashboard backend; it forwards the binary frames unchanged. |
-| A new message | Add a `MsgType`, payload codec, `Command` variant alternative and `onCommand` overload. |
-| A better planner | Replace `CollisionAvoidance` / 
