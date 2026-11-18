@@ -18,21 +18,11 @@ using namespace sdt;
 
 namespace {
 void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
-  std::uint8_t buf[proto::kMaxFrame];
-  const std::size_t n = proto::encodeCommand(c, seq++, buf, sizeof buf);
-  t.send(buf, n);
-  switch (m) {
-    case ControlMode::Hold: return "HOLD";
-    case ControlMode::Manual: return "MANUAL";
-    case ControlMode::Mission: return "MISSION";
+  std::uint8_t buf[proto::kMaxFrISSION";
     case ControlMode::ReturnHome: return "RTH";
   }
   return "?";
-}
-const char* safetyName(SafetyState s) {
-  switch (s) {
-    case SafetyState::Nominal: return "NOMINAL";
-    case SafetyState::Degraded: return "DEGRADED";
+} return "DEGRADED";
     case SafetyState::Failsafe: return "FAILSAFE";
     case SafetyState::EmergencyStop: return "E-STOP";
   }
