@@ -18,14 +18,7 @@ class Pid {
   explicit Pid(const PidGains& g = {}) noexcept : g_(g) {}
 
   void reset() noexcept {
-
-  double update(double error, double dt) noexcept {
-    if (!(dt > 0.0) || !std::isfinite(error)) return 0.0;
-    const double d = primed_ ? g_.kd * (error - prev_error_) / dt : 0.0;
-    prev_error_ = error;
-    primed_ = true;
-
-    const double unsat = g_.kp * error + integral_ + d;
++ integral_ + d;
     const double out = clampd(unsat, g_.out_min, g_.out_max);
     if (out == unsat || (unsat > out) != (error > 0.0)) {  // integrate unless winding further into saturation
       integral_ = clampd(integral_ + g_.ki * error * dt, -g_.i_max, g_.i_max);
