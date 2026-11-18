@@ -20,5 +20,4 @@ port.
 
 | Module | Responsibility | Key types |
 |---|---|---|
-| `common/` | Units, time, logging, wait-free queue | `Vec3`, `VehicleState`, `VelocityCommand`, `IClock`/`SteadyClock`/`ManualClock`, `SpscQueue` |
-| `hal/` | Everything physical, as interfaces | `IStateSource`, `IRadarSource`, `IActuatorSink`, `IMediaSource`, `IMediaSink` |
+| `common/` | Units, time, logging, wait-free queue | `Vec3`, `VehicleState`, `VelocityCommand`, `IClock`/
