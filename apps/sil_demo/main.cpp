@@ -16,18 +16,6 @@
 
 using namespace sdt;
 
-namespace {
-void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
-  std::uint8_t buf[proto::kMaxFrISSION";
-
-    if (i % 100 == 0) {
-      const Telemetry tl = ctl.telemetry();
-      std::printf("%7.1f %-8s %-9s %7.1f %7.1f %6.2f %5u\n", t, modeName(tl.mode), safetyName(tl.safety),
-                  tl.position.x, tl.position.y, tl.velocity.norm(), static_cast<unsigned>(tl.tracks));
-    }
-    if (ctl.missionState() == MissionState::Completed && vehicle.truth().velocity.norm() < 0.05) break;
-    if (link_loss && t > 40.0) break;
-  }
 
   std::printf("\nmin clearance to any obstacle surface: %.2f m\n", min_clearance);
   std::printf("final mission state: %d, rejected commands: %u\n", static_cast<int>(ctl.missionState()),
