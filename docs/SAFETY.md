@@ -41,6 +41,3 @@ Applied in this order to every setpoint, in every mode:
 * aircraft: land, disarm, deploy a parachute, or hand over to the autopilot's own failsafe — a
   decision for the platform owner, because a motor cut that is safe on the ground is catastrophic
   in the air;
-* mechanism: remove drive enable / apply holding brake.
-
-The core calls it exactly when the supervisor demands `EmergencyStop` 
