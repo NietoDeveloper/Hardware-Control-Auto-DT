@@ -15,9 +15,7 @@ independent review on the target platform are required.
 
 | Hazard | Mitigation |s
 
-| Disarming a moving vehicle by mistake | Refued above `max_disarm_speed_mps` (except while e-stopped) |
-| Slow network or video encoder delaying control | Isolated threads, wait-free queues, drop-on-backpressure |
-| Control loop missing deadlines | Overrun and worst-case timing counters per loop |
+| Disarming a moving vehicle by mistak
 
 ## 3. Defence in depth
 
