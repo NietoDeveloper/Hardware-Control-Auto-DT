@@ -60,5 +60,4 @@ Each row is an automated test that injects the fault and asserts the response.
 | Radar loss → degrade → hold | `sys_radar_loss_degrades_then_holds` |
 | Geofence containment | `sys_geofence_contains_vehicle` |
 | Disarm refused while moving | `sys_disarm_refused_while_moving` |
-| Real threads + loopback transport | `runtime_threads_arm_and_stream_telemetry` |
-| No heap allocation on the control path | `sys_control_path_never_allocates` |
+| Real threads + loopback transport | 
