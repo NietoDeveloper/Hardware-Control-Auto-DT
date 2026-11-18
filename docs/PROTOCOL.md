@@ -46,6 +46,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 | 40 | u16 | `mission_index` (current waypoint) |
 | 42 | u32 | `faults` (bit-field, see SAFETY.md §4) |
 | 46 | u16 | `tracks` (confirmed radar obstacles) |
-| 48 | u32 | `rejected_commands` (monotonic counter) |
-
-Sent every 100 ms by default (`RuntimeConfig::telemetry_period`). A dashboard that 
