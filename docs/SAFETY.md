@@ -16,10 +16,6 @@ protection, strict validation, fault injection). It is **not certified** to any
 
 * A failsafe action is held until all triggering conditions have been absent for
   `recovery_time` (default 1 s). This prevents flapping when a link is marginal.
-* `EmergencyStop` latches. It is cleared only by an explicit operator **disarm**
-  (`supervisor.reset()`), never automatically.
-* While disarmed the supervisor still reports faults (used by pre-arm checks) but never escalates.
-
 ## 5. Pre-arm checks
 
 Arming is refused (and counted in `rejected_commands`) unless:
