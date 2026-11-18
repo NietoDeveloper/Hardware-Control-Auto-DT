@@ -14,10 +14,7 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Configuration loading from file with validation (today configuration is in code).
 * Structured event log / flight-data recorder with deterministic replay into the controller.
 * Dynamic-obstacle prediction beyond constant velocity; non-spherical obstacle shapes.
-* Local map memory and escape from concave obstacles; global planning between waypoints.
-* Terrain/altitude-aware 3-D avoidance for aerial platforms.
-* Multi-sensor fusion (radar + lidar/camera/ultrasonic) behind `IRadarSource`-style ports.
-* Real media pipeline: hardware encoders, Opus audio, RTP/WebRTC sink, adaptive bitrate.
+* Local map memory and escape from concave obstacles; global planning between waypoints. audio, RTP/WebRTC sink, adaptive bitrate.
 
 ## v3.0 — Assurance
 
