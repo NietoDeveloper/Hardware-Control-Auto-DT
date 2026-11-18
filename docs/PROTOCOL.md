@@ -48,6 +48,4 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 | 46 | u16 | `tracks` (confirmed radar obstacles) |
 | 48 | u32 | `rejected_commands` (monotonic counter) |
 
-Sent every 100 ms by default (`RuntimeConfig::telemetry_period`). A dashboard that watches
-`rejected_commands` can tell when the vehicle refused something.
-
+Sent every 100 ms by default (`RuntimeConfig::telemetry_period`). A dashboard that 
