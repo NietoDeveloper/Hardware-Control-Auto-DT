@@ -29,5 +29,4 @@ count × {
 ```
 
 Payload size = 7 + 24 × count bytes (max 3 079). Uploads are rejected while a mission is Running or
-Paused. Mission control is separate: upload, then `MissionControl(Start)`.
-
+Paused. Mission control is separate: upload, then 
