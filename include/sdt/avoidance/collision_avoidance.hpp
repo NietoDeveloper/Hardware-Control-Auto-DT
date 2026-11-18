@@ -20,13 +20,6 @@ struct AvoidanceConfig {
   double w_ttc{2.0};
   double w_hysteresis{0.2};     // damps left/right dithering between cycles
 };
-
-  AvoidanceResult resolve(const VehicleState& own, const Vec3& desired, const Obstacle* obstacles,
-                          std::size_t count, double max_speed) noexcept;
-
-  void reset() noexcept { last_offset_ = 0.0; }
-
- private:
   double minTtc(const VehicleState& own, const Vec3& v, const Obstacle* obs,
                 std::size_t n) const noexcept;
   AvoidanceConfig cfg_;
