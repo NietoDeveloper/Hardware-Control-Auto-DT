@@ -14,10 +14,6 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Configuration loading from file with validation (today configuration is in code).
 * Structured event log / flight-data recorder with deterministic replay into the controller.
 
-## v1.2 — Trust and health
-
-* Authenticated (and optionally encrypted) command frames; replay protection.
-* Battery/power, thermal, GNSS-quality and motor-health faults and failsafes.
 * Operator-visible fault descriptions in telemetry; command acknowledgements.
 * Length-negotiated protocol extensions.
 
