@@ -7,10 +7,7 @@ threads interact, and — most importantly — **why** it is built this way.
 
 **Goals**
 
-* Control air, ground or mechanism hardware from a dashboard, either live (manual) or along a
-  programmed route.
-* Detect obstacles with radar and avoid them (or stop) instead of colliding.
-* Remain controllable and safe when links, sensors or algorithms misbehave.
+* Control air, ground or mechani
 * Be one backend among many: it talks to other Software DT backends and frontenrough a
   small, stable, transport-independent protocol.
 * Be testable without hardware, deterministically, in CI.
