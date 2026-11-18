@@ -28,5 +28,4 @@ class MissionExecutor {
   std::uint32_t missionId() const noexcept { return mission_.id; }
   bool hasMission() const noexcept { return mission_.count > 0; }
 
- private:
-
+ private
