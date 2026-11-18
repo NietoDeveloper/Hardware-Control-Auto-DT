@@ -17,4 +17,4 @@ class MissionExecutor {
   bool load(const Mission& m) noexcept;
   bool start(const Vec3& position, TimeNs now) noexcept;
   bool pause() noexcept;
-// Desired world-frame velocity for this cycle (zero unless Runni
+// Desired world-frame velocity for this cycle (zero unlesni
