@@ -8,10 +8,6 @@ wrong, and — just as importantly — what it does **not** claim.
 v1 applies safety-critical *engineering practices* (determinism, static allocation, layered
 protection, strict validation, fault injection). It is **not certified** to any standard
 (e.g. DO-178C, ISO 26262, IEC 61508) and has not been formally verified. Before it controls a
-vehicle that can hurt people or property, a hazard analysis, hardware-in-the-loop testing andgencyStop(): vehicle-specific safe termination
-```
-
-Each layer assumes the previous one can be wrong. The guard in particular enforces its limits no
 matter which mode produced the command.
 
 ## 4. Safety supervisor
