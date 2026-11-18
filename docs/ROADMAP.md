@@ -15,8 +15,3 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Independent supervisor on a separate process/processor with its own watchdog.
 * Formal hazard analysis (FMEA/FTA), requirements traceability, coverage targets (MC/DC where
 ## Cross-cutting, every release
-
-* Keep the control path allocation-free and deterministic (the allocation test stays).
-* Every new fault source ships with a fault-injection test.
-* Protocol changes bump the version and update `docs/PROTOCOL.md`.
-* Benchmarks tracked per release on target hardware.
