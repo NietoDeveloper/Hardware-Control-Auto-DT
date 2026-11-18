@@ -19,9 +19,3 @@ Telemetry enums: `safety` 0 Nominal, 1 Degraded, 2 Failsafe, 3 EmergencyStop;
 ```
 u32 mission_id
 u8  loop        (0 or 1)
-u16 count       (1..128)
-count × {
-  f32 x, f32 y, f32 z        local ENU metres
-  f32 speed_mps              cruise speed toward this waypoint
-  f32 acceptance_m           reached when within this 3-D radius
-  f32 hold_s                 dwell on arrival (0 = fly through)
