@@ -59,5 +59,4 @@ dashboard                                    vehicle
   ◄──────────────────────────── Telemetry (10 Hz): armed=0, faults=0
   Arm(1) ──────────────────────────────────►  pre-arm checks → armed, mode=Hold
   MissionUpload(id=7, 12 wp) ──────────────►  stored
-  MissionControl(Start) ───────────────────►  mode=Mission, mission_state=Running
-  ◄──────────────────────────── Telemetry: mission_index advancing, tracks=n
+  MissionControl(Start) ───────────────────►  
