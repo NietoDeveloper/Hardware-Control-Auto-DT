@@ -9,12 +9,7 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Deterministic, allocation-free `VehicleController` with manual, mission, return-home and hold.
 * Radar tracking, velocity-sampling avoidance, layered safety, geofence.
 * Binary protocol with CRC and resynchronisation.
-* Three-thread runtime, simulator, 27 tests, benchmark, sanitizer build options.
-
-## v1.1 — First real platform
-
-* Real transport adapters: UDP, TCP, serial.
-* First hardware adapters (one ground, one aerial or mechanism target), with hardware-in-the-loop tests.
+* Three-thread runtime, simulator, 27 tests, benchmark, sanitizer build options.ial or mechanism target), with hardware-in-the-loop tests.
 * Radar mounting-offset calibration.
 * Configuration loading from file with validation (today configuration is in code).
 * Structured event log / flight-data recorder with deterministic replay into the controller.
