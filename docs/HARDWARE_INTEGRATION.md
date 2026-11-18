@@ -12,17 +12,7 @@ reference implementation of the same ports.
  private:
   std::atomic<double> left_{0}, right_{0}, yaw_from_estimator_{0};
   std::atomic<bool> estop_{false};
-  double track_{0.5}, wheel_r_{0.08};
-};
-
-## 4. Transport adapters
-
-```cpp
-class UdpTransport final : public sdt::ITransport {
- public:
-  std::size_t receive(std::uint8_t* buf, std::size_t cap) noexcept override {
-    const ssize_t n = ::recv(fd_, buf, cap, MSG_DONTWAIT);   // fd_ is a non-blocking UDP socket
-    return n > 0 ? static_cast<std::size_t>(n) : 0;
+  double track_{0.5}, wheel_r_{0.08};n) : 0;
   }
   bool send(const std::uint8_t* d, std::size_t n) noexcept override {
     return ::sendto(fd_, d, n, MSG_DONTWAIT, peer_, peer_len_) == static_cast<ssize_t>(n);
