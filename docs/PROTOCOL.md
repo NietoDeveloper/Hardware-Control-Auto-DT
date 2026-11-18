@@ -39,6 +39,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 | 8 | f32 ×3 | `position` x, y, z (m) |
 | 20 | f32 ×3 | `velocity` x, y, z (m/s) |
 | 32 | f32 | `yaw` (rad) |
-| 36 | u8 | `armed` (0/1) |
-| 37 | u8 | `mode` |
-| 38 | u8 | `safety` |
