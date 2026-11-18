@@ -12,20 +12,3 @@
 
 #include "sdt/common/types.hpp"
 class IMediaSource {
- public:
-  virtual ~IMediaSource() = default;
-  virtual bool poll(MediaFrame& out) = 0;
-  virtual std::uint8_t streamId() const noexcept = 0;
-  /// Ask the encoder for an IDR/keyframe (used after the sink dropped frames).
-  virtual void requestKeyframe() noexcept {}
-};
-
-class IMediaSink {
- public:
-  virtual ~IMediaSink() = default;
-  /// Return false if the frame could not be accepted (backpressure); the router then drops and
-  /// resynchronises on the next keyframe. Must not block.
-  virtual bool publish(MediaFrame&& frame) = 0;
-};
-
-}  // namespace sdt
