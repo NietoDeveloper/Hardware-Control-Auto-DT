@@ -36,4 +36,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 | Offset | Type | Field |
 |---|---|---|
 | 0 | u64 | `stamp` — vehicle monotonic time, ns |
-| 8 | f32 ×3 | `position` x, y, z (m) |
