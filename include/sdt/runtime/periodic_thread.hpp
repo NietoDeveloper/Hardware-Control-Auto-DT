@@ -6,5 +6,3 @@
 #include <functional>
 #include <string>
 #include <thread>
-
-#include "sdt/common/types.hpp"
