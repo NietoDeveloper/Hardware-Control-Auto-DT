@@ -22,11 +22,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
     case ControlMode::
 }
   ManualClock clock;
-  sim::SimVehicle vehicle(VehicleState{})
-  VehicleConfig cfg;
-  cfg.kind = VehicleKind::Ground;
-  VehicleController ctl(cfg, VehiclePorts{vehicle, radar, vehicle});
-
   auto [dashboard, onboard] = LoopbackTransport::makePair();
   CommandQueue queue;
   CommandGateway gateway(*onboard, queue);
