@@ -26,10 +26,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
 
   std::uint16_t seq = 0;
   constexpr TimeNs dt = millis(10);
-  double min_clearance = kInf;
-  bool uploaded = false, armed_sent = false, started = false;
-  std::printf("%7s %-8s %-9s %7s %7s %6s %5s\n", "t[s]", "mode", "safety", "x[m]", "y[m]", "v[m/s]", "trks");
-
   for (int i = 0; i < 12000; ++i) {  // up to 120 s of simulated time
     const TimeNs now = clock.now();
     const double t = toSeconds(now);
