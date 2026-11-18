@@ -124,5 +124,3 @@ Details: [SAFETY.md](SAFETY.md).
 
 | Decision | Why |
 |---|---|
-| Velocity setpoint as the core's output | Works for aircraft, wheeled robots and mechanisms; inner loops stay with platform experts. |
-| Injected clock instead of `steady_clock::now()` inside logic | Deterministic tests, replay, 
