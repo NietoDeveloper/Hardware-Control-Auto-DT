@@ -43,6 +43,4 @@ Applied in this order to every setpoint, in every mode:
   in the air;
 * mechanism: remove drive enable / apply holding brake.
 
-The core calls it exactly when the supervisor demands `EmergencyStop` and the vehicle is armed.
-
-## 8. Validation evidence in this repository
+The core calls it exactly when the supervisor demands `EmergencyStop` 
