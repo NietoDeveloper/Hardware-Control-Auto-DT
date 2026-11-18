@@ -13,11 +13,7 @@ reference implementation of the same ports.
 Rules for every adapter that runs on the control thread (`IStateSource`, `IRadarSource`,
 `IActuatorSink`): **no allocation, no locks that another thread can hold for long, no blocking I/O,
 no exceptions.** Do I/O on your own thread and hand data over with a latest-value slot or a
-wait-free queue (`sdt::SpscQueue`).
-
-  velocity, rotate by `-yaw` inside the adapter.
-* If the radar is not mounted facing forward, rotate detections in the adapter until boresight =
-  vehicle forward (v1 assumes that).
+ard (v1 assumes that).
 
 ## 3. Platform recipes
 
