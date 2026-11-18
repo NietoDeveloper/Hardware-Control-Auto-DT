@@ -14,13 +14,6 @@ independent review on the target platform are required.
 ## 2. Hazards addressed
 
 | Hazard | Mitigation |
-|---|---|
-| Collision with an obstacle | Radar tracking + velocity-sampling avoidance; supervisor holds if no safe velocity exists |
-| Operator link lost | Hold after 2 s, return home after 10 s (configurable) |
-| Operator input stale | Manual sticks older than 500 ms command zero velocity |
-| Position/velocity estimate lost | Latched emergency stop |
-| Radar lost while moving | Speed cap, then hold |
-| Leaving the operating area | Polygonal geofence + altitude band; barrier in the command guard |
 | Corrupted or malicious-looking command | CRC, strict decoding, range checks, state validation |
 | NaN/Inf reaching actuators | Rejected at decode, state ingest and guard |
 | Disarming a moving vehicle by mistake | Refused above `max_disarm_speed_mps` (except while e-stopped) |
