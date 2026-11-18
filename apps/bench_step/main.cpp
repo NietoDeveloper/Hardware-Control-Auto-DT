@@ -12,16 +12,7 @@ using namespace sdt;
 
 int main() {
   ManualClock clock;
-  sim::SimVehicle veh(VehicleState{});
-  std::vector<sim::SimObstacle> obs;
-  // A dense field of 20 static obstacles around the vehicle's path: tracker, avoidance and
-  // guard all stay busy for the whole run.
-  for (int i = 0; i < 20; ++i) {
-    obs.push_back({{14.0 + 5.0 * (i % 5), -9.0 + 4.5 * (i / 5) * 1.0 + 1.3 * (i % 3), 0.0}, {0.0, 0.0, 0.0}, 1.0});
-  }
-  sim::SimRadar radar(veh, obs, clock);
-  VehicleConfig cfg;
-  VehicleController ctl(cfg, VehiclePorts{veh, radar, veh});
+l(cfg, VehiclePorts{veh, radar, veh});
 
   Mission m;
   m.count = 1;
