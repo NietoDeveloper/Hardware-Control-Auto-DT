@@ -17,7 +17,3 @@ or vendor code. The only code allowed to know about the physical world is an ada
 port.
 
 ## 3. Modules
-
-| Module | Responsibility | Key types |
-|---|---|---|
-| `common/` | Units, time, logging, wait-free queue | `Vec3`, `VehicleState`, `VelocityCommand`, `IClock`/
