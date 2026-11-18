@@ -8,12 +8,6 @@ reference implementation of the same ports.
 cfg.guard.max_speed_mps    = 6.0;
 cfg.geofence.enabled       = true;           // fill vertices, min_z, max_z
 cfg.safety.radar_required  = true;
-
-MyEstimator est;  MyRadar radar;  MyActuator act;  MyUdpTransport link;
-sdt::VehicleController ctl(cfg, sdt::VehiclePorts{est, radar, act});
-
-sdt::SteadyClock clock;
-sdt::RuntimeConfig rc;                       // control 100 Hz / comms 200 Hz by default
 rc.control_rt = sdt::RtConfig{80, 2};        // SCHED_FIFO 80 pinned to CPU 2 (needs CAP_SYS_NICE)
 rc.comms_rt   = sdt::RtConfig{50, 3};
 
