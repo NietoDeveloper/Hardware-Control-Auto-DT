@@ -14,12 +14,6 @@ offset  size  field
 3       1     type       s
 ### Decoder behaviour (`proto::FrameDecoder`)
 
-* Incremental: feed it any chunking of the byte stream.
-* **Re-synchronises** after garbage, truncation or bit errors by scanning for the magic bytes.
-* Fixed internal buffer; no allocation, no excmode` (see §3) |
-| ManualControl | `0x04` | dashboard → vehicleside `[-1, 1]` or not finite; a mission has 0 or
-more than 128 waypoints; trailing bytes remain.
-
 ### Link liveness
 
 **Any valid command frame** (including `Heartbeat`) refreshes the link timer. With defaults the
