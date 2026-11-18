@@ -36,5 +36,3 @@ port.
 
 * Local **ENU** frame: x = East, y = North, z = Up. SI units everywhere (m, m/s, rad, s).
 * Yaw is counter-clockwise from East. Time is monotonic nanoseconds (`TimeNs`).
-* `VelocityCommand` is expressed in the **world frame**; platform adapters convert it to whatever
-  their hardware needs (body-frame velocity, wheel 
