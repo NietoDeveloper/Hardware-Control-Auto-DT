@@ -25,12 +25,7 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
     const TimeNs now = clock.now();
     const double t = toSeconds(now);
 
-    // --- simulated dashboard operator ---
-    const bool link_up = !(link_loss && t > 8.0);
-    if (link_up && i % 10 == 0) sendCmd(*dashboard, CmdHeartbeat{}, seq);
-    if (!uploaded && t > 0.2) { sendCmd(*dashboard, CmdMissionUpload{m}, seq); uploaded = true; }
-    if (!armed_sent && t > 0.8) { sendCmd(*dashboard, CmdArm{true}, seq); armed_sent = true; }
-    if (!started && t > 1.0) { sendCmd(*dashboard, CmdMissionControl{MissionAction::Start}, seq); started = true; }
+    // --- simulated dashboard operator ---ontrol{MissionAction::Start}, seq); started = true; }
 
     // --- vehicle side: comms -> control -> physics ---
     gateway.poll(now);
