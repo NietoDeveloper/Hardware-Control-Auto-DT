@@ -72,5 +72,3 @@ dashboard                                    vehicle
   (`bad_version`).
 * New message types and new trailing telemetry fields will be introduced with a version bump until
   a length-negotiated extension mechanism exists (planned).
-
-## 8. Security note
