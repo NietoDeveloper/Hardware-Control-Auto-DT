@@ -8,6 +8,4 @@ threads interact, and — most importantly — **why** it is built this way.
 **Goals**
 
 * Control air, ground or mechani
-* Be one backend among many: it talks to other Software DT backends and frontenrough a
-  small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
-  to the platform (autopilot, motor controller, joint 
+* Be one backend among many: it talks to other Software DT backends and frontenroug
