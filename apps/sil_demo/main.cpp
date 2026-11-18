@@ -21,12 +21,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
     case ControlMode::
 }
-}  // namespace
-
-int main(int argc, char** argv) {
-  const std::string scenario = argc > 1 ? argv[1] : "nominal";
-  const bool link_loss = scenario == "link-loss";
-
   ManualClock clock;
   sim::SimVehicle vehicle(VehicleState{});
   std::vector<sim::SimObstacle> obstacles = {
