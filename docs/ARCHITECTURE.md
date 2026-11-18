@@ -152,5 +152,4 @@ Details: [SAFETY.md](SAFETY.md).
   faults: link loss, estimator freeze, radar silence, geofence pressure, manual-stick timeout.
 * **Runtime test** exercises the real threads and the loopback transport end to end.
 * **Allocation test** proves the control path performs no heap allocation.
-* **Sanitizers** (ASan/UBSan, TSan) are first-class build options.
-* **Benchmark** (`bench_step`) tracks the control-cycle latency distribution.
+* **Sanitizers** (ASan/UBSan, TSan) are first-class 
