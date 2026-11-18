@@ -21,12 +21,7 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
     case ControlMode::
 }
-  ManualClock clock;
-  Mission m;
-  m.id = 1;
-  m.count = 3;
-  m.waypoints[0] = {{40.0, 0.0, 0.0}, 4.0f, 1.5f, 0.0f};
-  m.waypoints[1] = {{40.0, 30.0, 0.0}, 4.0f, 1.5f, 0.0f};
+  ManualClock clock;.0f, 1.5f, 0.0f};
   m.waypoints[2] = {{0.0, 30.0, 0.0}, 4.0f, 1.5f, 1.0f};
 
   std::uint16_t seq = 0;
