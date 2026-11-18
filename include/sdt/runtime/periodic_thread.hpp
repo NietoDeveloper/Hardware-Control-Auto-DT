@@ -29,5 +29,3 @@ class PeriodicThread {
   PeriodicThread(const PeriodicThread&) = delete;
   PeriodicThread& operator=(const PeriodicThread&) = delete;
   ~PeriodicThread() { stop(); }
-
-  bool start(std::string name, TimeNs period, std::function<void()> body, RtConfig rt = {});
