@@ -21,4 +21,3 @@ class MissionExecutor {
   void abort() noexcept;
 
   /// Desired world-frame velocity for this cycle (zero unless Running).
-  Vec3 step(const VehicleState& s, TimeNs now) noexcept;
