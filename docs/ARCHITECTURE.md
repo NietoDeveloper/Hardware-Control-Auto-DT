@@ -132,6 +132,3 @@ Details: [SAFETY.md](SAFETY.md).
 | Binary protocol with CRC and resync | Small, fast, works on lossy radios; one decoder for all transports. |
 | Media isolated on its own thread and queue | Video encoders stall; flight/drive control must not. |
 | Simulator implements the same ports | The binary logic under test is the logic that flies/drives. |
-| Header-light, dependency-free | Easy to audit, vendor and cross-compile for embedded Linux targets. |
-
-## 9. Extension points
