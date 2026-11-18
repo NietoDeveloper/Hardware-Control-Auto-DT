@@ -43,9 +43,4 @@ port.
 
 ## 4. The control cycle
 
-`VehicleController::step(now)` is the heart of the system. One call = one cycle, in this exact order:
-
-1. **Sense.** Poll `IStateSource` (reject non-finite estimates) and drain at most two radar scans
-   from `IRadarSource` into `RadarTracker` (bounded work). Confirmed tracks are copied into a
-   fixed array.
-2. **Judge.** Build `SafetyInputs` (link age, state age, radar age, geofence margin, collision flag)
+`VehicleController::step(now)` is the heart of the system. One ca
