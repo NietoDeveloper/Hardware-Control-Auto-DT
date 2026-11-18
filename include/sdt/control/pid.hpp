@@ -17,12 +17,6 @@ class Pid {
  public:
   explicit Pid(const PidGains& g = {}) noexcept : g_(g) {}
 
-  void reset() noexcept {
-+ integral_ + d
-  }
-
- private:
-  PidGains g_;
   double integral_{0.0};
   double prev_error_{0.0};
   bool primed_{false};
