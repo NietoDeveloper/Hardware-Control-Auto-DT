@@ -34,5 +34,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 ## 5. Telemetry payload (52 bytes)
 
 | Offset | Type | Field |
-|---|---|---|
-| 0 | u64 | `stamp` — vehicle monotonic time, ns |
