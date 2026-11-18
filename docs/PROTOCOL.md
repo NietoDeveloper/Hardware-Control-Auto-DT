@@ -11,15 +11,7 @@ All multi-byte integers and floats are **little-endian**. Floats are IEEE-754 bi
 offset  size  field
 0       2     magic      0xD7 0x7A
 2       1     version    1
-3       1     type       see §2
-4       2     seq        u16, sender-chosen, wraps (diagnostics / loss detection)
-6       2     length     u16, payload bytes, 0..4096
-8       n     payload
-8+n     4     crc32      IEEE CRC-32 over bytes [version .. payload] (offsets 2..8+n-1)
-```
-
-Maximum frame size: 8 + 4096 + 4 = 4108 bytes.
-
+3       1     type       s
 ### Decoder behaviour (`proto::FrameDecoder`)
 
 * Incremental: feed it any chunking of the byte stream.
