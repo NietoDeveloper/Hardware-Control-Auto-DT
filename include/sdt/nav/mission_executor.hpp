@@ -26,4 +26,3 @@ class MissionExecutor {
   MissionState state() const noexcept { return state_; }
   std::uint16_t currentIndex() const noexcept { return index_; }
   std::uint32_t missionId() const noexcept { return mission_.id; }
-  bool hasMission() const noexcept { return mission_.count > 0; }
