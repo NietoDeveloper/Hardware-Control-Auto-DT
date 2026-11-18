@@ -22,13 +22,7 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
     case ControlMode::
 }
   ManualClock clock;
-  sim::SimVehicle vehicle(VehicleState{});
-  std::vector<sim::SimObstacle> obstacles = {
-      {{20.0, 0.3, 0.0}, {0.0, 0.0, 0.0}, 1.2},      // static, sits on the first leg
-      {{60.0, 15.0, 0.0}, {-1.5, 0.0, 0.0}, 1.0},    // crosses the second leg
-  };
-  sim::SimRadar radar(vehicle, obstacles, clock);
-
+  sim::SimVehicle vehicle(VehicleState{})
   VehicleConfig cfg;
   cfg.kind = VehicleKind::Ground;
   VehicleController ctl(cfg, VehiclePorts{vehicle, radar, vehicle});
