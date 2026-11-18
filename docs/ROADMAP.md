@@ -11,10 +11,6 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Binary protocol with CRC and resynchronisation.
 * Three-thread runtime, simulator, 27 tests, benchmark, sanitizer build options.ial or mechanism target), with hardware-in-the-loop tests.
 * Radar mounting-offset calibration.
-* Configuration loading from file with validation (today configuration is in code).
-* Structured event log / flight-data recorder with deterministic replay into the controller.e bitrate.
-
-## v3.0 — Assurance
 
 * Independent supervisor on a separate process/processor with its own watchdog.
 * Formal hazard analysis (FMEA/FTA), requirements traceability, coverage targets (MC/DC where
