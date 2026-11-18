@@ -4,7 +4,3 @@
 // collision, so the demo doubles as a CI smoke test.
 //
 //   sil_demo [nominal|link-loss]
-#include <cmath>
-#include <cstdio>
-#include <cstring>
-#include <string>
