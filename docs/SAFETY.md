@@ -9,5 +9,4 @@ v1 applies safety-critical *engineering practices* (determinism, static allocati
 protection, strict validation, fault injection). It is **not certified** to any 
 | 0 | `kLinkLost` | No valid command frame within `link_hold_after` |
 | 1 | `kStateStale` | No valid state estimate within `state_stale_after` |
-| 2 | `kRadarStale` | No radar scan within `radar_degraded_after` (when radar is required) |
-| 3 | `kGeofence` | Vehicle is outsidtive conditions.
+| 2 | `kRadarStale` | No radar scan within `radar_degraded_after` (when 
