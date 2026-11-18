@@ -138,5 +138,4 @@ Details: [SAFETY.md](SAFETY.md).
 
 | To add… | Do this |
 |---|---|
-| A new vehicle or mechanism | Implement `IStateSource`, `IRadarSource` (optional), `IActuatorSink`. |
-| A new radio / network | Implement `ITransport`. |
+| A new vehicle or mechanism | Implement `IStateSource`, 
