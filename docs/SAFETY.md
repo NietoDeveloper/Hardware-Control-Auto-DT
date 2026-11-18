@@ -11,15 +11,6 @@ protection, strict validation, fault injection). It is **not certified** to any 
 vehicle that can hurt people or property, a hazard analysis, hardware-in-the-loop testing and an
 independent review on the target platform are required.
 
-## 2. Hazards addressed
-
-| Hazard | Mitigation |s
-
-| Disarming a moving vehicle by mistak
-
-## 3. Defence in depth
-
-```
  intent (operator / mission / RTH)
       │
       ▼  1. Collision avoidance      reshapes velocity using radar tracks
