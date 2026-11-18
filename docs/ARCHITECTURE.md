@@ -131,4 +131,3 @@ Details: [SAFETY.md](SAFETY.md).
 | Command guard *after* avoidance | Limits hold even if avoidance, mission or manual input is wrong. |
 | Binary protocol with CRC and resync | Small, fast, works on lossy radios; one decoder for all transports. |
 | Media isolated on its own thread and queue | Video encoders stall; flight/drive control must not. |
-| Simulator implements the same ports | The binary logic under test is the logic that flies/drives. |
