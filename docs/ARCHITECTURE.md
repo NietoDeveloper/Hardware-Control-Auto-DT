@@ -129,5 +129,4 @@ Details: [SAFETY.md](SAFETY.md).
 | Fixed-capacity containers (`std::array`) | No allocation, bounded time, trivially copyable → safe through lock-free queues. |
 | Supervisor is a pure function of inputs | Exhaustively unit-testable; could later move to a separate process or processor. |
 | Command guard *after* avoidance | Limits hold even if avoidance, mission or manual input is wrong. |
-| Binary protocol with CRC and resync | Small, fast, works on lossy radios; one decoder for all transports. |
-| Media isolated on its own thread and queue | Video encoders stall; flight/drive control must not. |
+| Binary protocol with CRC and resync | Small, fast, 
