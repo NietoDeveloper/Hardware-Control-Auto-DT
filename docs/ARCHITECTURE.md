@@ -11,13 +11,7 @@ threads interact, and — most importantly — **why** it is built this way.
 * Be one backend among many: it talks to other Software DT backends and frontenrough a
   small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
   to the platform (autopilot, motor controller, joint servos).
-* State estimation / SLAM — the core consumes a fused `VehicleState`.
-* Mapping and global path planning — v1 follows operator-supplied waypoints.
-
-## 2. Layered view
-
-```
-┌───────────────────────────────────────────────────────────────────────┐
+* State estimation / SLAM — the core consumes a fused `Ve─────────────────────────────────────────────────────────────┐
 │ Application / integration   (your executable, adapters, config)        │
 ├───────────────────────────────────────────────────────────────────────┤
 │ runtime/   VehicleRuntime · PeriodicThread · VehicleController          │  orchestration
