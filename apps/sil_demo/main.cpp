@@ -19,16 +19,7 @@ using namespace sdt;
 namespace {
 void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
-    case ControlMode::
-}
-  for (int i = 0; i < 12000; ++i) {  // up to sics ---
-    gateway.poll(now);
-    CommandEnvelope env;
-    while (queue.pop(env)) ctl.handle(env);
-    ctl.step(now);
-    if (i % 10 == 0) gateway.sendTelemetry(ctl.telemetry());
-
-    for (auto& o : obstacles) o.position += o.velocity * toSeconds(dt);
+    case ControlMode::ocity * toSeconds(dt);
     vehicle.step(now, toSeconds(dt));
     for (const auto& o : obstacles) {
       min_clearance = std::min(min_clearance, (o.position - vehicle.truth().position).norm() - o.radius_m);
