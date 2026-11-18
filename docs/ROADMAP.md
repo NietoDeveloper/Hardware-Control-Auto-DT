@@ -12,9 +12,7 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Three-thread runtime, simulator, 27 tests, benchmark, sanitizer build options.ial or mechanism target), with hardware-in-the-loop tests.
 * Radar mounting-offset calibration.
 * Configuration loading from file with validation (today configuration is in code).
-* Structured event log / flight-data recorder with deterministic replay into the controller.
-* Dynamic-obstacle prediction beyond constant velocity; non-spherical obstacle shapes.
-* Local map memory and escape from concave obstacles; global planning between waypoints. audio, RTP/WebRTC sink, adaptive bitrate.
+* Structured event log / flight-data recorder with deterministic replay into the controller.e bitrate.
 
 ## v3.0 — Assurance
 
