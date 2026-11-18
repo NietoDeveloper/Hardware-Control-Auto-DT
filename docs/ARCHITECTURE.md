@@ -83,4 +83,3 @@ Properties of `step()`:
  encode + ITransport.send          (SPSC, 8; drop if full)
 ```
 
-* **One writer per queue, wait-free.** `SpscQueue` uses acquire/release atomics and cache-line
