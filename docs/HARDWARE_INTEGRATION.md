@@ -15,12 +15,6 @@ reference implementation of the same ports.
   double track_{0.5}, wheel_r_{0.08};
 };
 
-* `IStateSource`: forward kinematics from encoders → position/velocity.
-* `IActuatorSink::apply`: inverse kinematics / Jacobian → joint velocity targets to the servo
-  controllers. Enforce joint limits *in the adapter* in addition to the core's geofence.
-* `IRadarSource`: any proximity sensor can be adapted into `RadarScan` (range + azimuth/elevation).
-* `emergencyStop`: remove drive enable and apply brakes (or hold torque if gravity loads the axis).
-
 ## 4. Transport adapters
 
 ```cpp
