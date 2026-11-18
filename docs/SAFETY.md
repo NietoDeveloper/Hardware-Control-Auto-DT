@@ -31,8 +31,3 @@ Applied in this order to every setpoint, in every mode:
    *and* be worse than the current position, command zero. A vehicle already outside may still
    move back inward.
 5. Acceleration slew (separate limits for speeding up and braking), relative to the previous command.
-6. Clamp yaw rate.
-
-## 7. Emergency stop contract
-
-`IActuatorSink::emergencyStop()` must be **idempotent, non-blocking and 
