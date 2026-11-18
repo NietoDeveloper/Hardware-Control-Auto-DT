@@ -3,6 +3,3 @@
 // real-time scheduling (SCHED_FIFO + CPU pinning on Linux; best effort, failures are logged).
 #include <atomic>
 #include <cstdint>
-#include <functional>
-#include <string>
-#include <thread>
