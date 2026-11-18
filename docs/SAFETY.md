@@ -29,5 +29,3 @@ Applied in this order to every setpoint, in every mode:
 3. Limit horizontal speed to `min(platform limit, verdict speed limit)`.
 4. **Geofence barrier:** compute the stopping point (v²/2a plus a margin); if it would lie outside
    *and* be worse than the current position, command zero. A vehicle already outside may still
-   move back inward.
-5. Acceleration slew (separate limits for speeding up and braking), relative to the previous command.
