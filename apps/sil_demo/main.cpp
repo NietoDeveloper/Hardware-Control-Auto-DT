@@ -21,11 +21,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
     case ControlMode::
 }
-  ManualClock clock;.0f, 1.5f, 0.0f};
-  m.waypoints[2] = {{0.0, 30.0, 0.0}, 4.0f, 1.5f, 1.0f};
-
-  std::uint16_t seq = 0;
-  constexpr TimeNs dt = millis(10);
   for (int i = 0; i < 12000; ++i) {  // up to 120 s of simulated time
     const TimeNs now = clock.now();
     const double t = toSeconds(now);
