@@ -11,8 +11,4 @@ enum class MissionState : std::uint8_t { Idle = 0, Running = 1, Paused = 2, Comp
 /// Deterministic mission state machine. No I/O, no allocation, no clock access.
 class MissionExecutor {
  public:
-  explicit MissionExecutor(const FollowerConfig& cfg = {}) noexcept : follower_(cfg) {}
 
-  /// Validates and stores a mission. Rejected while Running/Paused.
-  bool load(const Mission& m) noexcept;
-  bool start(const Vec3& position, TimeNs now) noexcept;
