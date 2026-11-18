@@ -14,11 +14,6 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 
 * Independent supervisor on a separate process/processor with its own watchdog.
 * Formal hazard analysis (FMEA/FTA), requirements traceability, coverage targets (MC/DC where
-  applicable).
-* Static analysis and coding-standard compliance gates in CI.
-* Redundant sensors/links and voting.
-* Certification path evaluation for target markets.
-
 ## Cross-cutting, every release
 
 * Keep the control path allocation-free and deterministic (the allocation test stays).
