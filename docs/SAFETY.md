@@ -13,10 +13,9 @@ independent review on the target platform are required.
 
 ## 2. Hazards addressed
 
-| Hazard | Mitigation |
-| Corrupted or malicious-looking command | CRC, strict decoding, range checks, state validation |
-| NaN/Inf reaching actuators | Rejected at decode, state ingest and guard |
-| Disarming a moving vehicle by mistake | Refused above `max_disarm_speed_mps` (except while e-stopped) |
+| Hazard | Mitigation |s
+
+| Disarming a moving vehicle by mistake | Refued above `max_disarm_speed_mps` (except while e-stopped) |
 | Slow network or video encoder delaying control | Isolated threads, wait-free queues, drop-on-backpressure |
 | Control loop missing deadlines | Overrun and worst-case timing counters per loop |
 
