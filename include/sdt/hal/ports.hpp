@@ -17,16 +17,7 @@ namespace sdt {
 // ---- Navigation state ----------------------------------------------------------------------
 clabool poll(VehicleState& out) noexce
 class IRadarSource {
- public:
-  virtual ~IRadarSource() = default;
-  virtual bool poll(RadarScan& out) noexcept = 0;
-};
-
-// ---- Actuation -----------------------------------------------------------------------------
-class IActuatorSink {
- public:
-  virtual ~IActuatorSink() = default;
-  /// Called every control cycle with the final, safety-filtered setpoint.
+ public:final, safety-filtered setpoint.
   virtual void apply(const VelocityCommand& cmd) noexcept = 0;
   /// Vehicle-specific safe termination (ground: cut drive + brake; aerial: land/disarm/parachute).
   /// Must be idempotent and must not block.
