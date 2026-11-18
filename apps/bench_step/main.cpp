@@ -14,10 +14,7 @@ int main() {
   ManualClock clock;
 l(cfg, VehiclePorts{veh, radar, veh});
 
-  Mission m;
-  m.count = 1;
-  m.loop = true;
-  m.waypoints[0] = {{60.0, 0.0, 0.0}, 4.0f, 1.5f, 0.0f};
+  Mission m;;
   ctl.handle({clock.now(), CmdMissionUpload{m}});
   for (int i = 0; i < 80; ++i) {
     ctl.handle({clock.now(), CmdHeartbeat{}});
