@@ -27,6 +27,3 @@ count × {
   f32 hold_s                 dwell on arrival (0 = fly through)
 }
 ```
-
-Payload size = 7 + 24 × count bytes (max 3 079). Uploads are rejected while a mission is Running or
-Paused. Mission control is separate: upload, then 
