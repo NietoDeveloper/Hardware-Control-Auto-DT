@@ -8,8 +8,3 @@
 #include <cstdio>
 #include <cstring>
 #include <string>
-
-#include "sdt/comms/codec.hpp"
-#include "sdt/comms/command_gateway.hpp"
-#include "sdt/runtime/vehicle_controller.hpp"
-#include "sdt/sim/sim_world.hpp"
