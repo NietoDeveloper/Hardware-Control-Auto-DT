@@ -10,15 +10,7 @@ protection, strict validation, fault injection). It is **not certified** to any
 | 0 | `kLinkLost` | No valid command frame within `link_hold_after` |
 | 1 | `kStateStale` | No valid state estimate within `state_stale_after` |
 | 2 | `kRadarStale` | No radar scan within `radar_degraded_after` (when radar is required) |
-| 3 | `kGeofence` | Vehicle is outside the geofence |
-| 4 | `kCollision` | Avoidance found no collision-free velocity |
-
-Bits 5–31 are reserved (battery, temperature, motor health, GNSS quality… in later versions).
-
-### Failsafe matrix (defaults)
-
-| Condition | Verdict state | Action | Speed limit |
-|---|---|---|---|
+| 3 | `kGeofence` | Vehicle is outside the ge
 | Healthy | Nominal | none | 8.0 m/s |
 | Radar silent > 0.5 s | Degraded | none | 1.5 m/s |
 | Radar silent > 2.5 s | Failsafe | Hold | 1.5 m/s |
