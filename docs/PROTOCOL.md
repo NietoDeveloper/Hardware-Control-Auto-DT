@@ -42,7 +42,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 | 36 | u8 | `armed` (0/1) |
 | 37 | u8 | `mode` |
 | 38 | u8 | `safety` |
-| 39 | u8 | `mission_state` |
-| 40 | u16 | `mission_index` (current waypoint) |
-| 42 | u32 | `faults` (bit-field, see SAFETY.md §4) |
-| 46 | u16 | `tracks` (confirmed radar obstacles) |
