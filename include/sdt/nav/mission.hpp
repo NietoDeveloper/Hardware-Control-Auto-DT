@@ -14,7 +14,3 @@ struct Waypoint {
   float hold_s{0.0f};        // dwell time on arrival (0 = fly through)
 };
 
-
-};
-
-}  // namespace sdt
