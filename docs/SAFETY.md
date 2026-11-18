@@ -62,6 +62,3 @@ Each row is an automated test that injects the fault and asserts the response.
 | Disarm refused while moving | `sys_disarm_refused_while_moving` |
 | Real threads + loopback transport | `runtime_threads_arm_and_stream_telemetry` |
 | No heap allocation on the control path | `sys_control_path_never_allocates` |
-| Supervisor state machine, hysteresis, latch | `supervisor_state_machine` |
-| Codec rejects corruption / NaN / out-of-range | `codec_rejects_corruption_and_resyncs`, `codec_rejects_nan_and_out_of_range` |
-| Avoidance reports "boxed in" | 
