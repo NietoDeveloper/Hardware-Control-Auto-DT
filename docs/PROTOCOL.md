@@ -74,6 +74,3 @@ dashboard                                    vehicle
   a length-negotiated extension mechanism exists (planned).
 
 ## 8. Security note
-
-CRC-32 detects accidental corruption only. v1 offers **no authentication or encryption**. Run the
-link on a trusted/isolated network or inside a VPN/TLS 
