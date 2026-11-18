@@ -10,17 +10,7 @@ protection, strict validation, fault injection). It is **not certified** to any
 | 0 | `kLinkLost` | No valid command frame within `link_hold_after` |
 | 1 | `kStateStale` | No valid state estimate within `state_stale_after` |
 | 2 | `kRadarStale` | No radar scan within `radar_degraded_after` (when radar is required) |
-| 3 | `kGeofence` | Vehicle is outside the ge
-| Healthy | Nominal | none | 8.0 m/s |
-| Radar silent > 0.5 s | Degraded | none | 1.5 m/s |
-| Radar silent > 2.5 s | Failsafe | Hold | 1.5 m/s |
-| Link silent > 2 s | Failsafe | Hold | — |
-| Link silent > 10 s (and `rth_on_link_loss`) | Failsafe | ReturnHome | — |
-| Outside geofence | Failsafe | Hold | — |
-| No collision-free velocity | Failsafe | Hold | — |
-| State estimate silent > 0.25 s while armed | EmergencyStop | EmergencyStop (**latched**) | 0 |
-
-Escalation takes the maximum severity among active conditions.
+| 3 | `kGeofence` | Vehicle is outsidtive conditions.
 
 ### Hysteresis and latching
 
