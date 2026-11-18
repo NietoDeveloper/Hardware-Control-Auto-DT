@@ -19,10 +19,7 @@ reference implementation of the same ports.
 
 Keep the autopilot's attitude and motor control; use the core as the *outer* (navigation +
 safety) loop.
-
-* `IStateSource`: translate the autopilot's local-position/velocity/attitude stream to ENU.
-* `IActuatorSink::apply`: send a velocity setpoint + yaw rate over the autopilot link
-  (MAVLink offboard velocity setpoints, a vendor SDK, …). Send at a steady rate; most autopilots
+ a vendor SDK, …). Send at a steady rate; most autopilots
   require a continuous setpoint stream to stay in offboard mode.
 * `emergencyStop`: choose deliberately — command land, trigger the autopilot's own failsafe,
   disarm only if the aircraft is on the ground, or fire a parachute system. Document the decision.
