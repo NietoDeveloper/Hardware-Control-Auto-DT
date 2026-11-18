@@ -54,7 +54,3 @@ Sent every 100 ms by default (`RuntimeConfig::telemetry_period`). A dashboard th
 ## 6. Typical session
 
 ```
-dashboard                                    vehicle
-  Heartbeat (10 Hz) ───────────────────────►
-  ◄──────────────────────────── Telemetry (10 Hz): armed=0, faults=0
-  Arm(1) ──────────────────────────────────►  pre-arm ch
