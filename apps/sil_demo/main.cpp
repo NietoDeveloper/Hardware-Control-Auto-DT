@@ -13,10 +13,3 @@
 #include "sdt/comms/command_gateway.hpp"
 #include "sdt/runtime/vehicle_controller.hpp"
 #include "sdt/sim/sim_world.hpp"
-
-using namespace sdt;
-
-
-  std::printf("\nmin clearance to any obstacle surface: %.2f m\n", min_clearance);
-  std::printf("final mission state: %d, rejepleted && min_clearance > 0.0) ? 0 : 1;
-}
