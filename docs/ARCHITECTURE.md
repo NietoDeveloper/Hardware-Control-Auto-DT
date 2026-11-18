@@ -12,9 +12,7 @@ threads interact, and — most importantly — **why** it is built this way.
   small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
   to the platform (autopilot, motor controller, joint servos).
 * State estimation / SLAM — the core consumes a fused `Ve─────────────────────────────────────────────────────────────┐(router)                               │  edges
-├───────────────────────────────────────────────────────────────────────┤
-│ hal/ ports · comms/transport port · common/ (types, clock, SPSC queue)  │  boundaries
-Dependency rule: arrows point **downwards only**. Domain logic never includes networking, threads
+├─────────────────────────────────eads
 or vendor code. The only code allowed to know about the physical world is an adapter implementing a
 port.
 
