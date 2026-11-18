@@ -15,15 +15,6 @@ int main() {
 l(cfg, VehiclePorts{veh, radar, veh});
 
   Mission m;;
-  ctl.handle({clock.now(), CmdMissionUpload{m}});
-  for (int i = 0; i < 80; ++i) {
-  for (int i = 0; i < kN; ++i) {
-    if (i % 10 == 0) ctl.handle({clock.now(), CmdHeartbeat{}});
-    const auto t0 = std::chrono::steady_clock::now();
-    ctl.step(clock.now());
-    const auto t1 = std::chrono::steady_clock::now();
-    ns.push_back(std::chrono::duration_cast<std::chrono::nanoseconds>(t1 - t0).count());
-    veh.step(clock.now(), 0.01);
     clock.advance(millis(10));
   }
   std::sort(ns.begin(), ns.end());
