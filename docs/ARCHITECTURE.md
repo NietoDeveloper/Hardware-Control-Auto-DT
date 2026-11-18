@@ -24,8 +24,3 @@ port.
 | `hal/` | Everything physical, as interfaces | `IStateSource`, `IRadarSource`, `IActuatorSink`, `IMediaSource`, `IMediaSink` |
 | `perception/` | Radar detections → stable obstacle tracks | `RadarTracker`, `Obstacle` (max 64 tracks) |
 | `avoidance/` | Desired velocity → safe velocity | `CollisionAvoidance`, `AvoidanceResult` |
-| `nav/` | Missions and path following | `Mission` (max 128 waypoints), `MissionExecutor`, `PathFollower` |
-| `safety/` | Health → verdict; last-line limiting | `SafetySupervisor`, `CommandGuard`, `Geofence` |
-| `control/` | Generic control primitives | `Pid` (anti-windup, output clamp) |
-| `comms/` | Dashboard edge | `proto::` codec, `FrameDecoder`, `CommandGateway`, `ITransport`, `LoopbackTransport` |
-| `media/` | Video/audio path | `MediaRouter` |
