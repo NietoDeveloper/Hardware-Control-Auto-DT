@@ -17,8 +17,4 @@ class PathFollower {
   Vec3 desiredVelocity(const Vec3& pos, const Vec3& from, const Waypoint& to,
                        bool stop_at_end) const noexcept;
 
- private:
-  FollowerConfig cfg_;
-};
 
-}  // namespace sdt
