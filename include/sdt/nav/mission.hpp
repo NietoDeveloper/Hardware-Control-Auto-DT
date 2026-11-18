@@ -6,5 +6,3 @@
 #include "sdt/common/types.hpp"
 
 namespace sdt {
-
-struct Waypoint {
