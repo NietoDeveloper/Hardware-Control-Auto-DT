@@ -31,4 +31,3 @@ class PeriodicThread {
   ~PeriodicThread() { stop(); }
 
   bool start(std::string name, TimeNs period, std::function<void()> body, RtConfig rt = {});
-  void stop() noexcept;
