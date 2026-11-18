@@ -36,6 +36,4 @@ class MissionExecutor {
   std::uint16_t index_{0};
   Vec3 from_{};
 
-};
-
-}  // namespace sdt
+}
