@@ -22,6 +22,3 @@ class MissionExecutor {
 
   /// Desired world-frame velocity for this cycle (zero unless Running).
   Vec3 step(const VehicleState& s, TimeNs now) noexcept;
-
-  MissionState state() const noexcept { return state_; }
-  std::uint16_t currentIndex() const noexcept { return index_; }
