@@ -29,8 +29,4 @@ class MissionExecutor {
   bool hasMission() const noexcept { return mission_.count > 0; }
 
  private:
-  void advance() noexcept;
-  PathFollower follower_;
-  Mission mission_{};
-  MissionState state_{MissionState::Idle};
 
