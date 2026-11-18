@@ -19,12 +19,6 @@ using namespace sdt;
 namespace {
 void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
-    case ControlMode::ocity * toSeconds(dt);
-    vehicle.step(now, toSeconds(dt));
-    for (const auto& o : obstacles) {
-      min_clearance = std::min(min_clearance, (o.position - vehicle.truth().position).norm() - o.radius_m);
-    }
-    clock.advance(dt);
 
     if (i % 100 == 0) {
       const Telemetry tl = ctl.telemetry();
