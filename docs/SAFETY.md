@@ -6,5 +6,4 @@ wrong, and — just as importantly — what it does **not** claim.
 ## 1. Scope and honesty
 
 v1 applies safety-critical *engineering practices* (determinism, static allocation, layered
-protection, strict validation, fault injection). It is **not certified** to any 
-| 0 | `kLinkLost` | No valid command frame within `link_hold_after` |
+prot
