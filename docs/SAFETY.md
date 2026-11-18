@@ -15,14 +15,7 @@ Each layer assumes the previous one can be wrong. The guard in particular enforc
 matter which mode produced the command.
 
 ## 4. Safety supervisor
-
-A pure state machine: `SafetyVerdict evaluate(SafetyInputs)`. It never touches actuators.
-
-**Inputs:** current time, age of last valid command frame (link), age of last state estimate, age
-of last radar scan, armed flag, geofence margin, collision-imminent flag.
-
-**Outputs:** `state` (Nominal, Degraded, Failsafe, EmergencyStop), `action` (None, Hold,
-ReturnHome, EmergencyStop), `faults` bit-field, and a `speed_limit_mps`.
+ a `speed_limit_mps`.
 
 ### Fault bits (telemetry `faults`)
 
