@@ -18,12 +18,7 @@ class Pid {
   explicit Pid(const PidGains& g = {}) noexcept : g_(g) {}
 
   void reset() noexcept {
-+ integral_ + d;
-    const double out = clampd(unsat, g_.out_min, g_.out_max);
-    if (out == unsat || (unsat > out) != (error > 0.0)) {  // integrate unless winding further into saturation
-      integral_ = clampd(integral_ + g_.ki * error * dt, -g_.i_max, g_.i_max);
-    }
-    return out;
++ integral_ + d
   }
 
  private:
