@@ -21,8 +21,6 @@ void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrame];
   const std::size_t n = proto::encodeCommand(c, seq++, buf, sizeof buf);
   t.send(buf, n);
-}
-const char* modeName(ControlMode m) {
   switch (m) {
     case ControlMode::Hold: return "HOLD";
     case ControlMode::Manual: return "MANUAL";
