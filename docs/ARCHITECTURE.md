@@ -135,7 +135,3 @@ Details: [SAFETY.md](SAFETY.md).
 | Header-light, dependency-free | Easy to audit, vendor and cross-compile for embedded Linux targets. |
 
 ## 9. Extension points
-
-| To add… | Do this |
-|---|---|
-| A new vehicle or mechanism | Implement `IStateSource`, 
