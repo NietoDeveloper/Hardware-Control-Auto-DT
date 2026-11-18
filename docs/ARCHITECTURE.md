@@ -34,5 +34,4 @@ port.
 
 ### Coordinate frames and units
 
-* Local **ENU** frame: x = East, y = North, z = Up. SI units everywhere (m, m/s, rad, s).
-* Yaw is counter-clockwise from East. Time is monotonic nanoseconds (`TimeNs`).
+* Local **ENU** frame: x = East, y = North, z = Up. SI 
