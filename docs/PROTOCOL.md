@@ -51,6 +51,3 @@ Paused. Mission control is separate: upload, then `MissionControl(Start)`.
 Sent every 100 ms by default (`RuntimeConfig::telemetry_period`). A dashboard that watches
 `rejected_commands` can tell when the vehicle refused something.
 
-## 6. Typical session
-
-```
