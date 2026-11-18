@@ -17,17 +17,6 @@ l(cfg, VehiclePorts{veh, radar, veh});
   Mission m;;
   ctl.handle({clock.now(), CmdMissionUpload{m}});
   for (int i = 0; i < 80; ++i) {
-    ctl.handle({clock.now(), CmdHeartbeat{}});
-    ctl.step(clock.now());
-    veh.step(clock.now(), 0.01);
-    clock.advance(millis(10));
-  }
-  ctl.handle({clock.now(), CmdArm{true}});
-  ctl.handle({clock.now(), CmdMissionControl{MissionAction::Start}});
-
-  constexpr int kN = 200000;
-  std::vector<std::int64_t> ns;
-  ns.reserve(kN);
   for (int i = 0; i < kN; ++i) {
     if (i % 10 == 0) ctl.handle({clock.now(), CmdHeartbeat{}});
     const auto t0 = std::chrono::steady_clock::now();
