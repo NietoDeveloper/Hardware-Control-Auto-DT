@@ -59,5 +59,3 @@ Each row is an automated test that injects the fault and asserts the response.
 | Estimator loss → latched e-stop until disarm | `sys_estimator_loss_latches_emergency_stop_until_disarm` |
 | Radar loss → degrade → hold | `sys_radar_loss_degrades_then_holds` |
 | Geofence containment | `sys_geofence_contains_vehicle` |
-| Disarm refused while moving | `sys_disarm_refused_while_moving` |
-| Real threads + loopback transport | 
