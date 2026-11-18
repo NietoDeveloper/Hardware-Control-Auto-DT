@@ -18,11 +18,7 @@ offset  size  field
 * **Re-synchronises** after garbage, truncation or bit errors by scanning for the magic bytes.
 * Fixed internal buffer; no allocation, no excmode` (see §3) |
 | ManualControl | `0x04` | dashboard → vehicle | `f32 forward, f32 lateral, f32 vertical, f32 yaw` |
-| MissionUpload | `0x05` | dashboard → vehicle | see §4 |
-| MissionControl | `0x06` | dashboard → vehicle | `u8 action` (see §3) |
-| Telemetry | `0x80` | vehicle → dashboard | see §5 |
-
-Unknown types are rejected.
+| MissionUpload | `0x05` | dashbo
 
 ### Strict validation
 
