@@ -143,6 +143,4 @@ Details: [SAFETY.md](SAFETY.md).
 | A WebSocket/gRPC bridge for web dashboards | Run it in the dashboard backend; it forwards the binary frames unchanged. |
 | A new message | Add a `MsgType`, payload codec, `Command` variant alternative and `onCommand` overload. |
 | A better planner | Replace `CollisionAvoidance` / `PathFollower`; keep the `Vec3 → Vec3` contract. |
-| New fault sources | Add a bit in `safety::fault`, an input in `SafetyInputs`, a rule in `SafetySupervisor`. |
-
-## 10. Testing strategy
+| New fault sources | Add a bit in `safety::fault`, an 
