@@ -80,6 +80,3 @@ link on a trusted/isolated network or inside a VPN/TLS tunnel; authenticated fra
 roadmap.
 
 ## 9. Example (C++)
-
-```cpp
-s
