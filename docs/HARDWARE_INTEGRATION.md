@@ -15,15 +15,6 @@ reference implementation of the same ports.
   double track_{0.5}, wheel_r_{0.08};
 };
 
-### 3.2 Aerial vehicle (autopilot in the loop)
-d, or fire a parachute system. Document the decision.
-* Configure `VehicleKind::Aerial`, the altitude band in `Geofence::min_z/max_z`, and tighten
-  speed/accel limits to the airframe.
-
-### 3.3 Mechanism (gantry, arm tip, pan-tilt, any velocity-controlled stage)
-
-Treat the end effector as a point with a world-frame velocity.
-
 * `IStateSource`: forward kinematics from encoders → position/velocity.
 * `IActuatorSink::apply`: inverse kinematics / Jacobian → joint velocity targets to the servo
   controllers. Enforce joint limits *in the adapter* in addition to the core's geofence.
