@@ -37,6 +37,3 @@ Applied in this order to every setpoint, in every mode:
 
 `IActuatorSink::emergencyStop()` must be **idempotent, non-blocking and vehicle-appropriate**:
 
-* ground robot: cut drive power and apply brakes;
-* aircraft: land, disarm, deploy a parachute, or hand over to the autopilot's own failsafe — a
-  de
