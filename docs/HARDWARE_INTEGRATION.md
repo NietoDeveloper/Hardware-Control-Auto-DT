@@ -4,19 +4,7 @@ The core never talks to hardware directly. You write **adapters** that implement
 `include/sdt/hal/ports.hpp` and `include/sdt/comms/transport.hpp`. The simulator in `sim/` is the
 reference implementation of the same ports.
 
-> The skeletons below are illustrative starting points, not shipped, tested drivers.
-
-## 1. Port contracts
-
-| Port | Method | Contract |. |true); /* driver thread cuts power + brakes */ }
- private:
-binary frames; the core does not embed an HTTP/WebSocket server.
-
-## 5. Wiring it together
-
-```cpp
-sdt::VehicleConfig cfg;
-cfg.kind                   = sdt::VehicleKind::Aerial;
+> The skeletons below are illustrative starting points, not shipped, tested drivers.nd::Aerial;
 cfg.guard.max_speed_mps    = 6.0;
 cfg.geofence.enabled       = true;           // fill vertices, min_z, max_z
 cfg.safety.radar_required  = true;
