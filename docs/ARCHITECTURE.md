@@ -119,8 +119,3 @@ Because ownership is exclusive, the core contains no locks.
 * **Never forward garbage.** Non-finite values are replaced with zero before reaching hardware.
 
 Details: [SAFETY.md](SAFETY.md).
-
-## 8. Key design decisions and rationale
-
-| Decision | Why |
-|---|---|
