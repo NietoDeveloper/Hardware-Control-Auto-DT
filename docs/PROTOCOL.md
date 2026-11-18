@@ -63,4 +63,4 @@ dashboard                                    vehicle
   ◄──────────────────────────── Telemetry: mission_index advancing, tracks=n
   SetMode(Manual) / ManualControl(...) ────►  operator takes over live
   MissionControl(Resume) / SetMode(Mission)►  back to the route
-  Arm(0) ──────────────────────────────────►  accepted 
+  Arm(0) ──────────────────────────────────►  accep
