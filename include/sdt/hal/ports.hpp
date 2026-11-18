@@ -11,20 +11,6 @@
 #include <vector>
 
 #include "sdt/common/types.hpp"
-
-namespace sdt {
-
-// ---- Navigation state ----------------------------------------------------------------------
-clabool poll(VehicleState& out) noexce
-class IRadarSource {
- public:final, safety-filtered setpoint.
-  virtual void apply(const Velocity
-  Codec codec{Codec::H264};
-  TimeNs stamp{0};
-  bool keyframe{false};
-  std::vector<std::uint8_t> payload;
-};
-
 class IMediaSource {
  public:
   virtual ~IMediaSource() = default;
