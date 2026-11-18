@@ -13,12 +13,6 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Radar mounting-offset calibration.
 * Configuration loading from file with validation (today configuration is in code).
 * Structured event log / flight-data recorder with deterministic replay into the controller.
-
-* Operator-visible fault descriptions in telemetry; command acknowledgements.
-* Length-negotiated protocol extensions.
-
-## v2.0 — Smarter navigation
-
 * Dynamic-obstacle prediction beyond constant velocity; non-spherical obstacle shapes.
 * Local map memory and escape from concave obstacles; global planning between waypoints.
 * Terrain/altitude-aware 3-D avoidance for aerial platforms.
