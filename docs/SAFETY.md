@@ -67,9 +67,3 @@ Each row is an automated test that injects the fault and asserts the response.
 | Avoidance reports "boxed in" | `avoidance_flags_no_safe_option_when_boxed_in` |
 
 ## 9. Known gaps (planned)
-
-* Authenticated and encrypted command channel (CRC is not security).
-* Battery/power, thermal, GNSS-quality and motor-health fault sources.
-* Independent watchdog / second-processor supervisor.
-* Dynamic-obstacle prediction beyond constant velocity; concave-obstacle escape.
-* Formal hazard analysis (FMEA/FTA), requirements traceability and hardware-in-the-loop campaign.
