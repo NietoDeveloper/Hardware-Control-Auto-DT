@@ -27,5 +27,3 @@ class PeriodicThread {
  public:
   PeriodicThread() = default;
   PeriodicThread(const PeriodicThread&) = delete;
-  PeriodicThread& operator=(const PeriodicThread&) = delete;
-  ~PeriodicThread() { stop(); }
