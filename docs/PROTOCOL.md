@@ -14,13 +14,6 @@ offset  size  field
 3       1     type       s
 ### Decoder behaviour (`proto::FrameDecoder`)
 
-### Link liveness
-
-
-## 3. Enumerations
-
-| `mode` | Meaning |
-|---|---|
 | 0 | Hold |
 | 1 | Manual |
 | 2 | Mission |
