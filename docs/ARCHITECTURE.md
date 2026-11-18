@@ -9,12 +9,7 @@ threads interact, and — most importantly — **why** it is built this way.
 
 * Control air, ground or mechani
 * Be one backend among many: it talks to other Software DT backends and frontenrough a
-  small, stable, transport-independent protocol.
-* Be testable without hardware, deterministically, in CI.
-
-**Non-goals for v1** (see [ROADMAP.md](ROADMAP.md))
-
-* Low-level attitude/motor control — the core outputs a *velocity setpoint* and leaves inner loops
+  small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
   to the platform (autopilot, motor controller, joint servos).
 * State estimation / SLAM — the core consumes a fused `VehicleState`.
 * Mapping and global path planning — v1 follows operator-supplied waypoints.
