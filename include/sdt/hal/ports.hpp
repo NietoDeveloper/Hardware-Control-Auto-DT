@@ -18,19 +18,7 @@ namespace sdt {
 clabool poll(VehicleState& out) noexce
 class IRadarSource {
  public:final, safety-filtered setpoint.
-  virtual void apply(const VelocityCommand& cmd) noexcept = 0;
-  /// Vehicle-specific safe termination (ground: cut drive + brake; aerial: land/disarm/parachute).
-  /// Must be idempotent and must not block.
-  virtual void emergencyStop() noexcept = 0;
-};
-
-// ---- Media (video / audio) -----------------------------------------------------------------
-enum class MediaKind : std::uint8_t { Video = 0, Audio = 1 };
-enum class Codec : std::uint8_t { Raw = 0, H264 = 1, H265 = 2, Opus = 3 };
-
-struct MediaFrame {
-  std::uint8_t stream_id{0};
-  MediaKind kind{MediaKind::Video};
+  virtual void apply(const Velocity
   Codec codec{Codec::H264};
   TimeNs stamp{0};
   bool keyframe{false};
