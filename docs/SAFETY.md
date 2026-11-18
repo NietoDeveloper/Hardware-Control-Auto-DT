@@ -53,5 +53,4 @@ Each row is an automated test that injects the fault and asserts the response.
 |---|---|
 | Arming refused without fresh sensors/link | `sys_prearm_rejected_without_fresh_sensors_or_link` |
 | Mission completes and avoids static obstacle | `sys_mission_completes_and_avoids_static_obstacle` |
-| Manual driving cannot hit an obstacle | `sys_manual_drive_cannot_hit_obstacle` |
-| Manual input stops when sticks go stale | `sys_manual_timeout_stops_vehicle` |
+| Manual driving cannot hit an obstacle | 
