@@ -48,9 +48,3 @@ The core calls it exactly when the supervisor demands `EmergencyStop` and the ve
 ## 8. Validation evidence in this repository
 
 Each row is an automated test that injects the fault and asserts the response.
-
-| Scenario | Test |
-|---|---|
-| Arming refused without fresh sensors/link | `sys_prearm_rejected_without_fresh_sensors_or_link` |
-| Mission completes and avoids static obstacle | `sys_mission_completes_and_avoids_static_obstacle` |
-| Manual driving cannot hit an obstacle | 
