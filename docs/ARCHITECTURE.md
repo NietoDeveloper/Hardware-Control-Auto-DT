@@ -92,30 +92,4 @@ Properties of `step()`:
   not accumulate into drift; it counts overruns, worst execution time and worst wake-up lateness.
 * **Real-time priority is optional and best-effort.** `RtConfig{priority, cpu}` requests
   `SCHED_FIFO` and CPU pinning on Linux (needs `CAP_SYS_NICE`); failure is logged, not fatal.
-* **Shutdown order matters.** Media, then control (stop issuing setpoints), then comms.
-
-## 6. Data ownership
-
-| Data | Owner (only writer) | Readers |
-|---|---|---|
-| `VehicleState`, tracks, mission, mode, verdict | control thread | control thread (telemetry copy goes out by queue) |
-| Decoder buffer, tx sequence | comms thread | comms thread |
-| Media frames | media thread until handed to the sink | sink |
-| Configuration | immutable after construction | everyone |
-
-Because ownership is exclusive, the core contains no locks.
-
-## 7. Error and fault handling philosophy
-
-* **Reject at the edge.** The codec validates length, enums, ranges and finiteness before a command
-  can exist as a C++ object.
-* **Validate against state.** The controller refuses commands that make no sense *now* and counts
-  them (`rejected_commands`).
-* **Sensor loss is a first-class event.** State, radar and link each have an age, and each age maps
-  to a defined degradation, not an undefined behaviour.
-* **Latch the severe, hysteresis the mild.** Emergency stop latches until an explicit disarm;
-  recoverable failsafes clear only after `recovery_time` of healthy conditions so they cannot
-  oscillate.
-* **Never forward garbage.** Non-finite values are replaced with zero before reaching hardware.
-
-Details: [SAFETY.md](SAFETY.md).
+* **Shutdown order matters.** Media, then control (stop 
