@@ -15,17 +15,7 @@
 namespace sdt {
 
 // ---- Navigation state ----------------------------------------------------------------------
-clabool poll(VehicleState& out) noexcept = 0;
-};
-
-// ---- Radar ---------------------------------------------------------------------------------
-
-struct RadarScan {
-  TimeNs stamp{0};
-  std::uint16_t count{0};
-  std::array<RadarDetection, kMaxRadarDetections> detections{};
-};
-
+clabool poll(VehicleState& out) noexce
 class IRadarSource {
  public:
   virtual ~IRadarSource() = default;
