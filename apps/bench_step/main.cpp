@@ -3,8 +3,3 @@
 #include <algorithm>
 #include <chrono>
 #include <cstdio>
-#include <vector>
-
-#include "sdt/runtime/vehicle_controller.hpp"
-#include "sdt/sim/sim_world.hpp"
-
