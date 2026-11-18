@@ -18,10 +18,6 @@ class Pid {
   explicit Pid(const PidGains& g = {}) noexcept : g_(g) {}
 
   void reset() noexcept {
-    integral_ = 0.0;
-    prev_error_ = 0.0;
-    primed_ = false;
-  }
 
   double update(double error, double dt) noexcept {
     if (!(dt > 0.0) || !std::isfinite(error)) return 0.0;
