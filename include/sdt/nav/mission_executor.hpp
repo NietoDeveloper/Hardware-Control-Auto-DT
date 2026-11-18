@@ -20,4 +20,4 @@ class MissionExecutor {
   bool resume() noexcept;
   void abort() noexcept;
 
-  /// Desired world-frame velocity for this cycle (zero unless Running).
+  /// Desired world-frame velocity for this cycle (zero unless Runni
