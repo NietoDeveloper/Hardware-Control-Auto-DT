@@ -15,11 +15,6 @@ Rules for every adapter that runs on the control thread (`IStateSource`, `IRadar
 no exceptions.** Do I/O on your own thread and hand data over with a latest-value slot or a
 wait-free queue (`sdt::SpscQueue`).
 
-## 2. Frames and units
-
-* Convert to the **local ENU** frame before returning state (pick a datum — usually the home
-  point — and convert GNSS lat/lon/alt to metres relative to it).
-* `VelocityCommand.velocity` is in the **world frame**. If your platform wants body-frame
   velocity, rotate by `-yaw` inside the adapter.
 * If the radar is not mounted facing forward, rotate detections in the adapter until boresight =
   vehicle forward (v1 assumes that).
