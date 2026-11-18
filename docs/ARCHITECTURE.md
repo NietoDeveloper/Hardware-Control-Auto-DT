@@ -10,5 +10,4 @@ threads interact, and — most importantly — **why** it is built this way.
 * Control air, ground or mechani
 * Be one backend among many: it talks to other Software DT backends and frontenrough a
   small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
-  to the platform (autopilot, motor controller, joint servos).
-* State estimation / SLAM — the core consumes a fused `Ve──────────────────────────────────────────────────────
+  to the platform (autopilot, motor controller, joint 
