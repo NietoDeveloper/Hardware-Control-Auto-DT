@@ -14,10 +14,6 @@ reference implementation of the same ports.
   std::atomic<bool> estop_{false};
   double track_{0.5}, wheel_r_{0.08};
 };
-```
-
-Configure `VehicleConfig::kind = VehicleKind::Ground` (vertical velocity forced to zero, lateral
-stick ignored).
 
 ### 3.2 Aerial vehicle (autopilot in the loop)
 
