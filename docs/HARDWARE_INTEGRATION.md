@@ -12,16 +12,6 @@ reference implementation of the same ports.
 
 Rules for every adapter that runs on the control thread (`IStateSource`, `IRadarSource`,
 `IActuatorSink`): **no allocation, no locks that another thread can hold for long, no blocking I/O,
-no exceptions.** Do I/O on your own thread and hand data over with a latest-value slot or a
-ard (v1 assumes that).
-
-## 3. Platform recipes
-
-### 3.1 Ground robot (differential drive)
-
-```cpp
-class DiffDriveActuator final : public sdt::IActuatorSink {
- public:
   void apply(const sdt::VelocityCommand& cmd) noexcept override {
     const double yaw = yaw_from_estimator_.load(std::memory_order_relaxed);
     const double v   = cmd.velocity.x * std::cos(yaw) + cmd.velocity.y * std::sin(yaw);  // forward
