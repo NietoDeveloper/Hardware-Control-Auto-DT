@@ -33,7 +33,4 @@ class MissionExecutor {
   PathFollower follower_;
   Mission mission_{};
   MissionState state_{MissionState::Idle};
-  std::uint16_t index_{0};
-  Vec3 from_{};
 
-}
