@@ -39,8 +39,4 @@ class PeriodicThread {
   std::atomic<bool> running_{false};
   std::atomic<std::uint64_t> cycles_{0};
   std::atomic<std::uint64_t> overruns_{0};
-  std::atomic<std::int64_t> max_exec_{0};
-  std::atomic<std::int64_t> max_late_{0};
-};
 
-}  // namespace sdt
