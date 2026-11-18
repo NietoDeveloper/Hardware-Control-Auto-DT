@@ -14,16 +14,7 @@ protection, strict validation, fault injection). It is **not certified** to any
 
 ### Hysteresis and latching
 
-* A failsafe action is held until all triggering conditions have been absent for
-  `recovery_time` (default 1 s). This prevents flapping when a link is marginal.
-## 5. Pre-arm checks
-
-Arming is refused (and counted in `rejected_commands`) unless:
-
-* the supervisor is not latched,
-* a state estimate is fresh,
-* the radar is fresh (when `radar_required`),
-* the link is fresh,
+* A failsafe action is held until all tr
 * the vehicle is inside the geofence.
 
 On arming, home is recorded, the guard's slew limiter is seeded with the measured velocity, and the
