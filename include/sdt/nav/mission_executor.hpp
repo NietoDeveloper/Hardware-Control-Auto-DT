@@ -8,4 +8,4 @@ namespace sdt {
 
 enum class MissionState : std::uint8_t { Idle = 0, Running = 1, Paused = 2, Completed = 3, Aborted = 4 };
 
-/// Deterministic mission st
+/// Deterministic
