@@ -3,8 +3,3 @@
 // Bounded compute: speed_levels x (2K+1) candidates x <= 64 tracks, no allocation.
 #include <cstddef>
 
-#include "sdt/common/types.hpp"
-#include "sdt/perception/radar_tracker.hpp"
-
-namespace sdt {
-
