@@ -35,5 +35,4 @@ Applied in this order to every setpoint, in every mode:
 
 ## 7. Emergency stop contract
 
-`IActuatorSink::emergencyStop()` must be **idempotent, non-blocking and vehicle-appropriate**:
-
+`IActuatorSink::emergencyStop()` must be **idempotent, non-blocking and 
