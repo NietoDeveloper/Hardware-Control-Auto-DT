@@ -85,8 +85,4 @@ Properties of `step()`:
 
 * **One writer per queue, wait-free.** `SpscQueue` uses acquire/release atomics and cache-line
   alignment; no mutexes appear on any path the control thread touches.
-* **Back-pressure policy is "drop, never block".** A full command queue drops (and counts) commands;
-  a full telemetry queue drops telemetry; a refusing media sink drops frames and requests a
-  keyframe. The control thread is never the one waiting.
-* **Absolute-deadline scheduling.** `PeriodicThread` sleeps until `start + n·period`, so jitter does
-  not accumulate into drift; it counts overruns, worst exe
+* **Back-pressure policy is "drop, never block".** A 
