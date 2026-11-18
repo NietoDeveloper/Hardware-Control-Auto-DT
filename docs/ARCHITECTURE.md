@@ -6,6 +6,3 @@ threads interact, and — most importantly — **why** it is built this way.
 ## 1. Goals and non-goals
 
 **Goals**
-
-* Control air, ground or mechani
-* Be one backend among many: it talks to other Software DT backends and frontenroug
