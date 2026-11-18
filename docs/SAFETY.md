@@ -46,5 +46,3 @@ Applied in this order to every setpoint, in every mode:
 The core calls it exactly when the supervisor demands `EmergencyStop` and the vehicle is armed.
 
 ## 8. Validation evidence in this repository
-
-Each row is an automated test that injects the fault and asserts the response.
