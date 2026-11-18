@@ -29,9 +29,3 @@ port.
 | `control/` | Generic control primitives | `Pid` (anti-windup, output clamp) |
 | `comms/` | Dashboard edge | `proto::` codec, `FrameDecoder`, `CommandGateway`, `ITransport`, `LoopbackTransport` |
 | `media/` | Video/audio path | `MediaRouter` |
-| `runtime/` | Wiring and threads | `VehicleController`, `VehicleRuntime`, `PeriodicThread` |
-| `sim/` | Software-in-the-loop adapters | `SimVehicle`, `SimRadar`, `SimObstacle` |
-
-### Coordinate frames and units
-
-* Local **ENU** frame: x = East, y = North, z = Up. SI 
