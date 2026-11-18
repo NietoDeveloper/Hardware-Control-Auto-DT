@@ -127,6 +127,4 @@ Details: [SAFETY.md](SAFETY.md).
 | Velocity setpoint as the core's output | Works for aircraft, wheeled robots and mechanisms; inner loops stay with platform experts. |
 | Injected clock instead of `steady_clock::now()` inside logic | Deterministic tests, replay, faster-than-real-time simulation. |
 | Fixed-capacity containers (`std::array`) | No allocation, bounded time, trivially copyable → safe through lock-free queues. |
-| Supervisor is a pure function of inputs | Exhaustively unit-testable; could later move to a separate process or processor. |
-| Command guard *after* avoidance | Limits hold even if avoidance, mission or manual input is wrong. |
-| Binary protocol with CRC and resync | Small, fast, 
+| Supervisor is a pure function of inputs | Exhaustively unit-testable; could later move to a separate process or 
