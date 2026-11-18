@@ -12,9 +12,7 @@ threads interact, and — most importantly — **why** it is built this way.
   small, stable, transport-independent poutputs a *velocity setpoint* and leaves inner loops
   to the platform (autopilot, motor controller, joint servos).
 * State estimation / SLAM — the core consumes a fused `Ve─────────────────────────────────────────────────────────────┐
-│ Application / integration   (your executable, adapters, config)        │
-├───────────────────────────────────────────────────────────────────────┤
-│ runtime/   VehicleRuntime · PeriodicThread · VehicleController          │  orchestration
+│ Application / integration   (your executable, adapters, config)        │ad · VehicleController          │  orchestration
 ├───────────────────────────────────────────────────────────────────────┤
 │ perception/ avoidance/ nav/ safety/ control/                            │  domain logic
 ├───────────────────────────────────────────────────────────────────────┤
