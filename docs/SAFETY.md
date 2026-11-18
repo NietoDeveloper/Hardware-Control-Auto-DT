@@ -55,7 +55,3 @@ Each row is an automated test that injects the fault and asserts the response.
 | Mission completes and avoids static obstacle | `sys_mission_completes_and_avoids_static_obstacle` |
 | Manual driving cannot hit an obstacle | `sys_manual_drive_cannot_hit_obstacle` |
 | Manual input stops when sticks go stale | `sys_manual_timeout_stops_vehicle` |
-| Link loss → hold → return home | `sys_link_loss_holds_then_returns_home` |
-| Estimator loss → latched e-stop until disarm | `sys_estimator_loss_latches_emergency_stop_until_disarm` |
-| Radar loss → degrade → hold | `sys_radar_loss_degrades_then_holds` |
-| Geofence containment | `sys_geofence_contains_vehicle` |
