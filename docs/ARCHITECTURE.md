@@ -150,6 +150,4 @@ Details: [SAFETY.md](SAFETY.md).
 * **Unit tests** per module with edge cases (corruption, NaN, boundaries, saturation).
 * **System tests** run the full controller against the simulator with a manual clock and inject
   faults: link loss, estimator freeze, radar silence, geofence pressure, manual-stick timeout.
-* **Runtime test** exercises the real threads and the loopback transport end to end.
-* **Allocation test** proves the control path performs no heap allocation.
-* **Sanitizers** (ASan/UBSan, TSan) are first-class 
+* **Runtime test** exercises the real threads and the 
