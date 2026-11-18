@@ -12,5 +12,3 @@ All multi-byte integers and floats are **little-endian**. Floats are IEEE-754 bi
 | 4 | Abort |
 
 Telemetry enums: `safety` 0 Nominal, 1 Degraded, 2 Failsafe, 3 EmergencyStop;
-`mission_state` 0 Idle, 1 Running, 2 Paused, 3 Completed, 4 Aborted.
-
