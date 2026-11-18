@@ -67,5 +67,3 @@ dashboard                                    vehicle
 ```
 
 ## 7. Versioning policy
-
-* `version` changes on any incompatible layout change. A decoder drops other versions
