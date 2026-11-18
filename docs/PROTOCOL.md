@@ -17,9 +17,7 @@ offset  size  field
 * Incremental: feed it any chunking of the byte stream.
 * **Re-synchronises** after garbage, truncation or bit errors by scanning for the magic bytes.
 * Fixed internal buffer; no allocation, no exceptions.
-* Counts frames, CRC errors, oversize frames and bad versions (`DecoderStats`).
-* A frame with a valid CRC but an invalid payload is dropped and counted
-  (`CommandGateway::Stats::decode_errors`).
+* Counts frames, CRC errors, oversize fram
 
 ## 2. Message types
 
