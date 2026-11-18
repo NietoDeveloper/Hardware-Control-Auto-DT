@@ -15,22 +15,10 @@
 namespace sdt {
 
 // ---- Navigation state ----------------------------------------------------------------------
-class IStateSource {
- public:
-  virtual ~IStateSource() = default;
-  virtual bool poll(VehicleState& out) noexcept = 0;
+clabool poll(VehicleState& out) noexcept = 0;
 };
 
 // ---- Radar ---------------------------------------------------------------------------------
-/// One radar return in the sensor frame (boresight = vehicle forward in v1).
-struct RadarDetection {
-  float range_m{0.f};
-  float azimuth_rad{0.f};    // + = left of boresight
-  float elevation_rad{0.f};  // + = up
-  float radial_velocity_mps{0.f};
-  float snr_db{0.f};
-};
-inline constexpr std::size_t kMaxRadarDetections = 256;
 
 struct RadarScan {
   TimeNs stamp{0};
