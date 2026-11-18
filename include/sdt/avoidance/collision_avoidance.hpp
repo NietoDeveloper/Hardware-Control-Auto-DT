@@ -12,18 +12,6 @@ struct AvoidanceConfig {
   double vehicle_radius_m{0.6};
   double safety_margin_m{1.0};
   double horizon_s{6.0};        // start shaping the velocity when a conflict is closer than this
-  double critical_ttc_s{1.5};   // candidates with time-to-collision below this are unsafe
-  int heading_steps{12};        // K: candidates at base +/- k * (max_deflection / K)
-  double max_deflection_rad{1.75};
-  int speed_levels{4};
-  double w_deviation{1.0};
-  double w_ttc{2.0};
-  double w_hysteresis{0.2};     // damps left/right dithering between cycles
-};
-  double minTtc(const VehicleState& own, const Vec3& v, const Obstacle* obs,
-                std::size_t n) const noexcept;
-  AvoidanceConfig cfg_;
-  double last_offset_{0.0};
-};
+  
 
 }  // namespace sdt
