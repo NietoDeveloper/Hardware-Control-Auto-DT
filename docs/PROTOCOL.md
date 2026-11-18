@@ -17,9 +17,7 @@ offset  size  field
 * Incremental: feed it any chunking of the byte stream.
 * **Re-synchronises** after garbage, truncation or bit errors by scanning for the magic bytes.
 * Fixed internal buffer; no allocation, no excmode` (see §3) |
-| ManualControl | `0x04` | dashboard → vehicle | `f32 forward, f32 lateral, f32 vertical, f3
-A command is dropped (and counted) if: the payload length is wrong; an enum value is unknown;
-`arm` is not 0/1; any `ManualControl` field is outside `[-1, 1]` or not finite; a mission has 0 or
+| ManualControl | `0x04` | dashboard → vehicleside `[-1, 1]` or not finite; a mission has 0 or
 more than 128 waypoints; trailing bytes remain.
 
 ### Link liveness
