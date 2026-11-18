@@ -84,6 +84,3 @@ roadmap.
 ```cpp
 std::uint8_t buf[sdt::proto::kMaxFrame];
 std::size_t n = sdt::proto::encodeCommand(sdt::CmdManual{0.5f, 0.f, 0.f, 0.1f}, seq++, buf, sizeof buf);
-transport.send(buf, n);
-
-sdt::proto::FrameDecoder 
