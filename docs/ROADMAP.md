@@ -12,6 +12,4 @@ This is a plan, not a commitment; order follows risk reduction first, features s
 * Three-thread runtime, simulator, 27 tests, benchmark, sanitizer build options.ial or mechanism target), with hardware-in-the-loop tests.
 * Radar mounting-offset calibration.
 
-* Independent supervisor on a separate process/processor with its own watchdog.
-* Formal hazard analysis (FMEA/FTA), requirements traceability, coverage targets (MC/DC where
-## Cross-cutting, every release
+* Independent 
