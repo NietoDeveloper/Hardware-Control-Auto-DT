@@ -16,13 +16,7 @@ reference implementation of the same ports.
 };
 
 ### 3.2 Aerial vehicle (autopilot in the loop)
-
-Keep the autopilot's attitude and motor control; use the core as the *outer* (navigation +
-safety) loop.
- a vendor SDK, …). Send at a steady rate; most autopilots
-  require a continuous setpoint stream to stay in offboard mode.
-* `emergencyStop`: choose deliberately — command land, trigger the autopilot's own failsafe,
-  disarm only if the aircraft is on the ground, or fire a parachute system. Document the decision.
+d, or fire a parachute system. Document the decision.
 * Configure `VehicleKind::Aerial`, the altitude band in `Geofence::min_z/max_z`, and tighten
   speed/accel limits to the airframe.
 
