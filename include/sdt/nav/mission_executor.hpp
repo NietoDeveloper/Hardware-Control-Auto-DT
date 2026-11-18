@@ -35,8 +35,7 @@ class MissionExecutor {
   MissionState state_{MissionState::Idle};
   std::uint16_t index_{0};
   Vec3 from_{};
-  bool dwelling_{false};
-  TimeNs dwell_start_{0};
+
 };
 
 }  // namespace sdt
