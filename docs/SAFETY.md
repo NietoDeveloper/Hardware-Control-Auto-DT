@@ -11,21 +11,3 @@ protection, strict validation, fault injection). It is **not certified** to any
 | 1 | `kStateStale` | No valid state estimate within `state_stale_after` |
 | 2 | `kRadarStale` | No radar scan within `radar_degraded_after` (when radar is required) |
 | 3 | `kGeofence` | Vehicle is outsidtive conditions.
-
-### Hysteresis and latching
-
-* A failsafe action is held until all tr
-* the vehicle is inside the geofence.
-
-On arming, home is recorded, the guard's slew limiter is seeded with the measured velocity, and the
-mode is `Hold`.
-
-## 6. Command guard (last line of defence)
-
-Applied in this order to every setpoint, in every mode:
-
-1. Reject non-finite vectors (replace with zero).
-2. Clamp vertical speed.
-3. Limit horizontal speed to `min(platform limit, verdict speed limit)`.
-4. **Geofence barrier:** compute the stopping point (v²/2a plus a margin); if it would lie outside
-   *and* be worse than the current position, command zero. A vehicle already outside may still
