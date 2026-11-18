@@ -25,5 +25,3 @@ count × {
   f32 speed_mps              cruise speed toward this waypoint
   f32 acceptance_m           reached when within this 3-D radius
   f32 hold_s                 dwell on arrival (0 = fly through)
-}
-```
