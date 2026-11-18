@@ -19,10 +19,7 @@ using namespace sdt;
 namespace {
 void sendCmd(ITransport& t, const Command& c, std::uint16_t& seq) {
   std::uint8_t buf[proto::kMaxFrISSION";
-    case ControlMode::ReturnHome: returILSAFE";
-    case SafetyState::EmergencyStop: return "E-STOP";
-  }
-  return "?";
+    case ControlMode::
 }
 }  // namespace
 
