@@ -12,19 +12,7 @@
 #include "sdt/comms/messages.hpp"
 #include "sdt/control/pid.hpp"
 #include "sdt/hal/ports.hpp"
-#include "sdt/nav/mission_executor.hpp"
-#include "sdt/perception/radar_tracker.hpp"
-#include "sdt/safety/command_guard.hpp"
-#include "sdt/safety/geofence.hpp"
-#include "sdt/safety/safety_supervisor.hpp"
-
-namespace sdt {
-
-  double manual_max_vertical_mps{2.0};
-  double manual_max_yaw_rate_rps{1.0};
-  TimeNs manual_timeout{millis(500)};  // stale sticks -> zero velocity
-  double rth_speed_mps{3.0};
-  double rth_arrival_m{1.5};
+#include "sdt/nav/mission_executor.h
   double face_travel_min_speed_mps{0.3};
   TimeNs default_dt{millis(10)};
   double max_disarm_speed_mps{0.5};
