@@ -20,14 +20,6 @@
 
 namespace sdt {
 
-struct VehicleConfig {
-  VehicleKind kind{VehicleKind::Ground};
-  SafetyConfig safety{};
-  TrackerConfig tracker{}
-  Geofence geofence{};
-  PidGains heading{2.0, 0.0, 0.1, -1.5, 1.5, 0.5};
-
-  double manual_max_speed_mps{4.0};
   double manual_max_vertical_mps{2.0};
   double manual_max_yaw_rate_rps{1.0};
   TimeNs manual_timeout{millis(500)};  // stale sticks -> zero velocity
