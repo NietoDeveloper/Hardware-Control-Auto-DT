@@ -12,5 +12,3 @@ namespace sdt::proto {
 inline constexpr std::uint8_t kMagic0 = 0xD7;
 inline constexpr std::uint8_t kMagic1 = 0x7A;
 inline constexpr std::uint8_t kVersion = 1;
-inline constexpr std::size_t kHeaderSize = 8;
-inline constexpr std::size_t kCrcSize = 4;
