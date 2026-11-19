@@ -11,6 +11,5 @@ namespace sdt {
 using CommandQueue = SpscQueue<CommandEnvelope, 32>;
 
 /// Dashboard-facing edge: bytes
-  struct Stats {
-    std::uint64_t commands_queued{0};
+nt64_t commands_queued{0};
  
