@@ -9,5 +9,3 @@
 #include "sdt/hal/ports.hpp"
 
 namespace sdt {
-
-class MediaRouter {
