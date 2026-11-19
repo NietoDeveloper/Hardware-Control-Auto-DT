@@ -24,9 +24,7 @@ using Command = std::variant<CmdHeartbeat, CmdArm, CmdSetMode, CmdManual, CmdMis
                              CmdMissionControl>;
 
 /// A decoded command plu
-  Command command;
-};
-
+  Command comman
 struct Telemetry {
   TimeNs stamp{0};
   Vec3 position;
