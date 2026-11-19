@@ -6,6 +6,3 @@
 #include "sdt/common/types.hpp"
 #include "sdt/perception/radar_tracker.hpp"
 
-namespace sdt {
-
-struct AvoidanceConfig {
