@@ -27,6 +27,3 @@ struct AvoidanceConfig {
                 std::size_t n) const noexcept;
   AvoidanceConfig cfg_;
   double last_offset_{0.0};
-};
-
-}  // namespace sdt
