@@ -16,5 +16,3 @@ using CommandQueue = SpscQueue<CommandEnvelope, 32>;
     std::uint64_t commands_dropped{0};  // control queue full
     std::uint64_t decode_e
   std::uint16_t tx_seq_{0};
-};
-
