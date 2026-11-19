@@ -4,5 +4,3 @@
 #include <cstddef>
 
 #include "sdt/common/types.hpp"
-#include "sdt/perception/radar_tracker.hpp"
-
