@@ -13,6 +13,3 @@ class MissionExecutor {
  public:
   explicit MissionExecutor(const FollowerConfig& cfg = {}) noexcept : follower_(cfg) {}
 
-  /// Validates and stores a mission. Rejected while Running/Paused.
-  bool load(co
-}  // namespace sdt
