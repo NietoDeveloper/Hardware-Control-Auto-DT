@@ -24,8 +24,4 @@ enum class MsgType : std::uint8_t {
   ManualControl = 0x04,
   MissionUpload = 0x05,
   MissionControl = 0x06,
-  Telemetry = 0x80,
-};
-
-std::uint32_t crc32(const std::uint8_t* data, std::size_t n) noexcept;
-
+  Telemetry = 0x80
