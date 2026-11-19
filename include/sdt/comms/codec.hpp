@@ -45,4 +45,4 @@ struc
 
 };
 
-struct Decoder
+struct Dec
