@@ -63,4 +63,4 @@ class FrameDecoder {
       if (push(data[i], f)) on_frame(f);
     }
   }
-  const DecoderSta
+  const Decoder
