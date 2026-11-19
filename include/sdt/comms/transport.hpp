@@ -9,8 +9,5 @@
 #include <utility>
 
 namespace sdt {
-
-class ITransport {
- public:
-  virtual ~ITransport() = default;
+l ~ITransport() = default;
   /// 
