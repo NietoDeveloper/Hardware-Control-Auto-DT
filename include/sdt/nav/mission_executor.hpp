@@ -14,15 +14,7 @@ class MissionExecutor {
   explicit MissionExecutor(const FollowerConfig& cfg = {}) noexcept : follower_(cfg) {}
 
   /// Validates and stores a mission. Rejected while Running/Paused.
-  bool load(const Mission& m) noexcept;
-  bool start(const Vec3& position, TimeNs now) noexcept;
-  bool pause() noexcept;
-  bool resume() noexcept;
-  void advance() noexcept;
-  PathFollower follower_;
-  Mission mission_{};
-  MissionState state_{MissionState::Idle};
-  std::uint16_t index_{0};
+  bool load(const Mission& m) no
   Vec3 from_{};
   bool dwelling_{false};
   TimeNs dwell_start_{0};
