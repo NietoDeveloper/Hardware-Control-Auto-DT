@@ -10,13 +10,10 @@
 #include "sdt/common/spsc_queue.hpp"
 #include "sdt/comms/command_gateway.hpp"
 #include "sdt/media/media_router.hpp"
-#include "sdt/runtime/periodic_thread.hpp"
-#include "sdt/runtime/vehic
+#include "sdt/runtime/periodic_thread.h
   RuntimeConfig cfg_;
   MediaRouter* med, 8> tel_q_;
   CommandGateway gateway_;
-  TimeNs last_tel_{kNever};
-  PeriodicThread control_;
   PeriodicThread comms_;
   PeriodicThread media_thread_;
 };
