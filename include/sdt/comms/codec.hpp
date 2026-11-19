@@ -70,5 +70,3 @@ class FrameDecoder {
   bool push(std::uint8_t b, Frame& out) noexcept;
   void resetFrame() noexcept;
 
-  St st_{St::Magic0};
-  std::uint8_t hdr_[kHeaderSize - 2]{};
