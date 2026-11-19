@@ -7,6 +7,4 @@
 #include <memory>
 
 #include "sdt/common/clock.hpp"
-#include "sdt/common/spsc_queue.hpp"
-#include "sdt/comms/command_gateway.hpp
-  Period
+#include "sdt/common/spsc
