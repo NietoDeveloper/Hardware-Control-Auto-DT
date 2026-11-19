@@ -15,11 +15,7 @@
 
 namespace sdt {
 
-struct RuntimeConfig {
-  TimeNs control_period{millis(10)};
-
-  VehicleRuntime(VehicleController& controller, ITransport& transport, const IClock& clock,
-                 const RuntimeConfig& cfg = {}, MediaRouter* media = nullptr);
+struct RuntimeConfig {ig& cfg = {}, MediaRouter* media = nullptr);
   ~VehicleRuntime() { stop(); }
 
   bool start();
