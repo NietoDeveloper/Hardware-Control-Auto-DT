@@ -20,5 +20,3 @@ class MediaRouter {
 
   /// One bounded pass over all sources.
   void pump();
-  const Stats& stats() const noexcept { return stats_; }
-
