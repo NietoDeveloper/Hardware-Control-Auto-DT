@@ -18,7 +18,7 @@ namespace sdt {
 struct RuntimeConfig {ig& cfg = {}, MediaRouter* media = nullptr);
   ~VehicleRuntime() { stop(); }
 
-  bool start();
+  bo
   void stop() noexcept;
 
   LoopStats controlStats() const noexcept { return control_.stats(); }
