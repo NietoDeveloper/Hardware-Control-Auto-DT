@@ -26,10 +26,7 @@ class LoopbackTransport final : public ITransport {
   std::size_t receive(std::uint8_t* buf, std::size_t cap) noexcept override;
   bool send(const std::uint8_t* data, std::size_t n) noexcept override;
 
- private:
-  struct Pipe 
-    std::mutex m;
-    std::deque<std::uint8_t> q;
+ private:int8_t> q;
   };
   LoopbackTransport(std::shared_ptr<Pipe> rx, std::shared_ptr<Pipe> tx) : rx_(std::move(rx)), tx_(std::move(tx)) {}
   std::shared_ptr<Pipe> rx_;
