@@ -5,6 +5,3 @@
 #include <cstddef>
 #include <cstdint>
 
-#include "sdt/comms/messages.hpp"
-
-namespace sdt::proto {
