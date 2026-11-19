@@ -11,7 +11,7 @@
 #include "sdt/comms/command_gateway.hpp"
 #include "sdt/media/media_router.hpp"
 #include "sdt/runtime/periodic_thread.h
-  RuntimeConfig cfg_;
+  RuntimeConfig cfg
   MediaRouter* med, 8> tel_q_;
   CommandGateway gateway_;
   PeriodicThr
