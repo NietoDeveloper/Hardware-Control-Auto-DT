@@ -18,5 +18,3 @@ class MediaRouter {
   void addSource(IMediaSource& s) { sources_.push_back(&s); }
   void setSink(IMediaSink& sink) noexcept { sink_ = &sink; }
 
-  /// One bounded pass over all sources.
-  void pump();
