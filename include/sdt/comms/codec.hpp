@@ -45,4 +45,4 @@ struc
 
 };
 
-struct Dec
+struct 
