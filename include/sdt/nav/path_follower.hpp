@@ -16,6 +16,3 @@ class PathFollower {
   explicit PathFollower(const FollowerConfig& cfg = {}) noexcept : cfg_(cfg) {}
   Vec3 desiredVelocity(const Vec3& pos, const Vec3& from, const Waypoint& to,
                        bool stop_at_end) const noexcept;
-
- private:
-  FollowerConfig cfg_;
