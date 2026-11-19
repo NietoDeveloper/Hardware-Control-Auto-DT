@@ -20,6 +20,3 @@ inline constexpr std::size_t kMaxWaypoints = 128;
 struct Mission {
   std::uint32_t id{0};
   std::uint16_t count{0};
-  bool loop{false};
-  std::array<Waypoint, kMaxWaypoints> waypoints{};
-
