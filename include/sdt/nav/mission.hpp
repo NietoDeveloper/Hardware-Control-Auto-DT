@@ -13,5 +13,3 @@ struct Waypoint {
   float acceptance_m{1.0f};  // reached when within this 3D radius
   float hold_s{0.0f};        // dwell time on arrival (0 = fly through)
 };
-
-inline constexpr std::size_t kMaxWaypoints = 128;
