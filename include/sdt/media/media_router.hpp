@@ -22,4 +22,3 @@ class MediaRouter {
   void pump();
   const Stats& stats() const noexcept { return stats_; }
 
- private:
