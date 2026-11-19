@@ -20,11 +20,6 @@ struct RuntimeConfig {ig& cfg = {}, MediaRouter* media = nullptr);
   void stop() noexcept;
 
 
-  void commsTick();  LoopStats controlStats() const noexcept { return control_.stats(); }
-
-
-  VehicleController& controller_;
-  const IClock& clock_;
   RuntimeConfig cfg_;
   MediaRouter* media_;
   std::unique_ptr<CommandQueue> cmd_q_;
