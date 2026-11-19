@@ -19,6 +19,3 @@ class PathFollower {
 
  private:
   FollowerConfig cfg_;
-};
-
-}  // namespace sdt
