@@ -24,11 +24,7 @@ struct AvoidanceResult {
   double min_ttc_s{kInf};
   bool modified{false};
   explicit CollisionAvoidance(const AvoidanceConfig& cfg = {}) noexcept : cfg_(cfg) {}
-
-  AvoidanceResult resolve(const VehicleState& own, const Vec3& desired, const Obstacle* obstacles,
-                          std::size_t count, double max_speed) noexcept;
-
-  void reset() noexcept { last_offset_ = 0.0; }
+ }
 
  private:
   double minTtc(const VehicleState& own, const Vec3& v, const Obstacle* obs,
