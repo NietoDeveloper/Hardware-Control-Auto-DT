@@ -18,8 +18,6 @@ using CommandQueue = SpscQueue<CommandEnvelope, 32>;
     std::uint64_t telemetry_sent{0};
     std::uint64_t send_failures{0};
   };
-  bool sendTelemetry(const Telemetry& t) noexcept;
-
   const Stats& stats() const noexcept { return stats_; }
   const proto::DecoderStats& wireStats() const noexcept { return decoder_.stats(); }
 
