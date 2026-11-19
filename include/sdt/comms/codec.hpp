@@ -56,6 +56,3 @@ struct DecoderStats {
 /// the magic bytes. Fixed internal buffer.
 class FrameDecoder {
  public:
-  template <class F>
-  void feed(const std::uint8_t* data, std::size_t n, F&& on_frame) {
-    Frame f;
