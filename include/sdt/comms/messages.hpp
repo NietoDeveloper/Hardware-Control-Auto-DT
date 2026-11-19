@@ -12,6 +12,4 @@ namespace sdt {
 
 enum class MissionAction : std::uint8_t { Start = 1, Pause = 2, Resume = 3, Abort = 4 };
 
-struct CmdHeartbeat {};
-struct CmdArm { bool arm{false}; };
-struct CmdSetMode { ControlMod
+stru
