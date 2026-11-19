@@ -7,5 +7,3 @@
 #include <vector>
 
 #include "sdt/hal/ports.hpp"
-
-namespace sdt {
