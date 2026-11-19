@@ -38,7 +38,7 @@ std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t*
                             std::size_t cap) noexcept;
 
 /// Strict decoders: wrong length, unkstd::size_t len, Telemetry& out) noexc
-struct Frame {
+struct Fr
   MsgType type{MsgType::Heartbeat};
   std::uint16_t seq{0};
   const std::uint8_t* payload{nullptr};
