@@ -5,29 +5,7 @@
 //
 // One control cycle:
 //   poll state/radar -> track -> safety verdict -> mode logic (manual | mission | RTH | hold)
-//   -> collision avoidance -> command guard (limits, geofence, slew) -> heading control -> actuate
-#include <cstdint>
-
-#include "sdt/avoidance/collision_avoidance.hpp"
-#include "sdt/comms/messages.hpp"
-#include "sdt/control/pid.hpp"
-#include "sdt/hal/ports.hpp"
-#include "sdt/nav/mission_executor.h
-  double face_travel_min_speed_mps{0.3};
-  TimeNs default_dt{millis(10)};
-  double max_disarm_speed_mps{0.5};
-};
-
-struct VehiclePorts {
-  IStateSource& state;
-  IRadarSource& radar;
-  IActuatorSink& actuator;
-};
-
-class VehicleController {
- public:
-  VehicleController(const VehicleConfig& cfg, VehiclePorts ports) noexcept;
-
+//   -> colli
   /// Apply one decoded command (called by the same thread that calls step()).
   void handle(const CommandEnvelope& env) noexcept;
   /// Run one control cycle at time `now`.
