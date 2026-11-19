@@ -14,8 +14,6 @@ class MediaRouter {
  public:
   struct Stats {
     std::uint64_t frames_in{0};
-    std::uint64_t frames_out{0};
-    std::uint64rames_dropped{0};
 
   void addSource(IMediaSource& s) { sources_.push_back(&s); }
   void setSink(IMediaSink& sink) noexcept { sink_ = &sink; }
