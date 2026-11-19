@@ -63,6 +63,4 @@ class FrameDecoder {
       if (push(data[i], f)) on_frame(f);
     }
   }
-  const DecoderStats& stats() const noexcept { return stats_; }
-
- priv
+  const DecoderStats& stats() const noexcept { return stats
