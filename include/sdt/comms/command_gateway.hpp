@@ -18,4 +18,4 @@ using CommandQueue = SpscQueue<CommandEnvelope, 32>;
   std::uint16_t tx_seq_{0};
 };
 
-}  // namespace sdt
+}  // namespace
