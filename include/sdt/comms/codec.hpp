@@ -41,4 +41,4 @@ std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t*
 struc
   MsgType type{MsgType::Heartbeat};
   std::uint16_t seq{0};
-  const std::uin
+  cons
