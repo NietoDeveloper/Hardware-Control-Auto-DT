@@ -22,11 +22,6 @@ class ITransport {
 /// In-process duplex pipe for tests and software-in-the-loop runs.
 class LoopbackTransport final : public ITransport {
  public:
-  static std::pair<std::unique_ptr<LoopbackTransport>, std::unique_ptr<LoopbackTransport>> makePair();
-  std::size_t receive(std::uint8_t* buf, std::size_t cap) noexcept override;
-  bool send(const std::uint8_t* data, std::size_t n) noexcept override;
-
- private:int8_t> q;
   };
   Lo::shared_ptr<Pipe> tx_;
 };
