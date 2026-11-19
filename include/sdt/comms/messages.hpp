@@ -1,2 +1,2 @@
 #pragma once
-// Transport-independent message model (dashboard <-> vehicle).
+// Transport-independent message model (dashboar
