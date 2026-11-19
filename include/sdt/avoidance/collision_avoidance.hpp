@@ -18,8 +18,6 @@ struct AvoidanceConfig {
   int speed_levels{4};
   double w_deviation{1.0};
   double w_ttc{2.0};
-  double w_hysteresis{0.2};     // damps left/right dithering between cycles
-};
 
 struct AvoidanceResult {
   Vec3 velocity;
