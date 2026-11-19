@@ -18,17 +18,6 @@ class MissionExecutor {
   bool start(const Vec3& position, TimeNs now) noexcept;
   bool pause() noexcept;
   bool resume() noexcept;
-  void abort() noexcept;
-
-  /// Desired world-frame velocity for this cycle (zero unless Running).
-  Vec3 step(const VehicleState& s, TimeNs now) noexcept;
-
-  MissionState state() const noexcept { return state_; }
-  std::uint16_t currentIndex() const noexcept { return index_; }
-  std::uint32_t missionId() const noexcept { return mission_.id; }
-  bool hasMission() const noexcept { return mission_.count > 0; }
-
- private:
   void advance() noexcept;
   PathFollower follower_;
   Mission mission_{};
