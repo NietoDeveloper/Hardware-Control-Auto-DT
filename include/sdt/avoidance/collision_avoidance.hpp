@@ -17,11 +17,7 @@ struct AvoidanceConfig {
   double max_deflection_rad{1.75};
   int speed_levels{4};
   double w_deviation{1.0};
-  double w_ttc{2.0};
-
-struct AvoidanceResult {
-  Vec3 veloc
-  double min_ttc_s{kInf};
+  double w__s{kInf};
   bool modified{false};
   explicit CollisionAvoidance(const AvoidanceConfig& cfg = {}) noexcept : cfg_(cfg) {}
  }
