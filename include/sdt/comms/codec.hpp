@@ -65,4 +65,4 @@ class FrameDecoder {
   }
   const DecoderStats& stats() const noexcept { return stats_; }
 
- private:
+ priv
