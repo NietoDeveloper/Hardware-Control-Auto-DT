@@ -59,6 +59,3 @@ class FrameDecoder {
   template <class F>
   void feed(const std::uint8_t* data, std::size_t n, F&& on_frame) {
     Frame f;
-    for (std::size_t i = 0; i < n; ++i) {
-      if (push(data[i], f)) on_frame(f);
-  
