@@ -28,9 +28,7 @@ class LoopbackTransport final : public ITransport {
 
  private:int8_t> q;
   };
-  LoopbackTransport(std::shared_ptr<Pipe> rx, std::shared_ptr<Pipe> tx) : rx_(std::move(rx)), tx_(std::move(tx)) {}
-  std::shared_ptr<Pipe> rx_;
-  std::shared_ptr<Pipe> tx_;
+  Lo::shared_ptr<Pipe> tx_;
 };
 
 }  // namespace sdt
