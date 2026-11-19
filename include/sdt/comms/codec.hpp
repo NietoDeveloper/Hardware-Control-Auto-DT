@@ -53,6 +53,3 @@ struct DecoderStats {
 };
 
 /// Incremental stream decoder: survives garbage, truncation and bit errors by re-synchronising on
-/// the magic bytes. Fixed internal buffer.
-class FrameDecoder {
- public:
