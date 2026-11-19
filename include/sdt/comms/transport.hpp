@@ -27,7 +27,7 @@ class LoopbackTransport final : public ITransport {
   bool send(const std::uint8_t* data, std::size_t n) noexcept override;
 
  private:
-  struct Pipe {
+  struct Pipe 
     std::mutex m;
     std::deque<std::uint8_t> q;
   };
