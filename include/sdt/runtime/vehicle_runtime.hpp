@@ -15,5 +15,4 @@
   MediaRouter* med, 8> tel_q_;
   CommandGateway gateway_;
   PeriodicThr
-  PeriodicThread media_thread_;
-}  
+  PeriodicThread media_thread_
