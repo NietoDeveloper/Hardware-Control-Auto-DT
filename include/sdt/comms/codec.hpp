@@ -74,5 +74,4 @@ class FrameDecoder {
   std::uint8_t hdr_[kHeaderSize - 2]{};
   std::size_t hdr_n_{0};
   std::uint8_t buf_[kMaxPayload]{};
-  std::size_t len_{0};
-  s
+  std::size_t le
