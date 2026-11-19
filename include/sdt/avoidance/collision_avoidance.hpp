@@ -23,7 +23,3 @@ struct AvoidanceConfig {
  }
 
  private:
-  double minTtc(const VehicleState& own, const Vec3& v, const Obstacle* obs,
-                std::size_t n) const noexcept;
-  AvoidanceConfig cfg_;
-  double last_offset_{0.0};
