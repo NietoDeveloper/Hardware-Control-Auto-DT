@@ -23,10 +23,6 @@ struct AvoidanceResult {
   Vec3 veloc
   double min_ttc_s{kInf};
   bool modified{false};
-  bool no_safe_option{false
-
-class CollisionAvoidance {
- public:
   explicit CollisionAvoidance(const AvoidanceConfig& cfg = {}) noexcept : cfg_(cfg) {}
 
   AvoidanceResult resolve(const VehicleState& own, const Vec3& desired, const Obstacle* obstacles,
