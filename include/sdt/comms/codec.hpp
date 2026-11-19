@@ -49,7 +49,3 @@ struct DecoderStats {
   std::uint64_t frames{0};
   std::uint64_t crc_errors{0};
   std::uint64_t oversize{0};
-  std::uint64_t bad_version{0};
-};
-
-/// Incremental stream decoder: survives garbage, truncation and bit errors by re-synchronising on
