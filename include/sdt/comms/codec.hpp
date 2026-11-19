@@ -81,4 +81,4 @@ class FrameDecoder {
   DecoderStats stats_{};
 };
 
-}  // namespace sdt::proto
+}  // namespace sdt::p
