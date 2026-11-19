@@ -14,7 +14,7 @@
   RuntimeConfig cfg_;
   MediaRouter* med, 8> tel_q_;
   CommandGateway gateway_;
-  PeriodicThread comms_;
+  PeriodicThr
   PeriodicThread media_thread_;
 };
 
