@@ -15,11 +15,6 @@
 
 namespace sdt {
 
-struct RuntimeConfig {ig& cfg = {}, MediaRouter* media = nullptr);
-  ~VehicleRuntime() { 
-  void stop() noexcept;
-
-
   RuntimeConfig cfg_;
   MediaRouter* media_;
   std::unique_ptr<CommandQueue> cmd_q_;
