@@ -17,7 +17,4 @@ struct CmdArm { bool arm{false}; };
 struct CmdSetMode { ControlMode mode{ControlMode::Hold}; };
 /// Normalised stick input in [-1, 1]
   std::uint16_t tracks{0};
-  std::uint32_t rejected_commands{0};
-};
-
-}  // namespace sdt
+  std::u
