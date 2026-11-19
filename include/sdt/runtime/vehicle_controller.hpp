@@ -23,10 +23,7 @@ namespace sdt {
 struct VehicleConfig {
   VehicleKind kind{VehicleKind::Ground};
   SafetyConfig safety{};
-  TrackerConfig tracker{};
-  AvoidanceConfig avoidance{};
-  GuardConfig guard{};
-  FollowerConfig follower{};
+  TrackerConfig tracker{}
   Geofence geofence{};
   PidGains heading{2.0, 0.0, 0.1, -1.5, 1.5, 0.5};
 
