@@ -14,7 +14,4 @@ enum class MissionAction : std::uint8_t { Start = 1, Pause = 2, Resume = 3, Abor
 
 struct CmdHeartbeat {};
 struct CmdArm { bool arm{false}; };
-struct CmdSetMode { ControlMode mode{ControlMode::Hold}; };
-/// Normalised stick input in [-1, 1]
-  std::uint16_t tracks{0};
-  std::u
+struct CmdSetMode { ControlMod
