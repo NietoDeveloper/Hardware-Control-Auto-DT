@@ -15,4 +15,4 @@ class MediaRouter {
   struct Stats {
     std::uint64_t frames_in{0};
 
-  void addSource(IMediaSource& s) { sources_.push_back(&s)
+  void addSource(IMediaSource& s) { sources_.push_back(&
