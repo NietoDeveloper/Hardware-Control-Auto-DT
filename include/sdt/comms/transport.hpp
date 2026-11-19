@@ -22,4 +22,4 @@ class ITransport {
 /// In-process duplex pipe for tests and software-in-the-loop runs.
 class LoopbackTransport final : public ITransport {
  public:
-  Lo::shared_pt
+  Lo::sha
