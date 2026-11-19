@@ -16,8 +16,6 @@ class MediaRouter {
     std::uint64_t frames_in{0};
     std::uint64_t frames_out{0};
     std::uint64_t frames_dropped{0};
-    std::uint64_t keyframe_requests{0};
-  };
 
   void addSource(IMediaSource& s) { sources_.push_back(&s); }
   void setSink(IMediaSink& sink) noexcept { sink_ = &sink; }
