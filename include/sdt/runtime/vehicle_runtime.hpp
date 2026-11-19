@@ -4,7 +4,4 @@
 //   comms   (soft RT,    200 Hz)   : transport <-> CommandGateway
 //   media   (best effort)          : MediaRouter::pump
 // Only the control thread ever touches vehicle state; comms and media cannot block it.
-#include <memory>
-
-#include "sdt/common/clock.hpp"
-#include "sdt/common/spsc
+#i
