@@ -17,11 +17,7 @@ struct CmdArm { bool arm{false}; };
 struct CmdSetMode { ControlMode mode{ControlMode::Hold}; };
 /// Normalised stick input in [-1, 1]. forward/lateral are body-relative (lateral + = left).
 struct CmdManual { float forward{0}, lateral{0}, vertical{0}, yaw{0}; };
-struct CmdMissionUpload { Mission mission; };
-struct CmdMissionControl { MissionAction action{MissionAction::Abort}; };
-
-  Vec3 position;
-  Vec3 velocity;
+struct CmdMissionUpload { Mission mis
   double yaw{0.0};
   bool armed{false};
   ControlMode mode{ControlMode::Hold}
