@@ -19,6 +19,4 @@ class ITransport {
   virtual bool send(const std::uint8_t* data, std::size_t n) noexcept = 0;
 };
 
-/// In-process duplex pipe for tests and software-in-the-loop runs.
-class LoopbackTransport final : public ITransport {
- p
+/// In-process duplex pipe for tests a
