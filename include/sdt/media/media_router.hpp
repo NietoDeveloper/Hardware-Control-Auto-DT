@@ -12,4 +12,3 @@ namespace sdt {
 
 class MediaRouter {
  public:
-  struct Stats {
