@@ -5,6 +5,3 @@
 #include "sdt/comms/codec.hpp"
 #include "sdt/comms/messages.hpp"
 #include "sdt/comms/transport.hpp"
-
-namespace sdt {
-
