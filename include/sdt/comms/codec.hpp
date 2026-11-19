@@ -45,7 +45,7 @@ struct Frame {
   MsgType type{MsgType::Heartbeat};
   std::uint16_t seq{0};
   const std::uint8_t* payload{nullptr};
-  std::size_t length{0};
+
 };
 
 struct DecoderStats {
