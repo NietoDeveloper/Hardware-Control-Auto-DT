@@ -9,4 +9,3 @@
 namespace sdt {
 
 struct AvoidanceConfig {
-  double vehicle_radius_m{0.6};
