@@ -23,6 +23,3 @@ class MediaRouter {
   const Stats& stats() const noexcept { return stats_; }
 
  private:
-  std::vector<IMediaSource*> sources_;
-  IM
-
