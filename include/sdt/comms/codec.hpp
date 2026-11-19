@@ -72,5 +72,3 @@ class FrameDecoder {
 
   St st_{St::Magic0};
   std::uint8_t hdr_[kHeaderSize - 2]{};
-  std::size_t hdr_n_{0};
-  std::uint8_t 
