@@ -66,7 +66,3 @@ class FrameDecoder {
   const DecoderStats& stats() const noexcept { return stats_; }
 
  private:
-  enum class St : std::uint8_t { Magic0, Magic1, Header, Payload, Crc };
-  bool push(std::uint8_t b, Frame& out) noexcept;
-  void resetFrame() noexcept;
-
