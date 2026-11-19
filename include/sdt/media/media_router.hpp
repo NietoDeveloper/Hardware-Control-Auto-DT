@@ -4,6 +4,3 @@
 // network can never delay a control cycle.
 #include <array>
 #include <cstdint>
-#include <vector>
-
-#include "sdt/hal/ports.hpp"
