@@ -11,4 +11,3 @@
 namespace sdt {
 
 class MediaRouter {
- public:
