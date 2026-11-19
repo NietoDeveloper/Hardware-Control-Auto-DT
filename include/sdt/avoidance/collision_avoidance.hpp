@@ -23,8 +23,7 @@ struct AvoidanceResult {
   Vec3 veloc
   double min_ttc_s{kInf};
   bool modified{false};
-  bool no_safe_option{false};  // every candidate violates critical_ttc_s -> escalate to safety
-};
+  bool no_safe_option{false
 
 class CollisionAvoidance {
  public:
