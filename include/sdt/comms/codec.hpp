@@ -37,4 +37,4 @@ std::size_t encodeCommand(const Command& cmd, std::uint16_t seq, std::uint8_t* o
 std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t* out,
                             std::size_t cap) noexcept;
 
-/// Strict decoders: wrong length, unkstd::size_t len, Telemetry& out) no
+/// Strict decoders: wrong length, unkstd::size_t len, Telemetry& ou
