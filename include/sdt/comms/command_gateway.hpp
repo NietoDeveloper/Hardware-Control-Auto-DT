@@ -17,11 +17,6 @@ using CommandQueue = SpscQueue<CommandEnvelope, 32>;
     std::uint64_t decode_errors{0};     // CRC-valid frame with an invalid payload
     std::uint64_t telemetry_sent{0};
     std::uint64_t send_failures{0};
-  };
-  const Stats& stats() const noexcept { return stats_; }
-  const proto::DecoderStats& wireStats() const noexcept { return decoder_.stats(); }
-
- private:
   ITransport& transport_;
   CommandQueue& out_;
   proto::FrameDecoder decoder_;
