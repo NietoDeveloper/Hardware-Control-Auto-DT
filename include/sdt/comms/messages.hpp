@@ -15,12 +15,7 @@ enum class MissionAction : std::uint8_t { Start = 1, Pause = 2, Resume = 3, Abor
 struct CmdHeartbeat {};
 struct CmdArm { bool arm{false}; };
 struct CmdSetMode { ControlMode mode{ControlMode::Hold}; };
-/// Normalised stick input in [-1, 1]. forward/lateral are body-relative (lateral + = left).
-struct CmdManual { float forward{0}, lateral{0}, vertical{0}, yaw{0}; };
-struct CmdMissionUpload { Mission mis
-  double yaw{0.0};
-  bool armed{false};
-  ControlMode mode{ControlMode::Hold}
+/// Normalised stick input in [-1, 1]. 
   SafetyState safety{SafetyState::Nominal};
   MissionState mission_state{MissionState::Idle};
   std::uint16_t mission_index{0};
