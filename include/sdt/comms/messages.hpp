@@ -20,7 +20,7 @@ struct CmdManual { float forward{0}, lateral{0}, vertical{0}, yaw{0}; };
 struct CmdMissionUpload { Mission mission; };
 struct CmdMissionControl { MissionAction action{MissionAction::Abort}; };
 
-using Command = std::variant<CmdHeartbeat, CmdArm, CmdSetMode, CmdManual, CmdMissionUpload,
+using Command = std::variant<CmdHeartbeat, mdSetMode, CmdManual, CmdMissionUpload,
                              CmdMissionControl>;
 
   Vec3 position;
