@@ -35,4 +35,4 @@ std::size_t encodeFrame(MsgType type, std::uint16_t seq, const std::uint8_t* pay
 std::size_t encodeCommand(const Command& cmd, std::uint16_t seq, std::uint8_t* out,
                           std::size_t cap) noexcept;
 std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t* out,
-                            std::size_t cap) noe
+          
