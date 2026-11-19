@@ -16,6 +16,4 @@
   CommandGateway gateway_;
   PeriodicThr
   PeriodicThread media_thread_;
-};
-
 }  
