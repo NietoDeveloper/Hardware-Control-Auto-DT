@@ -18,10 +18,6 @@ using CommandQueue = SpscQueue<CommandEnvelope, 32>;
     std::uint64_t telemetry_sent{0};
     std::uint64_t send_failures{0};
   };
-
-  CommandGateway(ITransport& transport, CommandQueue& out) noexcept : transport_(transport), out_(out) {}
-
-  void poll(TimeNs now) noexcept;
   bool sendTelemetry(const Telemetry& t) noexcept;
 
   const Stats& stats() const noexcept { return stats_; }
