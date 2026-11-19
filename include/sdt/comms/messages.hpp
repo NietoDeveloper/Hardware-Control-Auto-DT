@@ -23,10 +23,6 @@ struct CmdMissionControl { MissionAction action{MissionAction::Abort}; };
 using Command = std::variant<CmdHeartbeat, CmdArm, CmdSetMode, CmdManual, CmdMissionUpload,
                              CmdMissionControl>;
 
-/// A decoded command plu
-  Command comman
-struct Telemetry {
-  TimeNs stamp{0};
   Vec3 position;
   Vec3 velocity;
   double yaw{0.0};
