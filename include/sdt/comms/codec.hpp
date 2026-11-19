@@ -78,7 +78,4 @@ class FrameDecoder {
   std::size_t got_{0};
   std::uint8_t crc_[kCrcSize]{};
   std::size_t crc_n_{0};
-  DecoderStats stats_{};
-};
-
-}  // 
+  DecoderStats stats_
