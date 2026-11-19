@@ -37,9 +37,7 @@ std::size_t encodeCommand(const Command& cmd, std::uint16_t seq, std::uint8_t* o
 std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t* out,
                             std::size_t cap) noexcept;
 
-/// Strict decoders: wrong length, unknown enum values and non-finite floats are rejected.
-bool decodeCommand(MsgType type, const std::uint8_t* payload, std::size_t len, Command& out) noexcept;
-bool decodeTelemetry(const std::uint8_toad, std::size_t len, Telemetry& out) noexc
+/// Strict decoders: wrong length, unkstd::size_t len, Telemetry& out) noexc
 struct Frame {
   MsgType type{MsgType::Heartbeat};
   std::uint16_t seq{0};
