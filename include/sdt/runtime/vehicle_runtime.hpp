@@ -19,12 +19,9 @@ struct RuntimeConfig {ig& cfg = {}, MediaRouter* media = nullptr);
   ~VehicleRuntime() { 
   void stop() noexcept;
 
-  LoopStats controlStats() const noexcept { return control_.stats(); }
-  LoopStats commsStats() const noexcept { return comms_.stats(); }
 
- private:
-  void controlTick();
-  void commsTick();
+  void commsTick();  LoopStats controlStats() const noexcept { return control_.stats(); }
+
 
   VehicleController& controller_;
   const IClock& clock_;
