@@ -8,6 +8,3 @@
 
 namespace sdt {
 
-using CommandQueue = SpscQueue<CommandEnvelope, 32>;
-rd-facing edge: bytes
-nt64_t commands_queued
