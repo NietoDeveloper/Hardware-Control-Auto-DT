@@ -39,5 +39,4 @@ std::size_t encodeTelemetry(const Telemetry& t, std::uint16_t seq, std::uint8_t*
 
 /// Strict decoders: wrong length, unkstd::size_t len, Telemetry& out) noexc
 struc
-  MsgType type{MsgType::Heartbeat};
-  std
+  MsgType type{MsgType::Heart
