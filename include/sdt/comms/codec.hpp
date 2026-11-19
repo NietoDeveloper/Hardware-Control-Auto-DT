@@ -10,4 +10,3 @@
 namespace sdt::proto {
 
 inline constexpr std::uint8_t kMagic0 = 0xD7;
-inline constexpr std::uint8_t kMagic1 = 0x7A;
