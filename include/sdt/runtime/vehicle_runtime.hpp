@@ -18,4 +18,4 @@
   PeriodicThread media_thread_;
 };
 
-}  // 
+}  
