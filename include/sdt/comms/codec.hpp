@@ -23,5 +23,3 @@ enum class MsgType : std::uint8_t {
   SetMode = 0x03,
   ManualControl = 0x04,
   MissionUpload = 0x05,
-  MissionControl = 0x06,
-  T
