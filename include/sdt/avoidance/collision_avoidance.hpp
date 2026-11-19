@@ -10,5 +10,3 @@ namespace sdt {
 
 struct AvoidanceConfig {
   double vehicle_radius_m{0.6};
-  double safety_margin_m{1.0};
-  double horizon_s{6.0};        // start shaping the velocity when a conflict is closer than this
