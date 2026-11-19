@@ -27,7 +27,7 @@ using Command = std::variant<CmdHeartbeat, CmdArm, CmdSetMode, CmdManual, CmdMis
   Vec3 velocity;
   double yaw{0.0};
   bool armed{false};
-  ControlMode mode{ControlMode::Hold};
+  ControlMode mode{ControlMode::Hold}
   SafetyState safety{SafetyState::Nominal};
   MissionState mission_state{MissionState::Idle};
   std::uint16_t mission_index{0};
