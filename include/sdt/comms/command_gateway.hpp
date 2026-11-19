@@ -10,10 +10,7 @@ namespace sdt {
 
 using CommandQueue = SpscQueue<CommandEnvelope, 32>;
 
-/// Dashboard-facing edge: bytes -> validated commands (into a lock-free queue for the control
-/// loop) and telemetry -> bytes. Runs on the comms thread; never touches vehicle state.
-class CommandGateway {
- public:
+/// Dashboard-facing edge: bytes
   struct Stats {
     std::uint64_t commands_queued{0};
     std::uint64_t commands_dropped{0};  // control queue full
