@@ -25,4 +25,4 @@ class LoopbackTransport final : public ITransport {
   Lo::shared_ptr<Pipe>
 
 
-}  // namespace sdt
+}  // namespace
