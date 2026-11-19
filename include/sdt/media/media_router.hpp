@@ -24,9 +24,5 @@ class MediaRouter {
 
  private:
   std::vector<IMediaSource*> sources_;
-  IMediaSink* sink_{nullptr};
-  std::array<bool, 256> wait_key_{};  // per stream: dropped a frame, discard deltas until a keyframe
-  Stats stats_{};
-};
-
+  IM
 
