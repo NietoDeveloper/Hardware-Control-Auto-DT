@@ -31,4 +31,4 @@ std::uint32_t crc32(const std::uint8_t* data, std::size_t n) noexcept;
 
 /// Returns the frame size, or 0 if `cap` is too small / payload too lar
 std::size_t encodeFrame(MsgType type, std::uint16_t seq, const std::uint8_t* payload,
-                        
+                    
