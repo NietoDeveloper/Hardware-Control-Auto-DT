@@ -15,8 +15,3 @@ struct Waypoint {
 };
 
 inline constexpr std::size_t kMaxWaypoints = 128;
-
-/// Fixed-capacity, trivially copyable: safe to pass through lock-free queues.
-struct Mission {
-  std::uint32_t id{0};
-  std::uint16_t count{0};
