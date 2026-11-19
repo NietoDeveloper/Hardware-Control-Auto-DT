@@ -14,6 +14,4 @@ class ITransport {
  public:
   virtual ~ITransport() = default;
   /// Non-blocking. Returns the number of bytes copied into `buf` (0 = nothing available).
-  virtual std::size_t receive(std::uint8_t* buf, std::size_t cap) noexcept = 0;
-  /// Non-blocking. Returns false if the bytes could not be queued.
-  virtual bool send(const std::uint8
+  virtual std
