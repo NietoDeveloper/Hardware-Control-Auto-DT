@@ -45,4 +45,4 @@ struc
 
 };
 
-struct DecoderStats {
+struct DecoderStat
