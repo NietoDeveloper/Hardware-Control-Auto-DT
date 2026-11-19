@@ -46,6 +46,3 @@ struc
 };
 
 struct DecoderStats {
-  std::uint64_t frames{0};
-  std::uint64_t crc_errors{0};
-  std::uint64_t oversize{0};
