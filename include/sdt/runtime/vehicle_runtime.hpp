@@ -9,4 +9,4 @@
 #include "sdt/common/clock.hpp"
 #include "sdt/common/spsc_queue.hpp"
 #include "sdt/comms/command_gateway.hpp
-  PeriodicThread media_thread_
+  Period
