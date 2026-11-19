@@ -14,10 +14,5 @@ class MissionExecutor {
   explicit MissionExecutor(const FollowerConfig& cfg = {}) noexcept : follower_(cfg) {}
 
   /// Validates and stores a mission. Rejected while Running/Paused.
-  bool load(const Mission& m) no
-  Vec3 from_{};
-  bool dwelling_{false};
-  TimeNs dwell_start_{0};
-};
-
+  bool load(co
 }  // namespace sdt
