@@ -8,5 +8,3 @@
 #include "sdt/comms/messages.hpp"
 
 namespace sdt::proto {
-
-inline constexpr std::uint8_t kMagic0 = 0xD7;
