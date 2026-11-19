@@ -20,7 +20,7 @@ struct AvoidanceConfig {
   double w_ttc{2.0};
 
 struct AvoidanceResult {
-  Vec3 velocity;
+  Vec3 veloc
   double min_ttc_s{kInf};
   bool modified{false};
   bool no_safe_option{false};  // every candidate violates critical_ttc_s -> escalate to safety
