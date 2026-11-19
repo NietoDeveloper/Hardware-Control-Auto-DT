@@ -23,9 +23,7 @@ struct CmdMissionControl { MissionAction action{MissionAction::Abort}; };
 using Command = std::variant<CmdHeartbeat, CmdArm, CmdSetMode, CmdManual, CmdMissionUpload,
                              CmdMissionControl>;
 
-/// A decoded command plus the local time its frame was received (drives link-loss detection).
-struct CommandEnvelope {
-  TimeNs rx_stamp{0};
+/// A decoded command plu
   Command command;
 };
 
