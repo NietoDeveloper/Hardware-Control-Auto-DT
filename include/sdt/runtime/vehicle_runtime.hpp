@@ -21,8 +21,7 @@ struct RuntimeConfig {
   TimeNs media_period{millis(5)};
   TimeNs telemetry_period{millis(100)};
   RtConfig control_rt{80, -1};
-  RtConfig comms_rt{50, -1};
-  RtConfig media_rt{0, -1};
+
 };
 
 class VehicleRuntime {
