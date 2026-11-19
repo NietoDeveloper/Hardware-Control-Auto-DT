@@ -15,7 +15,7 @@ inline constexpr std::uint8_t kVersion = 1;
 inline constexpr std::size_t kHeaderSize = 8;
 inline constexpr std::size_t kCrcSize = 4;
 inline constexpr std::size_t kMaxPayload = 4096;
-inline constexpr std::size_t kMaxFrame = kHeaderSize + kMaxPayload + kCrcSize;
+inline constexpr std::size_t kMaxFrame = kHeaderSize + kMaxPay
 
 enum class MsgType : std::uint8_t {
   Heartbeat = 0x01,
