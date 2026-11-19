@@ -11,10 +11,7 @@
 #include "sdt/comms/command_gateway.hpp"
 #include "sdt/media/media_router.hpp"
 #include "sdt/runtime/periodic_thread.hpp"
-#include "sdt/runtime/vehicle_controller.hpp"
-
-namespace sdt {
-
+#include "sdt/runtime/vehic
   RuntimeConfig cfg_;
   MediaRouter* media_;
   std::unique_ptr<CommandQueue> cmd_q_;
