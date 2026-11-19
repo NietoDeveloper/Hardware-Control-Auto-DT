@@ -18,13 +18,6 @@ class MissionExecutor {
   bool start(const Vec3& position, TimeNs now) noexcept;
   bool pause() noexcept;
   bool resume() noexcept;
-  void abort() noexcept;
-
-  /// Desired world-frame velocity for this cycle (zero unless Running).
-
- private:
-  void advance() noexcept;
-  PathFollower follower_;
   Mission mission_{};
   MissionState state_{MissionState::Idle};
   std::uint16_t index_{0};
