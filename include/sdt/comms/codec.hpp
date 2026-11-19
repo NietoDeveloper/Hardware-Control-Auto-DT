@@ -14,5 +14,3 @@ inline constexpr std::uint8_t kMagic1 = 0x7A;
 inline constexpr std::uint8_t kVersion = 1;
 inline constexpr std::size_t kHeaderSize = 8;
 inline constexpr std::size_t kCrcSize = 4;
-inline constexpr std::size_t kMaxPayload = 4096;
-onstexpr std::size_t kMaxFrame = kHeaderSize + kMaxPay
