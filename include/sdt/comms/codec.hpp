@@ -19,5 +19,3 @@ inline constexpr std::size_t kMaxFrame = kHeaderSize + kMaxPay
 
 enum class MsgType : std::uint8_t {
   Heartbeat = 0x01,
-  Arm = 0x02,
-  SetMode = 0x03,
