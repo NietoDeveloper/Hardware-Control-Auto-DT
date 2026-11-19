@@ -18,11 +18,7 @@ namespace sdt {
 struct RuntimeConfig {
   TimeNs control_period{millis(10)};
   TimeNs comms_period{millis(5)};
-  TimeNs media_period{millis(5)};
-  TimeNs telemetry_period{millis(100)};
-  RtConfig control_rt{80, -1};
-
-};
+  Tim
 
 class VehicleRuntime {
  public:
