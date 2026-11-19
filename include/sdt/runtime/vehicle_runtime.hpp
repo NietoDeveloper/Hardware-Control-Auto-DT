@@ -13,9 +13,7 @@
 #include "sdt/runtime/periodic_thread.hpp"
 #include "sdt/runtime/vehic
   RuntimeConfig cfg_;
-  MediaRouter* media_;
-  std::unique_ptr<CommandQueue> cmd_q_;
-  SpscQueue<Telemetry, 8> tel_q_;
+  MediaRouter* med, 8> tel_q_;
   CommandGateway gateway_;
   TimeNs last_tel_{kNever};
   PeriodicThread control_;
