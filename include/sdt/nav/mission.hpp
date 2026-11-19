@@ -22,6 +22,4 @@ struct Mission {
   std::uint16_t count{0};
   bool loop{false};
   std::array<Waypoint, kMaxWaypoints> waypoints{};
-};
 
-}  // namespace sdt
