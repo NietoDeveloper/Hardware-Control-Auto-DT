@@ -1,2 +1,2 @@
 #pragma once
-// Transport-independent message model (dashboar
+// Transport-independent message model (das
