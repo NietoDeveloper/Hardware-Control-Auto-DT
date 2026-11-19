@@ -13,5 +13,3 @@ namespace sdt {
 class MediaRouter {
  public:
   struct Stats {
-    std::uint64_t frames_in{0};
-
