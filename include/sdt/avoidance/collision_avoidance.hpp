@@ -17,4 +17,3 @@ struct AvoidanceConfig {
   double max_deflection_rad{1.75};
   int speed_levels{4};
   double w_deviation{1.0};
-  double w__s{kInf};
