@@ -76,6 +76,3 @@ class FrameDecoder {
   std::uint8_t buf_[kMaxPayload]{};
   std::size_t len_{0};
   std::size_t got_{0};
-  std::uint8_t crc_[kCrcSize]{};
-  std::size_t crc_n_{0};
-  DecoderStats stats_
