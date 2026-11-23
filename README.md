@@ -199,4 +199,4 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## License
 
-Proprietary — © SoftwareDT.com. All rights r
+Proprietary — © SoftwareDT.com. All right
