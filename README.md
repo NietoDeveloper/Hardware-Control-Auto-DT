@@ -10,7 +10,7 @@ or a programmed route — and turns it into safe, bounded, real-time actuator co
 watching a radar for obles so the vehicle neither collnor leaves its route unnecess
 
 > **Version 1 is about architecturries, todel, 
-> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those bs
+> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those 
 4. [Repository layout](#repository-layo
 5. [Building and testing](#building-ansting)
 6. [Quick start](#quick-start)
