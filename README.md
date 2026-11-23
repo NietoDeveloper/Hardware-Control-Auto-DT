@@ -137,7 +137,4 @@ Implement the ports; nothing in the core changes.
 | `ITransport` | Non-blocking byte pipe | UDP, TCP, serial, radio modem |
 | `IMediaSource` / `IMediaSink` | Encoded video/audio frames in, network out | Hardware H.264/H.265 encoder, Opus, RTP/WebRTC |
 
-Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism:
-[docs/HARDWARE_INTEGRATION.md](docs/HARDWARE_INTEGRATION.md).
-
-## Quality evidence
+Step
