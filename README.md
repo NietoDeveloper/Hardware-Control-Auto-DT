@@ -14,7 +14,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  │                     
  │                      heading contr()      
  └──────────────────────────────────────────────────────────────────────────┘
- ┌──────┴──────────────────────────────────────┴───────────┐
+ ┌──────┴────────────────────────────────┐
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └────────────────────────────────────────────────┘
 
