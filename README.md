@@ -143,5 +143,3 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 ## Quality evidence
 
 All results below were produced by this repository's own test suite and 
-
-  moving, real multi-threaded runtime streamiry, **zeallocations 
