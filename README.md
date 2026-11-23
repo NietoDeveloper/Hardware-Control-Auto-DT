@@ -9,7 +9,7 @@ ground robot, or any velocity-controlled mechanism. It accepts operator intent â
 or a programmed route â€” and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle neither collides nor leaves its route unnecessarily.
 
-> **Version 1 is about architecture.** The module boundaries, threading model, safety layering,
+> **Version 1 is about architecture.** The module boundaries, threading model, safety laye
 > wire protocol and test strategy aredeliverable. Individual algorithms are deliberately
 > simple and will be refined release by releathout breaking those boundaries. See
 > [docs/ROADMAP.md](docs/ROADMAP.md).
