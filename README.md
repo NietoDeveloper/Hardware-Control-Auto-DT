@@ -19,8 +19,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 | Programmed route (waypoint mission, pause/resume/abort, optional loop, dwell) | `nav/` | Implemented |
 | Radar obstacle detection and multi-target tracking | `perception/` | Implemented |
 | Collision avoidance (re-plans velocity around obstacles; also assists manual driving) | `avoidance/` | Implemented |
-| Independent safety supervisor (link loss, sensor loss, geofence, imminent collision) | `safety/` | Implemented |
-| Last-line command guard (speed/accel limits, geofence barrier, NaN rejection) | `safety/command_guard` | Implemented |
+| Independent safety supervisor (link loss, sgeofence barrier, NaN rejection) | `safety/command_guard` | Implemented |
 | Return-to-home and hold failsafes | `VehicleController` | Implemented |
 | Binary, CRC-protected, resynchronising dashboard protocol | `comms/` | Implemented |
 | Transport abstraction (UDP / TCP / serial / WebSocket bridge plug in here) | `comms/transport.hpp` | Port + in-process loopback |
