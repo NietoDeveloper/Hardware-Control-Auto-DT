@@ -7,7 +7,7 @@ Version 1.0.0 · C++20 · no third-party dependencies · Linux / macOS
 (or any other backend/frontend in the Software DT ecosystem) and **physical hardware**: a drone, a
 ground robot, or any velocity-controlled mechanism. It accepts operator intent — manual driving
 or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
-watching a radar for obles so the vehicle neither collides nor leaves its route unnecessarily.
+watching a radar for obles so the vehicle neither collides nor leaves its route unnecess
 
 > **Version 1 is about architectureThe moduldaries, threading model, safet
 > wire protocol and test strategy aredeliverable. Individual algorithms are deliberaking those boundaries
