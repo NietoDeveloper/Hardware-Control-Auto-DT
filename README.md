@@ -8,10 +8,7 @@ Version 1.0.0 · C++20 · no third-party dependencies · Linux / macOS
 ground robot, or any velocity-controlled mechanism. It accepts operator intent — manual driving
 or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle neither collnor leaves its route unnece
-> **Version 1 is about architecturries, todel, 
-> wire protocol and test strategy aredelnl algorithms are delibera
-4. [Repository layout](#repository-layo
-5. [Building and testing](#building-
+> **Version 1 is about architecturries,
 7. [Control modes](#control-modes)
 8. [Safety model]
 9. [Dashboard protocol](#dashboalimit
