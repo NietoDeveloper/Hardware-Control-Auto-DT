@@ -145,11 +145,7 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 All results below were produced by this repository's own test suite and 
 
   moving, real multi-threaded runtime streamiry, **zero allocations on the control path**).r **TSan** (no reports).
-* `sil_demo nominal`: mission completes with **2.18 m m`) 1.2 m from home.
-* `bench_step` (200 000 cycles, 19 confirmedexpected to shrink and must be re-measured on target hardware.
-
----
-
+* `sil_demo nominal`: mission completes with **2.18 
 ## Known limitations of v1
 
 * **No real hardware drivers yet.** Only simulator adapters and an in-process loopback transport
