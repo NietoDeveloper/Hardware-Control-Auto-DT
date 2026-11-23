@@ -13,9 +13,7 @@ watching a radar for obles so the vehicle nei───────────�
  └──────────────────────────────────────)
 `y a control cycle.
 │   ├── PROTOCOL.md              binary wire protocol v1 (frames, payloads, enums)
-│   ├── HARDWARE_INTEGRATION.md  how to write adapters for a drone, robot or mechanism
-│   └── ROADMAP.md               v1 → v2 → v3 plan
-├── include/sdt/
+│   ├── HARDWARE_INTEGRATION.md  how to write ada
 │   ├── perception/ radar clustering + multi-target alpha-beta tracker (fixed capacity)
 │   ├── avoidance/ velocity-sampling collision avoidance (discretised velocity obstacles)
 │   ├── nav/       mission data, mission state machine, carrot-chasing path follower
