@@ -13,9 +13,7 @@ watching a radar for obles so the vehicle nei───────────�
  └──────────────────────────────────────)
 `
 ## Design par, actuators, media) or `comms/transport.hpp`.
-2. **The control step is deterministic.** -bit repeatable.
-3. **No allocation, no blocking, no exceptions on the control path.** Enforced by a test that
-   replaces global `operator new` and fails if the control cycle allocates.
+2. **The control step is deterministic.** -bit 
 4. **Threads are isolated by wait-free queues.** Only the control thread ever touches vehicle
    state. A slow network, encoder or dashboard cannot delay a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each layer
