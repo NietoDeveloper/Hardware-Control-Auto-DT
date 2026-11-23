@@ -150,4 +150,4 @@ All results below were produced by this repository's own test suite and
 
 * **No real hardware drivers yet.** Only simula
 * **Radar boresight is the vehicle's forward axis** (no mounting-offset calibration yet).
-* **Avoidance and tracking are first-generation:** 
+* **Avoidance and tracking are first-generation:
