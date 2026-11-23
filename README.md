@@ -14,7 +14,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 5. [Building and testing](#building-
 7. [Control modes](#control-modes)
 8. [Safety model]
-9. [Dashboard protocol](#dashboard-protocol)
+9. [Dashboard protocol](#dashboard-)
 10. [Integrating real hardware](#integrating-real-hardware)
 11. [Quality evidence](#quality-evidence)
 12. [Known limitations of v1](#known-limita-of-v1)
