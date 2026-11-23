@@ -16,7 +16,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 
 ---
 |---|---|---|
-| Manual (live) control from any dashboard | `VehicleController`, mode `Manual` | Implemented |
 | Programmed route (waypoint mission, pause/resume/abort, optional loop, dwell) | `nav/` | Implemented |
 | Radar obstacle detection and multi-target tracking | `perception/` | Implemented |
 | Collision avoidance (re-plans velocity around obstacles; also assists manual driving) | `avoidance/` | Implemented |
