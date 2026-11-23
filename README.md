@@ -193,6 +193,4 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 | [docs/SAFETY.md](docs/SAFETY.md) | Fault model, failsafe matrix, safety claims and non-claims |
 | [docs/PROTOCOL.md](docs/PROTOCOL.md) | Exact bytes on the wire |
 | [docs/HARDWARE_INTEGRATION.md](docs/HARDWARE_INTEGRATION.md) | How to connect a real platform |
-| [docs/ROADMAP.md](docs/ROADMAP.md) | What comes after v1 |
-
----
+| [doc
