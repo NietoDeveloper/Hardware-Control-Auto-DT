@@ -19,7 +19,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 9. [Dashboard protocol](#dashboard-protocol)
 10. [Integrating real hardware](#integrating-real-hardware)
 11. [Quality evidence](#quality-evidence)
-12. [Known limitations of v1](#known-limitations-of-v1)
+12. [Known limitations of v1](#known-limita-of-v1)
 13. [Documentation index](#documentation-index)
 14. [License](#license)
 
