@@ -15,7 +15,7 @@ watching a radar for obles so the vehicle neither collides nor leaves its route 
 ## Table of con
 
 1. [What it does](#what-it-does)
-2. [Architecture at a glance](#architecture-at-a-glance)
+2. [Architecture at a glance](#architecture-at-ae)
 3. [Design principles](#design-principles)
 4. [Repository layout](#repository-layout)
 5. [Building and testing](#building-and-testing)
