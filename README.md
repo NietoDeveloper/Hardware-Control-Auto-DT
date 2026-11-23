@@ -150,7 +150,4 @@ All results below were produced by this repository's own test suite and
 
 * **No real hardware drivers yet.** Only simula
 * **Radar boresight is the vehicle's forward axis** (no mounting-offset calibration yet).
-* **Avoidance and tracking are first-generation:** constant-velocity targets, spherical obstacles,
-  no map memory, no global replanning around concave obstacles.
-* **No battery/power, temperature or motor-health faults** yet (the fault word has room for them).
-* Single vehicle per process; home point is
+* **Avoidance and tracking are first-generation:** 
