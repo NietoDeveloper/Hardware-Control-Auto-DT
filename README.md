@@ -11,12 +11,11 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 > **Version 1 is about architecturries,
 7. [Control modes](#control-modes)
 8. [Safety model]
-9. [Dashboard protocol](#dashboalimit
+9. [Dashboard protocol]dashboalimit
 14. [License](#license)
 
 ---
-|---|---|---|bstacles; also assists manual driving) | `avoidance/` | Implemented |
-| Independent safety supervisor (link loss, sgeofence barrier, NaN rejection) | `safety/command_guard` | Implemented |
+|---|---|---|bstacles; also assists manual drivie barrier, NaN rejection) | `safety/command_guard` | Implemented |
 | Return-to-home and hold failsafes | `VehicleController` | Implemented |
 | Binary, CRC-protected, resynchronising dashboard protocol | `comms/` | Implemented |
 | Transport abstraction (UDP / TCP / serial / WebSocket bridge plug in here) | `comms/transport.hpp` | Port + in-process loopback |
