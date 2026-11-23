@@ -15,8 +15,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 14. [License](#license)
 
 ---
-|---|---|---|bstacles; also assists manual drivie barrier, NaN rejection) | `safety/command_guard` | Implemented |
-| Return-to-home and hold failsafes | `VehicleController` | Implemented |
+|---|---|---|bstacles; also assists manual drivietroller` | Implemented |
 | Binary, CRC-protected, resynchronising dashboardcess loopback |
 | Video/audio routing, isolated from the control loop | `media/` | Router + backpressure logic; no encoders yet |
 | Multi-threaded real-time runtime (control 100 Hz, comms 200 Hz, media) | `runtime/` | Implemented |
