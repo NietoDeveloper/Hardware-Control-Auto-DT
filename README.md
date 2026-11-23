@@ -14,9 +14,7 @@ watching a radar for obles so the vehicle nei───────────�
 `y a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each lay
    assumes the one before it is wrong.
-   New planner = swap a module behind the same datapes.
-
----
+   New planner = swap a module behind the same da
 
 ## Repository la
 
