@@ -17,8 +17,7 @@ watching a radar for obles so the vehicle nei───────────�
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each layer
    assumes the one before it is wrong.
 6. **Fail safe, and make failure visible.** s wrong lengths, unknown enums, out-of-range sticks
-   and non-finite floats, and resynchronises after garbage or bit errors.
-8. **Extensible without rewrites.** New vehicle = new HAL adapter. New radio = new `ITransport`.
+   and non-finite floats, and resynchronises after
    New planner = swap a module behind the same data types.
 
 ---
