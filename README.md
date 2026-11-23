@@ -190,4 +190,4 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 | Document | Read it to learn… |
 |---|---|
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How the system is structured and why |
-| [docs/SAFETY.md](docs/SAFETY.md) | Fault model, failsafe matrix, safety cla
+| [docs/SAFETY.md](docs/SAFETY.md) | Fault mod
