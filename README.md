@@ -9,7 +9,7 @@ ground robot, or any velocity-controlled mechanism. It accepts operator intent â
 or a programmed route â€” and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle neither collnor leaves its route unnece
 > **Version 1 is about architecturries, todel, 
-> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those 
+> wire protocol and test strategy aredelnl algorithms are deliberaking those 
 4. [Repository layout](#repository-layo
 5. [Building and testing](#building-
 6. [Quick start](#quick-st
