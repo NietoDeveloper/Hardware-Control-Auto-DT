@@ -9,7 +9,7 @@ ground robot, or any velocity-controlled mechanism. It accepts operator intent �
 or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle nei─────────────────────────────┘
  ┌──────┴──────────────────────────
- │ HAL adapters: simulator today · autopilot / serial /
+ │ HAL adapters: simulator today · autopilot / ser /
  └──────────────────────────────────────)
 `y a control cycle.
 │   ├── PROTOCOL.md              binary e prool v1 (frames, payloads, enums)
