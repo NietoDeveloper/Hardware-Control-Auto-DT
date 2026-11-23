@@ -15,7 +15,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  │                      heading control ─► IActuatorSink::apply()        
  └──────────────────────────────────────────────────────────────────────────┘
         ▲ IStateSource            ▲ IRadarSource            ▼ IActuatorSink
- ┌──────┴───────────────────────────┴───────────────────────────┴───────────┐
+ ┌──────┴───────────────────────────┴──────────────────────┴───────────┐
  │ HAL adapters: simulator today · autopilot / CAN / serial / GPIO tomorrow │
  └──────────────────────────────────────────────────────────────────────────┘
 
