@@ -145,9 +145,7 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 All results below were produced by this repository's own test suite and 
 
   moving, real multi-threaded runtime streamiry, **zero allocations on the control path**).r **TSan** (no reports).
-* `sil_demo nominal`: mission completes with **2.18 m minimum clearance** to the nearest obstacle
-  surface and 0 rejected commands.
-* `sil_demo link-loss`: after the dashboard disappears the vehicle holds, returns, and ends in `Hold` (safety state `Failsafe`) 1.2 m from home.
+* `sil_demo nominal`: mission completes with **2.18 m m`) 1.2 m from home.
 * `bench_step` (200 000 cycles, 19 confirmed tracks, general-purpose Linux container, no
   real-time scheduling): **p50 7.8 µs · p99 22.3 µs · p99.9 41.7 µs** against a 10 000 µs budget.
   The 2.06 ms worst case is an OS scheduling artefact of the non-real-time environment; on a
