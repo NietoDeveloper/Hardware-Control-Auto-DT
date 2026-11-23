@@ -196,5 +196,3 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 | [docs/ROADMAP.md](docs/ROADMAP.md) | What comes after v1 |
 
 ---
-
-## License
