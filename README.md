@@ -16,8 +16,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 
 ---
 |---|---|---|bstacles; also assists manual drivietroller` | Implemented |
-| Binary, CRC-protected, resynchronising dashboardcess loopback |
-| Video/audio routing, isolated from the control loop | `media/` | Router + backpressure logic; no encoders yet |
+| Binary, CRC-protected, resynchronisi yet |
 | Multi-threaded real-time runtime (control 100 Hz, comms 200 Hz, media) | `runtime/` | Implemented |
 | Software-in-the-loop simulator (kinematic vehicle, noisy radar, moving obstacles) | `sim/` | Implemented |
 | Air, ground and generic mechanism platforms | `VehicleKind` + HAL | Ground and Aerial kinds; mechanisms integrate through the same velocity port |
