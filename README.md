@@ -13,8 +13,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
-|---|---|---|bstacles; also assists manual 100 Hz, comms 200 Hz, media) | `runtime/` | Implemented |
-| Software-in-the-loop simulator (kinematic vehicle, noisy radar, moving obstacles) | `sim/` | Implemented |
+|---|---|---|bstacles; also assists manu
 | Air, ground and generic mechanism platforms | `VehicleKind` + HAL | Ground and Aerial kinds; mechanisms integrate through the same velocity port |
 
 ---
