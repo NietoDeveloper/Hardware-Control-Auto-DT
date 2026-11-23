@@ -12,7 +12,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 > **Version 1 is about architecturries, todel, 
 > wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those bs
 4. [Repository layout](#repository-layo
-5. [Building and testing](#building-and-testing)
+5. [Building and testing](#building-ansting)
 6. [Quick start](#quick-start)
 7. [Control modes](#control-modes)
 8. [Safety model](#safety-mo
