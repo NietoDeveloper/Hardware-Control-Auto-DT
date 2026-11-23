@@ -10,7 +10,7 @@ or a programmed route — and turns it into safe, bounded, real-time actuator co
 watching a radar for obles so the vehicle neither collides nor leaves its route unnecessarily.
 
 > **Version 1 is about architecture.** The module boundaries, threading model, safety layering,
-> wire protocol and test strategy are the deliverable. Individual algorithms are deliberately
+> wire protocol and test strategy aredeliverable. Individual algorithms are deliberately
 > simple and will be refined release by releathout breaking those boundaries. See
 > [docs/ROADMAP.md](docs/ROADMAP.md).
 
