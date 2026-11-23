@@ -12,9 +12,7 @@ watching a radar for obles so the vehicle nei───────────�
 ## Building and tes
 Requirements: a C++20 compiler (GCC 11+ or Clang 14+; developed and tested with GCC 13), CMake ≥ 3.20. Nothing ele.
 
-ctest --test-dir build --output-on-failure
-```
-| `SDT_BUILD_TESTS` | `ON` | Build `sdt_tests` anI uses `ON`) |
+ctest --test-dir build --output-on-failure`ON`) |
 | `SDT_SANITIZER` | *(empty)* | e.g. `address,undefined` or `thread` |
 
 The warning set is strict (`-Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wsign-conversion
