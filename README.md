@@ -15,9 +15,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 14. [License](#license)
 
 ---
-|---|---|---|
-| Radar obstacle detection and multi-target tracking | `perception/` | Implemented |
-| Collision avoidance (re-plans velocity around obstacles; also assists manual driving) | `avoidance/` | Implemented |
+|---|---|---|bstacles; also assists manual driving) | `avoidance/` | Implemented |
 | Independent safety supervisor (link loss, sgeofence barrier, NaN rejection) | `safety/command_guard` | Implemented |
 | Return-to-home and hold failsafes | `VehicleController` | Implemented |
 | Binary, CRC-protected, resynchronising dashboard protocol | `comms/` | Implemented |
