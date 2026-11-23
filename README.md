@@ -16,9 +16,7 @@ watching a radar for obles so the vehicle nei───────────�
    state. A slow network, encoder or dashboard cannot delay a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each layer
    assumes the one before it is wrong.
-6. **Fail safe, and make failure visible.** Every fault is a bit in telemetry; every rejected
-   command is counted; every protocol error is counted.
-7. **Strict at the edges.** The decoder rejects wrong lengths, unknown enums, out-of-range sticks
+6. **Fail safe, and make failure visible.** s wrong lengths, unknown enums, out-of-range sticks
    and non-finite floats, and resynchronises after garbage or bit errors.
 8. **Extensible without rewrites.** New vehicle = new HAL adapter. New radio = new `ITransport`.
    New planner = swap a module behind the same data types.
