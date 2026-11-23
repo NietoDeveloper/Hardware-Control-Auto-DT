@@ -200,4 +200,4 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 ## License
 
 Proprietary — © SoftwareDT.com. All rights reserved. (Replace this section if the project is
-later released under an open-source license.)
+later released under an open-source l
