@@ -16,8 +16,6 @@ watching a radar for obles so the vehicle nei───────────�
    state. A slow network, encoder or dashboard cannot delay a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each layer
    assumes the one before it is wrong.
-6. **Fail safe, and make failure visible.** s wrong lengths, unknown enums, out-of-range sticks
-   and non-finite floats, and resynchronises after
    New planner = swap a module behind the same data types.
 
 ---
