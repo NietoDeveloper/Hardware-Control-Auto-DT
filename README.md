@@ -10,11 +10,7 @@ or a programmed route — and turns it into safe, bounded, real-time actuator co
 watching a radar for obles so the vehicle neither collnor leaves its route unnecess
 
 > **Version 1 is about architecturries, threading model, 
-> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those boundaries
-> [docs/ROADMAP.md](docs/ROADM
-1. [What it does](#what-it-does)
-2. [Architecture at a glance](#architecture-at-ae)
-3. [Design principles](#design-princi
+> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those bs
 4. [Repository layout](#repository-layout)
 5. [Building and testing](#building-and-testing)
 6. [Quick start](#quick-start)
