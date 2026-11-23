@@ -150,8 +150,7 @@ All results below were produced by this repository's own test suite and
 
 * **No real hardware drivers yet.** Only simulator adapters and an in-process loopback transport
   ship in v1. The ports are the product; the adap
-* **The wire protocol is integrity-checked, not authenticated or encrypted.** CRC-32 catches
-  corruption, not an attacker. Authenticated frames are a v2 item; until then put the link on a
+* **The wire protocol is integrity-checked
   trusted network or tunnel.
 * **Radar boresight is the vehicle's forward axis** (no mounting-offset calibration yet).
 * **Avoidance and tracking are first-generation:** constant-velocity targets, spherical obstacles,
