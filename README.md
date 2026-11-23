@@ -142,7 +142,7 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 
 ## Quality evidence
 
-All results below were produced by this repository's own test suite and app
+All results below were produced by this repository's own test suite and 
 
 * **27 automated tests, 0 failures** — 16 unit (q codec, PID, guard, geofence, tr
   avoidance, mission, supervisor, media routd 1em/runtime (pre-arm refusal, missiodisarm refusal while
