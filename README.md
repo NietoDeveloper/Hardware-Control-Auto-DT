@@ -11,7 +11,7 @@ watching a radar for obles so the vehicle neither collides nor leaves its route 
 
 > **Version 1 is about architecture.** The module boundaries, threading model, safety layering,
 > wire protocol and test strategy are the deliverable. Individual algorithms are deliberately
-> simple and will be refined release by release without breaking those boundaries. See
+> simple and will be refined release by releathout breaking those boundaries. See
 > [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ---
