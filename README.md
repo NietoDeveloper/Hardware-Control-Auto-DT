@@ -10,11 +10,7 @@ or a programmed route — and turns it into safe, bounded, real-time actuator co
 watching a radar for obles so the vehicle nei─────────────────────────────┘
  ┌──────┴──────────────────────────
  │ HAL adapters: simulator today · autopilot / ser /
- └──────────────────────────────────────)
-`y a control cycle.
-│   ├── PROTOCOL.md              binary e prool v1 (frames, payloads, enums)
-│   ├── HARDWARE_INTEGRATION.md  how to write
-│   ├── nav/       mission data, mission state machincarrot-chasing path foll(dependency-free te
+ └──────────────────────────────────────)machincarrot-chasing path foll(dependency-free te
 
 ## Building and tes
 Requirements: a C++20 compiler (GCC 11+ or Clang 14+; developed and tested with GCC 13), CMake ≥ 3.20. Nothing else.
