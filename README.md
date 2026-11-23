@@ -13,8 +13,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
-|---|---|---|bstacles; also assists manu
-| Air, ground and generic mechanism platforms | `VehicleKind` + HAL | Ground and Aerial kinds; mechanisms integrate through the same velocity port |
+|---|---|---|bstacles; also assists manuthrough the same velocity port |
 
 ---
 
