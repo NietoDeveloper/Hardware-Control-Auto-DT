@@ -17,8 +17,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 ---
 |---|---|---|bstacles; also assists manual drivie barrier, NaN rejection) | `safety/command_guard` | Implemented |
 | Return-to-home and hold failsafes | `VehicleController` | Implemented |
-| Binary, CRC-protected, resynchronising dashboard protocol | `comms/` | Implemented |
-| Transport abstraction (UDP / TCP / serial / WebSocket bridge plug in here) | `comms/transport.hpp` | Port + in-process loopback |
+| Binary, CRC-protected, resynchronising dashboardcess loopback |
 | Video/audio routing, isolated from the control loop | `media/` | Router + backpressure logic; no encoders yet |
 | Multi-threaded real-time runtime (control 100 Hz, comms 200 Hz, media) | `runtime/` | Implemented |
 | Software-in-the-loop simulator (kinematic vehicle, noisy radar, moving obstacles) | `sim/` | Implemented |
