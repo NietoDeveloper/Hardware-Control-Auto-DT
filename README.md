@@ -14,10 +14,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
    Dashboards / other Software DT backends and frontends
-                         │  binary frame
-        lock-free SPSC queue                lock-free SPSC queue
-          (commands)                            (telemetry)
- ┌───────────────▼───────────────────────────────┴──────────────────────────┐
+                         │  binary frame─────────────────────────┐
  │ control thread (100 Hz, SCHED_FIFO optional)    VehicleController::step()│
  │                                                                          │
  │  poll state ─ poll radar ─► RadarTracker ─► obstacles                    │
