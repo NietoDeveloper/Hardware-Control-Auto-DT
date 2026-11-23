@@ -134,5 +134,4 @@ Implement the ports; nothing in the core changes.
 | `IStateSource::poll` | Fused position / velocity / yaw | GNSS+IMU estimator, autopilot telemetry, wheel odometry + SLAM, encoders |
 | `IRadarSource::poll` | Radar scans in sensor frame | Vendor radar SDK / CAN / UART |
 | `IActuatorSink::apply` / `emergencyStop` | Map a world-frame velocity + yaw-rate to the platform | Autopilot velocity setpoints, differential-drive mixer, joint-space velocity controller |
-| `ITransport` | Non-blocking byte pipe | UDP, TCP, serial, radio modem |
-| `IMediaSource` / `IMediaSink` | Encoded video/audio frames in, network out | Hardware H.264/H.265 encoder, Opus, RTP/WebRTC |
+| `I
