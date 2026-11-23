@@ -10,7 +10,7 @@ or a programmed route — and turns it into safe, bounded, real-time actuator co
 watching a radar for obles so the vehicle neither collides nor leaves its route unnecess
 
 > **Version 1 is about architectureThe moduldaries, threading model, 
-> wire protocol and test strategy aredeliverable. Individual algorithms are deliberaking those boundaries
+> wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those boundaries
 > [docs/ROADMAP.md](docs/ROADM
 ## Table o
 
