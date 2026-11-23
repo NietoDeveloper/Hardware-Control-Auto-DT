@@ -12,8 +12,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 > **Version 1 is about architecturries, threading model, 
 > wire protocol and test strategy aredeliverable. Inl algorithms are deliberaking those boundaries
 > [docs/ROADMAP.md](docs/ROADM
-## Table o
-
 1. [What it does](#what-it-does)
 2. [Architecture at a glance](#architecture-at-ae)
 3. [Design principles](#design-princi
