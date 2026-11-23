@@ -13,11 +13,6 @@ watching a radar for obles so the vehicle nei───────────�
  └──────────────────────────────────────)
 `y a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each lay
-   assumes the one before it is wrong.
-
-```
-sdt-vehicle-core/
-├── CMakeLists.txt
 ├── README.md
 ├── docs/
 │   ├── ARCHITECTURE.md          layers, data flow, threading, timing, design decisions
