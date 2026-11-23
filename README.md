@@ -13,10 +13,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
-   Dashboards / other Software DT backends and frontends
-                         │  binary frame──
- │  poll state ─ poll radar ─► RadarTracker ─► obstacles                    │
- │        │                                         │                       │
+   Dashboards / other Software DT backends and
  │        ▼                                         ▼                       │
  │  SafetySupervisor (verdict)   intent: Manual │ Mission │ RTH │ Hold      │
  │        │                                         │                       │
