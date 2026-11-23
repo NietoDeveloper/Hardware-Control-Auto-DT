@@ -18,7 +18,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └──────────────────────────────────────)
 `
-## Design principles
+## Design p
 
 1. **Hardware is behind ports.** The core never includes a vendor SDK. Everything physical is an
    interface in `hal/ports.hpp` (state, radar, actuators, media) or `comms/transport.hpp`.
