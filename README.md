@@ -8,7 +8,7 @@ Version 1.0.0 · C++20 · no third-party dependencies · Linux / macOS
 ground robot, or any velocity-controlled mechanism. It accepts operator intent — manudriving
 or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle nei─────────────────────────────┘
- ┌──────┴──────────────────────────────
+ ┌──────┴──────────────────────────
  │ HAL adapters: simulator today · autopilot / serial /
  └──────────────────────────────────────)
 `y a control cycle.
