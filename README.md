@@ -13,7 +13,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 4. [Repository layout](#repository-layo
 5. [Building and testing](#building-
 7. [Control modes](#control-modes)
-8. [Safety model](#safety-mo
+8. [Safety model]
 9. [Dashboard protocol](#dashboard-protocol)
 10. [Integrating real hardware](#integrating-real-hardware)
 11. [Quality evidence](#quality-evidence)
