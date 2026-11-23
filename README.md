@@ -18,8 +18,6 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── HARDWARE_INTEGRATION.md  how to write adapters for a drone, robot or mechanism
 │   └── ROADMAP.md               v1 → v2 → v3 plan
 ├── include/sdt/
-│   ├── common/    types, injected clock, logger, wait-free SPSC queue
-│   ├── hal/       ports: IStateSource, IRadarSource, IActuatorSink, IMediaSource/Sink
 │   ├── perception/ radar clustering + multi-target alpha-beta tracker (fixed capacity)
 │   ├── avoidance/ velocity-sampling collision avoidance (discretised velocity obstacles)
 │   ├── nav/       mission data, mission state machine, carrot-chasing path follower
