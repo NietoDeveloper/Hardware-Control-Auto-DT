@@ -15,9 +15,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 14. [License](#license)
    Dashboards / other Software DT backends and frontends
                          │  binary frames (CRC-32, versioned)
-                         ▼
- ┌──────────────────────────────────────────────────────────────────────────┐
- │ comms thread (200 Hz)       CommandGateway ⇄ ITransport                  │
+                         ▼ITransport                  │
  └───────────────┬───────────────────────────────▲──────────────────────────┘
         lock-free SPSC queue                lock-free SPSC queue
           (commands)                            (telemetry)
