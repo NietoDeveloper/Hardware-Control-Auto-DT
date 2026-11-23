@@ -15,10 +15,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 14. [License](#license)
 
 ---
-
-## What it does
-
-| Capability | Where | Status in v1 |
 |---|---|---|
 | Manual (live) control from any dashboard | `VehicleController`, mode `Manual` | Implemented |
 | Programmed route (waypoint mission, pause/resume/abort, optional loop, dwell) | `nav/` | Implemented |
