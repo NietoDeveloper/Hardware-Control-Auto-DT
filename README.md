@@ -146,9 +146,7 @@ All results below were produced by this repository's own test suite and app
 
 * **27 automated tests, 0 failures** — 16 unit (q codec, PID, guard, geofence, tr
   avoidance, mission, supervisor, media routd 1em/runtime (pre-arm refusal, missiodisarm refusal while
-  moving, real multi-threaded runtime streaming telemetry, **zero allocations on the control path**).
-* Builds warning-free with `-Werror` under the strict warning set above. The full suite also
-  passes clean under **ASan + UBSan** and under **TSan** (no reports).
+  moving, real multi-threaded runtime streaming telemetry, **zero allocations on the control path**).r **TSan** (no reports).
 * `sil_demo nominal`: mission completes with **2.18 m minimum clearance** to the nearest obstacle
   surface and 0 rejected commands.
 * `sil_demo link-loss`: after the dashboard disappears the vehicle holds, returns, and ends in `Hold` (safety state `Failsafe`) 1.2 m from home.
