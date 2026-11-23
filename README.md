@@ -12,7 +12,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 7. [Control modes](#control-modes)
 8. [Safety model]
  │                               
- │                      heading control ─► IActuatorSink::apply()      
+ │                      heading control ─nk::apply()      
  └──────────────────────────────────────────────────────────────────────────┘
         ▲ IStateSource            ▲             ▼ IActuatorSink
  ┌──────┴──────────────────────────────────────┴───────────┐
