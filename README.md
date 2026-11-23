@@ -13,8 +13,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
-
----
 |---|---|---|bstacles; also assists manual drivietroller` | Implemented |
 | Binary, CRC-protected, resynchronisi yet |
 | Multi-threaded real-time runtime (control 100 Hz, comms 200 Hz, media) | `runtime/` | Implemented |
