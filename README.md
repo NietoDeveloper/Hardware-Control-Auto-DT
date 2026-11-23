@@ -9,9 +9,6 @@ ground robot, or any velocity-controlled mechanism. It accepts operator intent �
 or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle nei─────────────────────────────┘
  ┌──────┴──────────────────────────
- │ HAL adapters: simulator today · autopilot / ser /
- └──────────────────────────────────────)machincarrot-chasing path foll(dependency-free te
-
 ## Building and tes
 Requirements: a C++20 compiler (GCC 11+ or Clang 14+; developed and tested with GCC 13), CMake ≥ 3.20. Nothing ele.
 
