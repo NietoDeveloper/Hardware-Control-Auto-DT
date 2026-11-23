@@ -12,9 +12,7 @@ watching a radar for obles so the vehicle nei───────────�
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └──────────────────────────────────────)
 `
-## Design par, actuators, media) or `comms/transport.hpp`.
-2. **The control step is deterministic.** -bit 
-4. **Threads are isolated by wait-free queues.** Only the control thread ever touches vehicle
+## Design par, actuators, media) or `comms/t
    state. A slow network, encoder or dashboard cannot delay a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each layer
    assumes the one before it is wrong.
