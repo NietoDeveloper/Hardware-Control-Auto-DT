@@ -21,7 +21,7 @@ watching a radar for obles so the vehicle neither collides nor leaves its route 
 5. [Building and testing](#building-and-testing)
 6. [Quick start](#quick-start)
 7. [Control modes](#control-modes)
-8. [Safety model](#safety-model)
+8. [Safety model](#safety-mo
 9. [Dashboard protocol](#dashboard-protocol)
 10. [Integrating real hardware](#integrating-real-hardware)
 11. [Quality evidence](#quality-evidence)
