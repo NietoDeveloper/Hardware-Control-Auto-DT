@@ -12,7 +12,7 @@ watching a radar for obles so the vehicle neither collides nor leaves its route 
 > **Version 1 is about architecture.** The module boundaries, threading model, safety laye
 > wire protocol and test strategy aredeliverable. Individual algorithms are deliberaking those boundaries. See
 > [docs/ROADMAP.md](docs/ROADMAP.m
-## Table of contents
+## Table of con
 
 1. [What it does](#what-it-does)
 2. [Architecture at a glance](#architecture-at-a-glance)
