@@ -148,10 +148,7 @@ All results below were produced by this repository's own test suite and
 * `sil_demo nominal`: mission completes with **2.18 
 ## Known limitations of v1
 
-* **No real hardware drivers yet.** Only simulator adapters and an in-process loopback transport
-  ship in v1. The ports are the product; the adap
-* **The wire protocol is integrity-checked
-  trusted network or tunnel.
+* **No real hardware drivers yet.** Only simula
 * **Radar boresight is the vehicle's forward axis** (no mounting-offset calibration yet).
 * **Avoidance and tracking are first-generation:** constant-velocity targets, spherical obstacles,
   no map memory, no global replanning around concave obstacles.
