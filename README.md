@@ -13,8 +13,7 @@ watching a radar for obles so the vehicle nei───────────�
  └──────────────────────────────────────)
 `y a control cycle.
 │   ├── PROTOCOL.md              binary wire protocol v1 (frames, payloads, enums)
-│   ├── HARDWARE_INTEGRATION.md  how to write ada
-│   ├── perception/ radar clustering + multi-
+│   ├── HARDWARE_INTEGRATION.md  how to write a
 │   ├── nav/       mission data, mission state machine, carrot-chasing path follower radar and obstacles
 ├── src/           implementations (mirrors include/)
 ├── apps/
