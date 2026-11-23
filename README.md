@@ -17,9 +17,6 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── perception/ radar clustering + multi-
 │   ├── nav/       mission data, mission state machine, carrot-chasing path follower
 │   ├── safety/    safety supervisor, command guard, polygonal geofence
-│   ├── control/   PID with anti-windup
-│   ├── comms/     wire codec, transport port, command gateway, message model
-│   ├── media/     media router (drop-on-backpressure, keyframe resync)
 │   ├── runtime/   deterministic VehicleController, periodic RT threads, VehicleRuntime
 │   └── sim/       software-in-the-loop vehicle, radar and obstacles
 ├── src/           implementations (mirrors include/)
