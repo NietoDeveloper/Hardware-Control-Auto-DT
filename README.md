@@ -16,10 +16,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  └──────────────────────────────────────────────────────────────────────────┘
  ┌──────┴────────────────────────────────┐
  │ HAL adapters: simulator today · autopilot / serial / GPI
- └────────────────────────────────────────────────┘
-
- media thread (best effort):  IMediaSource ─► MediaRouter ─► IMediaSink
-                              (never shares a lock or queue with the control loop)
+ └──────────────────────────────────────)
 ```
 
 The whole story, with data-flow and timing rationale, is in
