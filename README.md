@@ -13,9 +13,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit      │                       │
  │        └──────────────► CollisionAvoidance ◄─────┘                       │
- │                               │                                          │
- │                      CommandGuard (limits · geofence · slew)             │
- │                               │                                          │
+ │                               
  │                      heading control ─► IActuatorSink::apply()           │
  └──────────────────────────────────────────────────────────────────────────┘
         ▲ IStateSource            ▲ IRadarSource            ▼ IActuatorSink
