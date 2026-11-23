@@ -16,7 +16,7 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── HARDWARE_INTEGRATION.md  how to write
 │   ├── nav/       mission data, mission state machincarrot-chasing path follower radar and obstacles
 ├── src/           implementations (mirrors include/)
-├── apps/
+├── a
 │   ├── sil_demo/    end-to-end simulated mission and link-loss scenarios
 │   └── bench_step/  latency histogram of one control cycle
 ├── tests/         27 unit, system and runtime tests (dependency-free test framework)
