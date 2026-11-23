@@ -19,11 +19,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  └──────────────────────────────────────)
 ```
 
-The whole story, with data-flow and timing rationale, is in
-[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-
----
-
 ## Design principles
 
 1. **Hardware is behind ports.** The core never includes a vendor SDK. Everything physical is an
