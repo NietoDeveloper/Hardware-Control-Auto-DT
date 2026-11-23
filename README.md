@@ -17,8 +17,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  ┌──────┴────────────────────────────────┐
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └──────────────────────────────────────)
-```
-
+`
 ## Design principles
 
 1. **Hardware is behind ports.** The core never includes a vendor SDK. Everything physical is an
