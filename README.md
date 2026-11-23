@@ -15,10 +15,7 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── PROTOCOL.md              binary wire protocol v1 (frames, payloads, enums)
 │   ├── HARDWARE_INTEGRATION.md  how to write ada
 │   ├── perception/ radar clustering + multi-
-│   ├── nav/       mission data, mission state machine, carrot-chasing path follower
-│   ├── safety/    safety supervisor, command guard, polygonal geofence
-│   ├── runtime/   deterministic VehicleController, periodic RT threads, VehicleRuntime
-│   └── sim/       software-in-the-loop vehicle, radar and obstacles
+│   ├── nav/       mission data, mission state machine, carrot-chasing path follower radar and obstacles
 ├── src/           implementations (mirrors include/)
 ├── apps/
 │   ├── sil_demo/    end-to-end simulated mission and link-loss scenarios
