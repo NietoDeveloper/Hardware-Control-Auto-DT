@@ -147,7 +147,7 @@ All results below were produced by this repository's own test suite and apps.
 * **27 automated tests, 0 failures** — 16 unit (q codec, PID, guard, geofence, tr
   avoidance, mission, supervisor, media routd 1em/runtime (pre-arm refusal, missio
   obstacle avoidance, manual-drive collision protection, manual timeout, link-loss 
-  home, estimator-loss latched e-stop, radar loss, geofence containment, disarm refusal while
+  home, estimator-loss latched e-ss, geofence containment, disarm refusal while
   moving, real multi-threaded runtime streaming telemetry, **zero allocations on the control path**).
 * Builds warning-free with `-Werror` under the strict warning set above. The full suite also
   passes clean under **ASan + UBSan** and under **TSan** (no reports).
