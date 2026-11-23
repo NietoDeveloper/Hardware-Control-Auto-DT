@@ -181,4 +181,4 @@ Stated plainly so nobody mistakes an architecture release for a certified produc
 * **No battery/power, temperature or motor-health faults** yet (the fault word has room for them).
 * Single vehicle per process; home point is the position at arming.
 
-The prioritised fix list is 
+The prioritised fix li
