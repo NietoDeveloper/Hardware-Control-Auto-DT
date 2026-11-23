@@ -179,4 +179,4 @@ Stated plainly so nobody mistakes an architecture release for a certified produc
 * **Avoidance and tracking are first-generation:** constant-velocity targets, spherical obstacles,
   no map memory, no global replanning around concave obstacles.
 * **No battery/power, temperature or motor-health faults** yet (the fault word has room for them).
-* Single vehicle per process; home point is the position at armi
+* Single vehicle per process; home point is the position at
