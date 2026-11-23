@@ -12,8 +12,6 @@ watching a radar for obles so the vehicle nei───────────�
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └──────────────────────────────────────)
 `y a control cycle.
-5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each lay
-├── README.md
 │   ├── PROTOCOL.md              binary wire protocol v1 (frames, payloads, enums)
 │   ├── HARDWARE_INTEGRATION.md  how to write adapters for a drone, robot or mechanism
 │   └── ROADMAP.md               v1 → v2 → v3 plan
