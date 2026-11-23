@@ -154,8 +154,6 @@ All results below were produced by this repository's own test suite and
 
 ## Known limitations of v1
 
-Stated plainly so nobody mistakes an architecture release for a certified product:
-
 * **No real hardware drivers yet.** Only simulator adapters and an in-process loopback transport
   ship in v1. The ports are the product; the adapters come with the first target platform.
 * **Not certified, not formally verified.** The engineering practices follow aerospace and
