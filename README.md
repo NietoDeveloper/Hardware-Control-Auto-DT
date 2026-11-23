@@ -17,7 +17,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
         ▲ IStateSource            ▲             ▼ IActuatorSink
  ┌──────┴──────────────────────────────────────┴───────────┐
  │ HAL adapters: simulator today · autopilot / serial / GPIO tomorrow │
- └─────────────────────────────────────────────────────────────────────┘
+ └───────────────────────────────────────────────────────────┘
 
  media thread (best effort):  IMediaSource ─► MediaRouter ─► IMediaSink
                               (never shares a lock or queue with the control loop)
