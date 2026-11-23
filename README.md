@@ -14,10 +14,7 @@ watching a radar for obles so the vehicle neit
  │ HAL adapters: simulator today · autopilot / serial / GPI
  └──────────────────────────────────────)
 `
-## Design p
-
-1. **Hardware is behind ports.** The core never includes a vendor SDK. Everything physical is an
-   interface in `hal/ports.hpp` (state, radar, actuators, media) or `comms/transport.hpp`.
+## Design par, actuators, media) or `comms/transport.hpp`.
 2. **The control step is deterministic.** `VehicleController::step(now)` is a function of
    previous state, its polled inputs and an *injected* timestamp. Tests drive it with a manual
    clock, faster than real time and bit-for-bit repeatable.
