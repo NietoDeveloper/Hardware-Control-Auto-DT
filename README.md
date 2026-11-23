@@ -144,7 +144,4 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 
 All results below were produced by this repository's own test suite and 
 
-  moving, real multi-threaded runtime streamiry, **zeallocations on the control path**).r **TSan** (no rets).
-* `sil_demo nominal`: mission completes with **2.18 
-## Known limitations of v1
-
+  moving, real multi-threaded runtime streamiry, **zeallocations 
