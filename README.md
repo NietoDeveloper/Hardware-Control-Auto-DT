@@ -22,8 +22,7 @@ watching a radar for obles so the vehicle nei───────────�
 
 ---
 
-## Building and testing
-
+## Building and tes
 Requirements: a C++20 compiler (GCC 11+ or Clang 14+; developed and tested with GCC 13), CMake ≥ 3.20. Nothing else.
 
 ```bash
