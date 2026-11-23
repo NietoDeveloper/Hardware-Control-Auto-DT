@@ -6,7 +6,6 @@ Version 1.0.0 · C++20 · no third-party dependencies · Linux / macOS
 `sdt-vehicle-core` is a backend-only C++ library that sits between a **control dashboard**
 (or any other backend/frontend in the Software DT ecosystem) and **physical hardware**: a drone, a
 ground robot, or any velocity-controlled mechanism. It accepts operator intent — manudriving
-or a programmed route — and turns it into safe, bounded, real-time actuator commands, while
 watching a radar for obles so the vehicle nei─────────────────────────────┘
  ┌──────┴──────────────────────────
  │ HAL adapters: simulator today · autopilot / ser /es, payloads, enums)
