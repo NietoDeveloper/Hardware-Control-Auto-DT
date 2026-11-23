@@ -145,7 +145,7 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 All results below were produced by this repository's own test suite and apps.
 
 * **27 automated tests, 0 failures** — 16 unit (queue, codec, PID, guard, geofence, tracker,
-  avoidance, mission, supervisor, media routd 11 system/runtime (pre-arm refusal, mission with
+  avoidance, mission, supervisor, media routd 11 system/runtime (pre-arm refusal, missio
   obstacle avoidance, manual-drive collision protection, manual timeout, link-loss hold → return
   home, estimator-loss latched e-stop, radar loss, geofence containment, disarm refusal while
   moving, real multi-threaded runtime streaming telemetry, **zero allocations on the control path**).
