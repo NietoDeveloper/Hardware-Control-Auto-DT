@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=SDT%20VEHICLE%20CORE&fontSize=70&fontColor=FFD700&fontAlignY=42&desc=⚡%20Real-Time%20Vehicle%20%26%20Mechanism%20Control%20·%20C%2B%2B20%20·%20Zero%20Dependencies&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=SDT%20VEHICLE%20CORE&fontSize=70&fontColor=FFD700&fontAlignY=42&desc=%E2%9A%A1%20Real-Time%20Vehicle%20%26%20Mechanism%20Control%20%C2%B7%20C%2B%2B20%20%C2%B7%20Zero%20Dependencies&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&duration=2800&pause=900&color=FFD700&center=true&vCenter=true&width=820&lines=%E2%9A%A1+Real-Time+Vehicle+%26+Mechanism+Control+Core;Drone+%7C+Ground+Robot+%7C+Any+Velocity-Controlled+Mechanism;Layered+Safety%3A+Avoidance+%E2%86%92+Supervisor+%E2%86%92+Guard;Lock-Free+Threads+%7C+Zero+Allocation+on+the+Control+Path;Binary+CRC-32+Dashboard+Protocol)](https://git.io/typing-svg)
 
