@@ -11,9 +11,7 @@ watching a radar for obles so the vehicle nei───────────�
  ┌──────┴──────────────────────────
  │ HAL adapters: simulator today · autopilot / ser /es, payloads, enums)
 │   ├── HARDWARE_INTATION.md  how to writechincarrot-chasing path 
-├── src/           implementations (mirrork-loss scen
-│   └── bench_step/  latency histogram of onetrol cycle
-├── tests/         27 unit, system and runtime te(dependency-free test framework)
+├── src/           implementations (mirrork-loss 
 └── .github/workflows/ci.ym
 
 ---
