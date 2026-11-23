@@ -140,8 +140,6 @@ Implement the ports; nothing in the core changes.
 Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism:
 [docs/HARDWARE_INTEGRATION.md](docs/HARDWARE_INTEGRATION.md).
 
----
-
 ## Quality evidence
 
 All results below were produced by this repository's own test suite and apps.
