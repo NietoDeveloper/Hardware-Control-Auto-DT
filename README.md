@@ -144,10 +144,10 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 
 All results below were produced by this repository's own test suite and 
 
-  moving, real multi-threaded runtime streamiry, **zero allocations on the control path**).r **TSan** (no reports).
+  moving, real multi-threaded runtime streamiry, **zeallocations on the control path**).r **TSan** (no reports).
 * `sil_demo nominal`: mission completes with **2.18 
 ## Known limitations of v1
 
 * **No real hardware drivers yet.** Only simula
-* **Radar boresight is the vehicle's forward axis** (no mounting-offset calibration yet).
+* **Radar boresight is the vehicle's forward a** (no mounting-offset calibration yet).
 * **Avoidance and tracking are first-generation:
