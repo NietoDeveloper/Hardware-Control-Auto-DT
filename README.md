@@ -149,9 +149,7 @@ All results below were produced by this repository's own test suite and
 ## Known limitations of v1
 
 * **No real hardware drivers yet.** Only simulator adapters and an in-process loopback transport
-  ship in v1. The ports are the product; the adapters come with the first target platform.
-* **Not certified, not formally verified.** The
-  exhaustive fault-injection tests), but v1 carries no DO-178C / ISO 26262 / IEC 61508 claim.
+  ship in v1. The ports are the product; the adap
 * **The wire protocol is integrity-checked, not authenticated or encrypted.** CRC-32 catches
   corruption, not an attacker. Authenticated frames are a v2 item; until then put the link on a
   trusted network or tunnel.
