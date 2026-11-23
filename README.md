@@ -14,7 +14,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
  │                     
  │                      heading contr()      
  └──────────────────────────────────────────────────────────────────────────┘
-        ▲ IStateSource            ▲             ▼ IActuatorSink
  ┌──────┴──────────────────────────────────────┴───────────┐
  │ HAL adapters: simulator today · autopilot / serial / GPIO tomorrow │
  └───────────────────────────────────────────────────────────┘
