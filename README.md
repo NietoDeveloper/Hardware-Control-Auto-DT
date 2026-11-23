@@ -144,8 +144,6 @@ Step-by-step guidance with skeletons for a ground robot, a drone and a mechanism
 
 All results below were produced by this repository's own test suite and 
 
-* **27 automated tests, 0 failures** — 16 unit (q codec, PID, guard, geofence, tr
-  avoidance, mission, supervisor, media routd runtime (pre-arm refusal, missiodisarm refusal wh
   moving, real multi-threaded runtime streamiry, **zero allocations on the control path**).r **TSan** (no reports).
 * `sil_demo nominal`: mission completes with **2.18 m minimum clearance** to the nearest obstacle
   surface and 0 rejected commands.
