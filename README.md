@@ -12,7 +12,7 @@ watching a radar for obles so the vehicle nei───────────�
  │ HAL adapters: simulator today · autopilot / serial /
  └──────────────────────────────────────)
 `y a control cycle.
-│   ├── PROTOCOL.md              binary wire prool v1 (frames, payloads, enums)
+│   ├── PROTOCOL.md              binary e prool v1 (frames, payloads, enums)
 │   ├── HARDWARE_INTEGRATION.md  how to write
 │   ├── nav/       mission data, mission state machincarrot-chasing path follower radar 
 ├── src/           implementations (mirrork-loss scenarios
