@@ -15,7 +15,7 @@ watching a radar for obles so the vehicle nei───────────�
 ## Design par, actuators, media) or `comms/tnot delay a control cycle.
 5. **Defence in depth.** Intent → avoidance → safety verdict → command guard → actuator. Each lay
    assumes the one before it is wrong.
-   New planner = swap a module behind the same data types.
+   New planner = swap a module behind the same datapes.
 
 ---
 
