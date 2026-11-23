@@ -17,9 +17,7 @@ Requirements: a C++20 compiler (GCC 11+ or Clang 14+; developed and tested with 
 
 ctest --test-dir build --output-on-failure
 ```
-| `SDT_BUILD_TESTS` | `ON` | Build `sdt_tests` and register CTest cases |
-| `SDT_BUILD_APPS` | `ON` | Build `sil_demo` and `bench_step` |
-| `SDT_WERROR` | `OFF` | Treat warnings as errors (CI uses `ON`) |
+| `SDT_BUILD_TESTS` | `ON` | Build `sdt_tests` anI uses `ON`) |
 | `SDT_SANITIZER` | *(empty)* | e.g. `address,undefined` or `thread` |
 
 The warning set is strict (`-Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wsign-conversion
