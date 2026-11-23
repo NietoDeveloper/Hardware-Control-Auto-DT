@@ -13,8 +13,6 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 8. [Safety model]
 9. [Dashboard protocol]dashboalimit
 14. [License](#license)
-|---|---|---|bstacles; also assists manuthrough the same velocity port |
-
    Dashboards / other Software DT backends and frontends
                          │  binary frames (CRC-32, versioned)
                          ▼
