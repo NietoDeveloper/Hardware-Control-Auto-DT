@@ -15,7 +15,7 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── PROTOCOL.md              binary e prool v1 (frames, payloads, enums)
 │   ├── HARDWARE_INTEGRATION.md  how to write
 │   ├── nav/       mission data, mission state machincarrot-chasing path follower radar 
-├── src/           implementations (mirrork-loss scenarios
+├── src/           implementations (mirrork-loss scen
 │   └── bench_step/  latency histogram of onetrol cycle
 ├── tests/         27 unit, system and runtime tests (dependency-free test framework)
 └── .github/workflows/ci.yml
