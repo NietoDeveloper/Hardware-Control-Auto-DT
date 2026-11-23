@@ -17,7 +17,7 @@ watching a radar for obles so the vehicle nei───────────�
 │   ├── nav/       mission data, mission state machincarrot-chasing path follower radar 
 ├── src/           implementations (mirrors 
 │   ├── sil_demo/    end-to-end simulated mission and link-loss scenarios
-│   └── bench_step/  latency histogram of one control cycle
+│   └── bench_step/  latency histogram of onetrol cycle
 ├── tests/         27 unit, system and runtime tests (dependency-free test framework)
 └── .github/workflows/ci.yml
 ```
