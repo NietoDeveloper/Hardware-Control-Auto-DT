@@ -13,8 +13,7 @@ watching a radar for obles so the vehicle nei───────────�
  └──────────────────────────────────────)
 `
 ## Design par, actuators, media) or `comms/transport.hpp`.
-2. **The control step is deterministic.** `VehicleConttimestamp. Tests drive it with a manual
-   clock, faster than real time and bit-for-bit repeatable.
+2. **The control step is deterministic.** -bit repeatable.
 3. **No allocation, no blocking, no exceptions on the control path.** Enforced by a test that
    replaces global `operator new` and fails if the control cycle allocates.
 4. **Threads are isolated by wait-free queues.** Only the control thread ever touches vehicle
