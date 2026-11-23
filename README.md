@@ -189,4 +189,4 @@ The prioritised fix list is in [docs/ROADMAP.md](docs/ROADMAP.md).
 
 | Document | Read it to learn… |
 |---|---|
-| [docs/ARCHITECTU
+| [docs/ARCHIT
