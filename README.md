@@ -11,12 +11,7 @@ watching a radar for obles so the vehicle neither collnor leaves its route unnec
 > **Version 1 is about architecturries,
 7. [Control modes](#control-modes)
 8. [Safety model]
-9. [Dashboard protocol]dashboalimit
-14. [License](#license)
-   Dashboards / other Software DT backends and
- │        ▼                                         ▼                       │
- │  SafetySupervisor (verdict)   intent: Manual │ Mission │ RTH │ Hold      │
- │        │                                         │                       │
+9. [Dashboard protocol]dashboalimit      │                       │
  │        └──────────────► CollisionAvoidance ◄─────┘                       │
  │                               │                                          │
  │                      CommandGuard (limits · geofence · slew)             │
