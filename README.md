@@ -19,7 +19,7 @@ watching a radar for obles so the vehicle nei───────────�
 
 ---
 
-## Repository layout
+## Repository la
 
 ```
 sdt-vehicle-core/
